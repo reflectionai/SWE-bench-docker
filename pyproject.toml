@@ -17,6 +17,7 @@ datasets = "^2.19.2"
 
 [tool.poetry.group.dev.dependencies]
 ipdb = "^0.13.13"
+yapf = "^0.40.2"
 
 [build-system]
 requires = ["poetry-core"]

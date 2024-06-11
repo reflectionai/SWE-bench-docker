@@ -29,34 +29,34 @@ keep_major_minor = lambda x, sep: ".".join(x.strip().split(sep)[:2])
 
 times = []
 for match in matches:
-    parts = match[0].split("-")
-    version = keep_major_minor(".".join(parts[0:3]), ".")
-    date_str = " ".join(parts[3:])
+  parts = match[0].split("-")
+  version = keep_major_minor(".".join(parts[0:3]), ".")
+  date_str = " ".join(parts[3:])
 
-    for f_ in date_formats:
-        try:
-            date_obj = datetime.strptime(date_str, f_)
-            times.append((date_obj.strftime("%Y-%m-%d"), version))
-        except:
-            continue
-        break
+  for f_ in date_formats:
+    try:
+      date_obj = datetime.strptime(date_str, f_)
+      times.append((date_obj.strftime("%Y-%m-%d"), version))
+    except:
+      continue
+    break
 
 times = sorted(times, key=lambda x: x[0])[::-1]
 
 for task in data_tasks:
-    created_at = task["created_at"].split("T")[0]
-    found = False
-    for t in times:
-        if t[0] < created_at:
-            task["version"] = t[1]
-            found = True
-            break
-    if not found:
-        task["version"] = None
+  created_at = task["created_at"].split("T")[0]
+  found = False
+  for t in times:
+    if t[0] < created_at:
+      task["version"] = t[1]
+      found = True
+      break
+  if not found:
+    task["version"] = None
 
 # Save xarray versioned data to repository
 with open(
     os.path.join(PATH_TASKS_XARRAY, "xarray-task-instances_versions.json"),
     "w",
 ) as f:
-    json.dump(data_tasks, fp=f)
+  json.dump(data_tasks, fp=f)

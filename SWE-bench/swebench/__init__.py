@@ -13,8 +13,7 @@ from swebench.harness.constants import (
 )
 
 from swebench.harness.run_evaluation import (
-  main as run_evaluation,
-)
+    main as run_evaluation, )
 
 from swebench.harness.utils import (
     get_environment_yml,
@@ -22,9 +21,7 @@ from swebench.harness.utils import (
     get_requirements,
 )
 
-from swebench.metrics.conversion import (
-    convert_log_to_ground_truth
-)
+from swebench.metrics.conversion import (convert_log_to_ground_truth)
 
 from swebench.metrics.getters import (
     get_diffs,
@@ -34,8 +31,7 @@ from swebench.metrics.getters import (
 )
 
 from swebench.metrics.log_parsers import (
-    MAP_REPO_TO_PARSER,
-)
+    MAP_REPO_TO_PARSER, )
 
 from swebench.metrics.metrics import (
     compute_fail_to_pass,
@@ -73,5 +69,4 @@ from swebench.versioning.get_versions import (
 )
 
 from swebench.versioning.utils import (
-    split_instances,
-)
+    split_instances, )

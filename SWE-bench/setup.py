@@ -1,13 +1,14 @@
 import setuptools
 
 with open('README.md', 'r', encoding='utf-8') as fh:
-    long_description = fh.read()
+  long_description = fh.read()
 
 setuptools.setup(
     name='swebench',
     author='John Yang',
     author_email='byjohnyang@gmail.com',
-    description='The official SWE-bench package - a benchmark for evaluating LMs on software engineering',
+    description=
+    'The official SWE-bench package - a benchmark for evaluating LMs on software engineering',
     keywords='nlp, benchmark, code',
     long_description=long_description,
     long_description_content_type='text/markdown',
