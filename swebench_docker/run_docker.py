@@ -74,7 +74,7 @@ async def run_docker_evaluation(
 
     cmd_string = ' '.join(docker_command)
 
-    if verbose:
+    if True:
       logger.info(cmd_string)
 
     start_time = time.time()
