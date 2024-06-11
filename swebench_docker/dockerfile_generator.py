@@ -29,16 +29,23 @@ class DockerfileGenerator:
         self.image_prefix = "swe-bench"
 
         self.dockerfiles_to_build = [
-            ("docker/Dockerfile", f"{self.namespace}/{self.image_prefix}-conda:bookworm-slim"),
-            ("docker/pyenv/Dockerfile", f"{self.namespace}/{self.image_prefix}-pyenv:bookworm-slim"),
-            ("docker/pyenv/Dockerfile-pyenvs", f"{self.namespace}/{self.image_prefix}-pyenvs:bookworm-slim"),
+            ("docker/Dockerfile",
+             f"{self.namespace}/{self.image_prefix}-conda:bookworm-slim"),
+            ("docker/pyenv/Dockerfile",
+             f"{self.namespace}/{self.image_prefix}-pyenv:bookworm-slim"),
+            ("docker/pyenv/Dockerfile-pyenvs",
+             f"{self.namespace}/{self.image_prefix}-pyenvs:bookworm-slim"),
         ]
 
         env = Environment(loader=FileSystemLoader("templates"))
-        self.conda_testbed_template = env.get_template(f"Dockerfile.conda_testbed")
-        self.pyenv_testbed_template = env.get_template(f"Dockerfile.pyenv_testbed")
-        self.conda_repository_template = env.get_template(f"Dockerfile.conda_repository")
-        self.pyenv_repository_template = env.get_template(f"Dockerfile.pyenv_repository")
+        self.conda_testbed_template = env.get_template(
+            f"Dockerfile.conda_testbed")
+        self.pyenv_testbed_template = env.get_template(
+            f"Dockerfile.pyenv_testbed")
+        self.conda_repository_template = env.get_template(
+            f"Dockerfile.conda_repository")
+        self.pyenv_repository_template = env.get_template(
+            f"Dockerfile.pyenv_repository")
         self.instance_template = env.get_template("Dockerfile.pyenv_instance")
 
         if predictions_path:
@@ -53,14 +60,14 @@ class DockerfileGenerator:
         task_instances_grouped = self.group_task_instances(self.task_instances)
 
         for repo, map_version_to_instances in task_instances_grouped.items():
-            logger.info(f"Repo {repo}: {len(map_version_to_instances)} versions")
+            logger.info(
+                f"Repo {repo}: {len(map_version_to_instances)} versions")
 
             # Determine instances to use for environment installation
             for version, instances in map_version_to_instances.items():
                 if self.instance_ids:
                     instances = [
-                        instance
-                        for instance in instances
+                        instance for instance in instances
                         if instance["instance_id"] in self.instance_ids
                     ]
                     if not instances:
@@ -81,9 +88,11 @@ class DockerfileGenerator:
                         deb_packages = MAP_REPO_TO_DEB_PACKAGES[repo]
 
                     if use_conda:
-                        self.generate_conda_repository_dockerfile(repo, deb_packages)
+                        self.generate_conda_repository_dockerfile(
+                            repo, deb_packages)
                     else:
-                        self.generate_pyenv_repository_dockerfile(repo, deb_packages)
+                        self.generate_pyenv_repository_dockerfile(
+                            repo, deb_packages)
 
                     testbeds.add(repo_name)
 
@@ -95,10 +104,8 @@ class DockerfileGenerator:
                     use_conda=use_conda,
                 )
 
-                if (
-                        "instance_image" in specifications
-                        and specifications["instance_image"]
-                ):
+                if ("instance_image" in specifications
+                        and specifications["instance_image"]):
                     for instance in instances:
                         install_cmd = specifications["install"]
                         self.generate_instance_dockerfile(
@@ -132,9 +139,8 @@ class DockerfileGenerator:
 
         return task_instances_grouped
 
-    def generate_conda_repository_dockerfile(
-        self, repo: str, deb_packages: List[str]
-    ):
+    def generate_conda_repository_dockerfile(self, repo: str,
+                                             deb_packages: List[str]):
         repo_name = _repo_name(repo)
 
         base_image = f"{self.namespace}/{self.image_prefix}-conda:bookworm-slim"
@@ -157,11 +163,13 @@ class DockerfileGenerator:
 
         repo_image_name = repo.replace("/", "_")
 
-        self.dockerfiles_to_build.append((output_file, f"{self.namespace}/{self.image_prefix}-{repo_image_name}:bookworm-slim"))
+        self.dockerfiles_to_build.append((
+            output_file,
+            f"{self.namespace}/{self.image_prefix}-{repo_image_name}:bookworm-slim"
+        ))
 
-    def generate_pyenv_repository_dockerfile(
-            self, repo: str, deb_packages: List[str]
-    ):
+    def generate_pyenv_repository_dockerfile(self, repo: str,
+                                             deb_packages: List[str]):
 
         repo_name = _repo_name(repo)
 
@@ -187,17 +195,17 @@ class DockerfileGenerator:
 
         repo_image_name = repo.replace("/", "_")
 
-        self.dockerfiles_to_build.append(
-            (output_file, f"{self.namespace}/{self.image_prefix}-{repo_image_name}:bookworm-slim"))
+        self.dockerfiles_to_build.append((
+            output_file,
+            f"{self.namespace}/{self.image_prefix}-{repo_image_name}:bookworm-slim"
+        ))
 
-    def generate_testbed_dockerfile(
-        self,
-        repo: str,
-        version: str,
-        specifications: dict,
-        setup_ref_instance: dict,
-        use_conda: bool = False
-    ):
+    def generate_testbed_dockerfile(self,
+                                    repo: str,
+                                    version: str,
+                                    specifications: dict,
+                                    setup_ref_instance: dict,
+                                    use_conda: bool = False):
 
         repo_name = _repo_name(repo)
         repo_image_name = repo.replace("/", "_")
@@ -207,8 +215,7 @@ class DockerfileGenerator:
         test_bed_dir = f"{self.docker_dir}/{repo_name}/{version}"
 
         environment_setup_commit = setup_ref_instance.get(
-            "environment_setup_commit", setup_ref_instance["base_commit"]
-        )
+            "environment_setup_commit", setup_ref_instance["base_commit"])
 
         path_to_reqs = None
         path_to_env_file = None
@@ -223,19 +230,19 @@ class DockerfileGenerator:
         pip_packages = specifications.get("pip_packages", [])
 
         # Create conda environment according to install instructinos
-        pkgs = (
-            specifications["packages"] if "packages" in specifications else ""
-        )
+        pkgs = (specifications["packages"]
+                if "packages" in specifications else "")
         if pkgs == "requirements.txt":
             # Create environment
             conda_create_cmd = f"conda create -n {env_name} python={specifications['python']} -y"
 
-            path_to_reqs = get_requirements(
-                setup_ref_instance, save_path=test_bed_dir
-            )
+            path_to_reqs = get_requirements(setup_ref_instance,
+                                            save_path=test_bed_dir)
 
             if specifications["python"] == "3.5":
-                install_cmds.append("pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org -r requirements.txt")
+                install_cmds.append(
+                    "pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org -r requirements.txt"
+                )
             else:
                 install_cmds.append("pip install -r requirements.txt")
         elif pkgs == "environment.yml":
@@ -244,9 +251,9 @@ class DockerfileGenerator:
 
             if "no_use_env" in specifications and specifications["no_use_env"]:
                 # Create environment from yml
-                path_to_env_file = get_environment_yml(
-                    setup_ref_instance, env_name, save_path=test_bed_dir
-                )
+                path_to_env_file = get_environment_yml(setup_ref_instance,
+                                                       env_name,
+                                                       save_path=test_bed_dir)
                 conda_create_cmd = f"conda create -c conda-forge -n {env_name} python={specifications['python']} -y"
 
                 # Install dependencies
@@ -274,8 +281,7 @@ class DockerfileGenerator:
 
         if "install" in specifications and (
                 "instance_image" not in specifications
-                or not specifications["instance_image"]
-        ):
+                or not specifications["instance_image"]):
             install_cmds.append(specifications["install"])
 
         repo_name = _repo_name(repo)
@@ -316,7 +322,10 @@ class DockerfileGenerator:
 
         print(f"Dockerfile generated: {output_file}")
 
-        self.dockerfiles_to_build.append((output_file, f"{self.namespace}/{self.image_prefix}-{repo_image_name}-testbed:{version}"))
+        self.dockerfiles_to_build.append((
+            output_file,
+            f"{self.namespace}/{self.image_prefix}-{repo_image_name}-testbed:{version}"
+        ))
 
     def generate_instance_dockerfile(
         self,
@@ -355,7 +364,10 @@ class DockerfileGenerator:
 
         print(f"Dockerfile generated: {output_file}")
 
-        self.dockerfiles_to_build.append((output_file, f"{self.namespace}/{self.image_prefix}-{repo_image_name}-instance:{instance['instance_id']}"))
+        self.dockerfiles_to_build.append((
+            output_file,
+            f"{self.namespace}/{self.image_prefix}-{repo_image_name}-instance:{instance['instance_id']}"
+        ))
 
 
 def _repo_name(repo: str) -> str:

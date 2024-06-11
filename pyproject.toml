@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "swe-bench-docker"
+version = "0.1.0"
+description = ""
+authors = ["ethanabrooks <ethanabrooks@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+swebench = {path = "SWE-bench"}
+pydantic = "^2.7.3"
+eval-type-backport = "^0.2.0"
+pandas = "^2.2.2"
+tqdm = "^4.66.4"
+datasets = "^2.19.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
