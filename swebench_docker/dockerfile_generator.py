@@ -81,7 +81,7 @@ class DockerfileGenerator:
         specifications = MAP_VERSION_TO_INSTALL[repo][version]
 
         use_conda = repo not in PYENV_REPOS
-
+        print("USE_CONDA IS:", use_conda)
         if repo_name not in testbeds:
           deb_packages = None
           if repo in MAP_REPO_TO_DEB_PACKAGES:
@@ -147,6 +147,7 @@ class DockerfileGenerator:
         base_image=base_image,
         deb_packages=" ".join(deb_packages) if deb_packages else None,
         repo_name=repo_name,
+        repo_name_with_slash=repo,  # Used to clone from real GitHub repo.
     )
 
     repo_dir = f"{self.docker_dir}/{repo_name}"
@@ -295,6 +296,7 @@ class DockerfileGenerator:
       python_version = PYTHON_ENVIRONMENT_VERSIONS[python_version]
       template = self.pyenv_testbed_template
 
+    repo_name_with_slash = repo_name.replace("__", "/")
     dockerfile_content = template.render(
         base_image=base_image,
         pyenv_image=pyenv_image,
@@ -309,6 +311,7 @@ class DockerfileGenerator:
         path_to_reqs=path_to_reqs,
         environment_setup_commit=environment_setup_commit,
         path_to_env_file=path_to_env_file,
+        repo_name_with_slash = repo_name_with_slash,
     )
 
     testbed_dir = f"{self.docker_dir}/{repo_name}/{version}"

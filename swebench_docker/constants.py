@@ -223,6 +223,15 @@ MAP_VERSION_TO_INSTALL_SEABORN.update(
         for k in ["0.12", "0.13"]
     })
 
+MAP_VERSION_TO_INSTALL_PANDAS= {
+    "1.4.1": {
+        "instance_image": True,
+        "python": "3.9",
+        "packages": "requirements.txt",
+        "install": "pip install -v --no-build-isolation -e .",
+    }
+}
+
 MAP_VERSION_TO_INSTALL_PYTEST = {
     k: {
         "python": "3.9",
@@ -642,7 +651,7 @@ MAP_VERSION_TO_INSTALL_PYDICOM.update(
 
 MAP_VERSION_TO_INSTALL_HUMANEVAL = {k: {"python": "3.9"} for k in ['1.0']}
 
-# Constants - Task Instance Instllation Environment
+# Constants - Task Instance Installation Environment
 MAP_VERSION_TO_INSTALL = {
     "astropy/astropy": MAP_VERSION_TO_INSTALL_ASTROPY,
     "django/django": MAP_VERSION_TO_INSTALL_DJANGO,
@@ -663,6 +672,7 @@ MAP_VERSION_TO_INSTALL = {
     "sqlfluff/sqlfluff": MAP_VERSION_TO_INSTALL_SQLFLUFF,
     "swe-bench/humaneval": MAP_VERSION_TO_INSTALL_HUMANEVAL,
     "sympy/sympy": MAP_VERSION_TO_INSTALL_SYMPY,
+    "pandas-dev/pandas": MAP_VERSION_TO_INSTALL_PANDAS,
 }
 
 # Constants - Repository Specific Installation Instructions
@@ -691,6 +701,7 @@ MAP_REPO_TO_TEST_FRAMEWORK = {
     "sqlfluff/sqlfluff": TEST_PYTEST,
     "swe-bench/humaneval": "python",
     "sympy/sympy": "bin/test -C --verbose",
+    "pandas-dev/pandas": TEST_PYTEST,
 }
 
 # Constants - Task Instance Requirements File Paths
@@ -705,6 +716,7 @@ MAP_REPO_TO_REQS_PATHS = {
     "pyvista/pyvista": ["requirements_test.txt", 'requirements.txt'],
     "sqlfluff/sqlfluff": ["requirements_dev.txt"],
     "sympy/sympy": ["requirements-dev.txt"],
+    "pandas-dev/pandas":  ["requirements-dev.txt"],
 }
 
 # Constants - Task Instance environment.yml File Paths
