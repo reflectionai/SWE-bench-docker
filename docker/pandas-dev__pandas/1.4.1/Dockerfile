@@ -9,7 +9,7 @@ SHELL ["conda", "run", "-n", "pandas-dev__pandas__1.4.1", "/bin/bash", "-c"]
 
 COPY docker/pandas-dev__pandas/1.4.1/requirements.txt .
 
-RUN pip install -e .
+# RUN pip install -r requirements.txt
 
 RUN git checkout  .
 

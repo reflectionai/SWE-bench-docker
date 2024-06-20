@@ -2,10 +2,18 @@
 
 FROM tina/swe-bench-pandas-dev_pandas-testbed:1.4.1
 
-WORKDIR /opt/pandas-dev__pandas
+WORKDIR $REPO_DIR
 
 RUN git -c advice.detachedHead=false checkout fc9fdba6592bdb5d0d1147ce4d65639acd897565
 
-RUN pip install -v --no-build-isolation -e .
+RUN pip install --config-settings="--build-option=--no-cython-compile" Cython==0.29.22
 
-WORKDIR /opt
+RUN pip install numpy
+
+RUN pip install python-dateutil
+
+RUN pip install pytz
+
+RUN python -m pip install -e . --no-build-isolation --no-use-pep517
+
+WORKDIR /home/swe-bench
