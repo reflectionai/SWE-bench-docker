@@ -548,6 +548,14 @@ MAP_VERSION_TO_INSTALL_SQLFLUFF = {
     ]
 }
 
+MAP_VERSION_TO_INSTALL_CONAN = {
+    "1.60.2": {
+        "python": "3.6",
+        "packages": "requirements.txt",
+        "install": "pip install -e .",
+    }
+}
+
 MAP_VERSION_TO_INSTALL_PYVISTA = {
     k: {
         "python": "3.9",
@@ -673,6 +681,7 @@ MAP_VERSION_TO_INSTALL = {
     "swe-bench/humaneval": MAP_VERSION_TO_INSTALL_HUMANEVAL,
     "sympy/sympy": MAP_VERSION_TO_INSTALL_SYMPY,
     "pandas-dev/pandas": MAP_VERSION_TO_INSTALL_PANDAS,
+    "conan-io/conan": MAP_VERSION_TO_INSTALL_CONAN,
 }
 
 # Constants - Repository Specific Installation Instructions
@@ -702,6 +711,7 @@ MAP_REPO_TO_TEST_FRAMEWORK = {
     "swe-bench/humaneval": "python",
     "sympy/sympy": "bin/test -C --verbose",
     "pandas-dev/pandas": TEST_PYTEST,
+    "conan-io/conan": TEST_PYTEST,
 }
 
 # Constants - Task Instance Requirements File Paths
@@ -717,6 +727,7 @@ MAP_REPO_TO_REQS_PATHS = {
     "sqlfluff/sqlfluff": ["requirements_dev.txt"],
     "sympy/sympy": ["requirements-dev.txt"],
     "pandas-dev/pandas":  ["requirements-dev.txt"],
+    "conan-io/conan": ["conans/requirements.txt", "conans/requirements_server.txt", "conans/requirements_dev.txt"]
 }
 
 # Constants - Task Instance environment.yml File Paths

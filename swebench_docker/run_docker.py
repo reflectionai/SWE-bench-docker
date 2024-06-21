@@ -42,7 +42,6 @@ async def run_docker_evaluation(
     json.dump(task_instance, tmpfile)
     tmpfile.close()
     tmpfile_path = tmpfile.name
-
     swebench_docker_fork_dir = os.environ.get("SWEBENCH_DOCKER_FORK_DIR")
     docker_command = [
         'docker',

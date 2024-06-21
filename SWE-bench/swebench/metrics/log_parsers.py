@@ -178,6 +178,7 @@ parse_log_pvlib = parse_log_pytest
 parse_log_pyvista = parse_log_pytest
 parse_log_sqlfluff = parse_log_pytest
 parse_log_xarray = parse_log_pytest
+parse_log_conan = parse_log_pytest
 
 parse_log_pydicom = parse_log_pytest_options
 parse_log_requests = parse_log_pytest_options
@@ -206,4 +207,5 @@ MAP_REPO_TO_PARSER = {
     "sqlfluff/sqlfluff": parse_log_sqlfluff,
     "sphinx-doc/sphinx": parse_log_sphinx,
     "sympy/sympy": parse_log_sympy,
+    "conan-io/conan": parse_log_conan,
 }

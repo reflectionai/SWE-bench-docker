@@ -111,54 +111,59 @@ def get_requirements(instance: dict, save_path: str = None):
   path_worked = False
   commit = 'environment_setup_commit' if 'environment_setup_commit' in instance and instance['environment_setup_commit'] else 'base_commit'
 
+  all_req_responses = []
+  all_req_paths = []
+  # If there are multiple requirements files, concatenate their requirements.
   for req_path in MAP_REPO_TO_REQS_PATHS[instance["repo"]]:
     reqs_url = os.path.join(
         SWE_BENCH_URL_RAW, instance["repo"], instance[commit], req_path)
-    
-    print("URL", reqs_url)
-
     reqs = requests.get(reqs_url)
     if reqs.status_code == 200:
       path_worked = True
-      break
+      all_req_responses.append(reqs)
+      all_req_paths.append(req_path)
   if not path_worked:
     print(
         f"Could not find requirements.txt at paths {MAP_REPO_TO_REQS_PATHS[instance['repo']]}"
     )
     return None
 
-  lines = reqs.text
-  original_req = []
-  additional_reqs = []
-  req_dir = "/".join(req_path.split("/")[:-1])
-  exclude_line = lambda line: any(
-      [line.strip().startswith(x) for x in ["-e .", "#", ".[test"]])
+  def _get_all_reqs_from_one_file(reqs_as_lines, req_path):
+    original_req = []
+    additional_reqs = []
+    req_base_dir = "/".join(req_path.split("/")[:-1])
+    exclude_line = lambda line: any(
+        [line.strip().startswith(x) for x in ["-e .", "#", ".[test"]])
 
-  for line in lines.split("\n"):
-    line = line.replace("sys.platform", "sys_platform")  # Django specific?
+    for line in reqs_as_lines.split("\n"):
+      line = line.replace("sys.platform", "sys_platform")  # Django specific?
 
-    if line.strip().startswith("-r"):
-      # Handle recursive requirements
-      file_name = line[len("-r"):].strip()
-      reqs_url = os.path.join(
-          SWE_BENCH_URL_RAW,
-          instance["repo"],
-          instance[commit],
-          req_dir,
-          file_name,
-      )
-      reqs = requests.get(reqs_url)
-      if reqs.status_code == 200:
-        for line_extra in reqs.text.split("\n"):
-          if not exclude_line(line_extra):
-            additional_reqs.append(line_extra)
-    else:
-      if not exclude_line(line):
-        original_req.append(line)
+      if line.strip().startswith("-r"):
+        # Handle recursive requirements
+        file_name = line[len("-r"):].strip()
+        reqs_url = os.path.join(
+            SWE_BENCH_URL_RAW,
+            instance["repo"],
+            instance[commit],
+            req_base_dir,
+            file_name,
+        )
+        reqs = requests.get(reqs_url)
+        if reqs.status_code == 200:
+          for line_extra in reqs.text.split("\n"):
+            if not exclude_line(line_extra):
+              additional_reqs.append(line_extra)
+      else:
+        if not exclude_line(line):
+          original_req.append(line)
 
-  # Combine all requirements into single text body
-  additional_reqs.append("\n".join(original_req))
-  all_reqs = "\n".join(additional_reqs)
+    # Combine all requirements into single text body
+    additional_reqs.append("\n".join(original_req))
+    return "\n".join(additional_reqs)
+
+  all_reqs = ""
+  for req_response, req_path in zip(all_req_responses, all_req_paths):
+    all_reqs += _get_all_reqs_from_one_file(req_response.text, req_path) + "\n\n"
 
   if save_path is None:
     return all_reqs
@@ -166,7 +171,6 @@ def get_requirements(instance: dict, save_path: str = None):
   path_to_reqs = os.path.join(save_path, "requirements.txt")
   with open(path_to_reqs, "w") as f:
     f.write(all_reqs)
-  print(all_reqs)
   return path_to_reqs
 
 
@@ -201,7 +205,6 @@ def get_test_directives(instance: dict) -> list:
       d = d.replace("/", ".")
       directives_transformed.append(d)
     directives = directives_transformed
-
   return directives
 
 

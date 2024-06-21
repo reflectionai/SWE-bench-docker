@@ -1,0 +1,1139 @@
+,repo,instance_id,base_commit,patch,test_patch,problem_statement,hints_text,created_at,version,FAIL_TO_PASS,PASS_TO_PASS,environment_setup_commit,gold_patch,has_tests,has_gold
+10706,pandas-dev/pandas,pandas-dev__pandas-10026,7eb5668f1908c19246a6ccf98426ac8fa2ca6c55,"diff --git a/doc/source/whatsnew/v0.16.1.txt b/doc/source/whatsnew/v0.16.1.txt
+--- a/doc/source/whatsnew/v0.16.1.txt
++++ b/doc/source/whatsnew/v0.16.1.txt
+@@ -192,6 +192,7 @@ Bug Fixes
+ - Bug in ``read_sql_table`` error when reading postgres table with timezone (:issue:`7139`)
+ - Bug in ``DataFrame`` slicing may not retain metadata (:issue:`9776`)
+ - Bug where ``TimdeltaIndex`` were not properly serialized in fixed ``HDFStore`` (:issue:`9635`)
++- Bug with ``TimedeltaIndex`` constructor ignoring ``name`` when given another ``TimedeltaIndex`` as data (:issue:`10025`).
+ - Bug in ``DataFrameFormatter._get_formatted_index`` with not applying ``max_colwidth`` to the ``DataFrame`` index (:issue:`7856`)
+ 
+ - Bug in ``groupby.apply()`` that would raise if a passed user defined function either returned only ``None`` (for all input). (:issue:`9685`)
+diff --git a/pandas/tseries/tdi.py b/pandas/tseries/tdi.py
+--- a/pandas/tseries/tdi.py
++++ b/pandas/tseries/tdi.py
+@@ -140,7 +140,7 @@ def __new__(cls, data=None, unit=None,
+                 copy=False, name=None,
+                 closed=None, verify_integrity=True, **kwargs):
+ 
+-        if isinstance(data, TimedeltaIndex) and freq is None:
++        if isinstance(data, TimedeltaIndex) and freq is None and name is None:
+             if copy:
+                 data = data.copy()
+             return data
+","diff --git a/pandas/tseries/tests/test_timedeltas.py b/pandas/tseries/tests/test_timedeltas.py
+--- a/pandas/tseries/tests/test_timedeltas.py
++++ b/pandas/tseries/tests/test_timedeltas.py
+@@ -949,6 +949,10 @@ def test_constructor_name(self):
+                             name='TEST')
+         self.assertEqual(idx.name, 'TEST')
+ 
++        # GH10025
++        idx2 = TimedeltaIndex(idx, name='something else')
++        self.assertEqual(idx2.name, 'something else')
++
+     def test_freq_conversion(self):
+ 
+         # doc example
+","BUG: Index constructor does not set name when given a TimedeltaIndex as data
+```
+In [46]: tdi = pd.timedelta_range(start=0, periods=4, freq='D')
+
+In [47]: pd.Index(tdi, name='foo').name is None
+Out[47]: True
+
+In [48]: pd.Index(tdi.values, name='foo').name is None
+Out[48]: False
+```
+
+Other index types seem to work fine:
+
+```
+In [51]: dti = pd.date_range(start='2000-01-01', periods=4, freq='D')
+
+In [52]: pd.Index(dti, name='foo').name is None
+Out[52]: False
+```
+
+",,2015-04-30T05:52:33Z,,[],[],,"diff --git a/pandas/tseries/tdi.py b/pandas/tseries/tdi.py
+--- a/pandas/tseries/tdi.py
++++ b/pandas/tseries/tdi.py
+@@ -140,7 +140,7 @@ def __new__(cls, data=None, unit=None,
+                 copy=False, name=None,
+                 closed=None, verify_integrity=True, **kwargs):
+ 
+-        if isinstance(data, TimedeltaIndex) and freq is None:
++        if isinstance(data, TimedeltaIndex) and freq is None and name is None:
+             if copy:
+                 data = data.copy()
+             return data
+",True,True
+10707,pandas-dev/pandas,pandas-dev__pandas-10042,483021141403d82920ab0f5a0a0258af84fa182e,"diff --git a/pandas/core/index.py b/pandas/core/index.py
+--- a/pandas/core/index.py
++++ b/pandas/core/index.py
+@@ -1179,17 +1179,18 @@ def argsort(self, *args, **kwargs):
+         return result.argsort(*args, **kwargs)
+ 
+     def __add__(self, other):
+-        if isinstance(other, Index):
++        if com.is_list_like(other):
+             warnings.warn(""using '+' to provide set union with Indexes is deprecated, ""
+                           ""use '|' or .union()"",FutureWarning)
++        if isinstance(other, Index):
+             return self.union(other)
+         return Index(np.array(self) + other)
+     __iadd__ = __add__
++    __radd__ = __add__
+ 
+     def __sub__(self, other):
+-        if isinstance(other, Index):
+-            warnings.warn(""using '-' to provide set differences with Indexes is deprecated, ""
+-                          ""use .difference()"",FutureWarning)
++        warnings.warn(""using '-' to provide set differences with Indexes is deprecated, ""
++                      ""use .difference()"",FutureWarning)
+         return self.difference(other)
+ 
+     def __and__(self, other):
+@@ -2469,6 +2470,21 @@ def _evaluate_compare(self, other):
+         cls.__le__ = _make_compare('__le__')
+         cls.__ge__ = _make_compare('__ge__')
+ 
++    @classmethod
++    def _add_numericlike_set_methods_disabled(cls):
++        """""" add in the numeric set-like methods to disable """"""
++
++        def _make_invalid_op(name):
++
++            def invalid_op(self, other=None):
++                raise TypeError(""cannot perform {name} with this index type: {typ}"".format(name=name,
++                                                                                           typ=type(self)))
++            invalid_op.__name__ = name
++            return invalid_op
++
++        cls.__add__ = cls.__radd__ = __iadd__ = _make_invalid_op('__add__')
++        cls.__sub__ = __isub__ = _make_invalid_op('__sub__')
++
+     @classmethod
+     def _add_numeric_methods_disabled(cls):
+         """""" add in numeric methods to disable """"""
+@@ -3148,6 +3164,7 @@ def _add_accessors(cls):
+                                                  overwrite=True)
+ 
+ 
++CategoricalIndex._add_numericlike_set_methods_disabled()
+ CategoricalIndex._add_numeric_methods_disabled()
+ CategoricalIndex._add_logical_methods_disabled()
+ CategoricalIndex._add_comparison_methods()
+diff --git a/pandas/core/reshape.py b/pandas/core/reshape.py
+--- a/pandas/core/reshape.py
++++ b/pandas/core/reshape.py
+@@ -612,7 +612,7 @@ def _convert_level_number(level_num, columns):
+         new_data[key] = value_slice.ravel()
+ 
+     if len(drop_cols) > 0:
+-        new_columns = new_columns - drop_cols
++        new_columns = new_columns.difference(drop_cols)
+ 
+     N = len(this)
+ 
+@@ -1045,7 +1045,7 @@ def check_len(item, name):
+         with_dummies = [result]
+         for (col, pre, sep) in zip(columns_to_encode, prefix, prefix_sep):
+ 
+-            dummy = _get_dummies_1d(data[col], prefix=pre, prefix_sep=sep, 
++            dummy = _get_dummies_1d(data[col], prefix=pre, prefix_sep=sep,
+                                     dummy_na=dummy_na, sparse=sparse)
+             with_dummies.append(dummy)
+         result = concat(with_dummies, axis=1)
+","diff --git a/pandas/io/tests/test_pytables.py b/pandas/io/tests/test_pytables.py
+--- a/pandas/io/tests/test_pytables.py
++++ b/pandas/io/tests/test_pytables.py
+@@ -3613,7 +3613,7 @@ def test_frame_select_complex(self):
+ 
+             # invert ok for filters
+             result = store.select('df', ""~(columns=['A','B'])"")
+-            expected = df.loc[:,df.columns-['A','B']]
++            expected = df.loc[:,df.columns.difference(['A','B'])]
+             tm.assert_frame_equal(result, expected)
+ 
+             # in
+diff --git a/pandas/tests/test_index.py b/pandas/tests/test_index.py
+--- a/pandas/tests/test_index.py
++++ b/pandas/tests/test_index.py
+@@ -686,6 +686,10 @@ def test_add(self):
+         # - API change GH 8226
+         with tm.assert_produces_warning():
+             self.strIndex + self.strIndex
++        with tm.assert_produces_warning():
++            self.strIndex + self.strIndex.tolist()
++        with tm.assert_produces_warning():
++            self.strIndex.tolist() + self.strIndex
+ 
+         firstCat = self.strIndex.union(self.dateIndex)
+         secondCat = self.strIndex.union(self.strIndex)
+@@ -772,6 +776,7 @@ def test_difference(self):
+         assertRaisesRegexp(TypeError, ""iterable"", first.difference, 0.5)
+ 
+     def test_symmetric_diff(self):
++
+         # smoke
+         idx1 = Index([1, 2, 3, 4], name='idx1')
+         idx2 = Index([2, 3, 4, 5])
+@@ -819,7 +824,7 @@ def test_symmetric_diff(self):
+ 
+         # other isn't iterable
+         with tm.assertRaises(TypeError):
+-            Index(idx1,dtype='object') - 1
++            Index(idx1,dtype='object').difference(1)
+ 
+     def test_is_numeric(self):
+         self.assertFalse(self.dateIndex.is_numeric())
+@@ -1488,6 +1493,19 @@ def test_construction_with_dtype(self):
+         result = CategoricalIndex(idx, categories=idx, ordered=True)
+         tm.assert_index_equal(result, expected, exact=True)
+ 
++    def test_disallow_set_ops(self):
++
++        # GH 10039
++        # set ops (+/-) raise TypeError
++        idx = pd.Index(pd.Categorical(['a', 'b']))
++
++        self.assertRaises(TypeError, lambda : idx - idx)
++        self.assertRaises(TypeError, lambda : idx + idx)
++        self.assertRaises(TypeError, lambda : idx - ['a','b'])
++        self.assertRaises(TypeError, lambda : idx + ['a','b'])
++        self.assertRaises(TypeError, lambda : ['a','b'] - idx)
++        self.assertRaises(TypeError, lambda : ['a','b'] + idx)
++
+     def test_method_delegation(self):
+ 
+         ci = CategoricalIndex(list('aabbca'), categories=list('cabdef'))
+@@ -3882,6 +3900,12 @@ def test_difference(self):
+         # - API change GH 8226
+         with tm.assert_produces_warning():
+             first - self.index[-3:]
++        with tm.assert_produces_warning():
++            self.index[-3:] - first
++        with tm.assert_produces_warning():
++            self.index[-3:] - first.tolist()
++
++        self.assertRaises(TypeError, lambda : first.tolist() - self.index[-3:])
+ 
+         expected = MultiIndex.from_tuples(sorted(self.index[:-3].values),
+                                           sortorder=0,
+","CategoricalIndex + and - should not be set operations?
+Related with the issue I just opened (#10038), I relooked at the set operation deprecation issues we had before (xref #8227, #9095, #9630).
+
+To make a summary:
+- in 0.15.0 we deprecated set operations, only for new TimedeltaIndex it is already numeric operation
+- in 0.15.1, for numeric indexes this was by accident converted to numeric operation
+- in 0.16.0, explicit deprecation added for DatetimeIndex
+- in a future release we want to have it all numeric operations (or TypeErrors if the dtype does not support that operation)
+
+But now, for the CategoricalIndex added, it is a set operation again (but with a warning):
+
+```
+In [1]: idx = pd.Index(pd.Categorical(['a', 'b']))
+
+In [2]: idx
+Out[2]:
+CategoricalIndex([u'a', u'b'],
+                 categories=[u'a', u'b'],
+                 ordered=False,
+                 name=None)
+
+In [3]: idx - idx
+c:\users\vdbosscj\scipy\pandas-joris\pandas\core\index.py:1191: FutureWarning: u
+sing '-' to provide set differences with Indexes is deprecated, use .difference(
+)
+  ""use .difference()"", FutureWarning)
+Out[3]: Index([], dtype='object')
+```
+
+As this is a new index, we should at once use the correct behaviour? 
+(Which is raising a TypeError I think?)
+
+","yep, these are not defined so they get behavior from super-class. Ok, will whip something up. I agree `TypeError` is correct
+",2015-05-01T16:03:24Z,,[],[],,"diff --git a/pandas/core/index.py b/pandas/core/index.py
+--- a/pandas/core/index.py
++++ b/pandas/core/index.py
+@@ -1179,17 +1179,18 @@ def argsort(self, *args, **kwargs):
+         return result.argsort(*args, **kwargs)
+ 
+     def __add__(self, other):
+-        if isinstance(other, Index):
++        if com.is_list_like(other):
+             warnings.warn(""using '+' to provide set union with Indexes is deprecated, ""
+                           ""use '|' or .union()"",FutureWarning)
++        if isinstance(other, Index):
+             return self.union(other)
+         return Index(np.array(self) + other)
+     __iadd__ = __add__
++    __radd__ = __add__
+ 
+     def __sub__(self, other):
+-        if isinstance(other, Index):
+-            warnings.warn(""using '-' to provide set differences with Indexes is deprecated, ""
+-                          ""use .difference()"",FutureWarning)
++        warnings.warn(""using '-' to provide set differences with Indexes is deprecated, ""
++                      ""use .difference()"",FutureWarning)
+         return self.difference(other)
+ 
+     def __and__(self, other):
+@@ -2469,6 +2470,21 @@ def _evaluate_compare(self, other):
+         cls.__le__ = _make_compare('__le__')
+         cls.__ge__ = _make_compare('__ge__')
+ 
++    @classmethod
++    def _add_numericlike_set_methods_disabled(cls):
++        """""" add in the numeric set-like methods to disable """"""
++
++        def _make_invalid_op(name):
++
++            def invalid_op(self, other=None):
++                raise TypeError(""cannot perform {name} with this index type: {typ}"".format(name=name,
++                                                                                           typ=type(self)))
++            invalid_op.__name__ = name
++            return invalid_op
++
++        cls.__add__ = cls.__radd__ = __iadd__ = _make_invalid_op('__add__')
++        cls.__sub__ = __isub__ = _make_invalid_op('__sub__')
++
+     @classmethod
+     def _add_numeric_methods_disabled(cls):
+         """""" add in numeric methods to disable """"""
+@@ -3148,6 +3164,7 @@ def _add_accessors(cls):
+                                                  overwrite=True)
+ 
+ 
++CategoricalIndex._add_numericlike_set_methods_disabled()
+ CategoricalIndex._add_numeric_methods_disabled()
+ CategoricalIndex._add_logical_methods_disabled()
+ CategoricalIndex._add_comparison_methods()
+diff --git a/pandas/core/reshape.py b/pandas/core/reshape.py
+--- a/pandas/core/reshape.py
++++ b/pandas/core/reshape.py
+@@ -612,7 +612,7 @@ def _convert_level_number(level_num, columns):
+         new_data[key] = value_slice.ravel()
+ 
+     if len(drop_cols) > 0:
+-        new_columns = new_columns - drop_cols
++        new_columns = new_columns.difference(drop_cols)
+ 
+     N = len(this)
+ 
+@@ -1045,7 +1045,7 @@ def check_len(item, name):
+         with_dummies = [result]
+         for (col, pre, sep) in zip(columns_to_encode, prefix, prefix_sep):
+ 
+-            dummy = _get_dummies_1d(data[col], prefix=pre, prefix_sep=sep, 
++            dummy = _get_dummies_1d(data[col], prefix=pre, prefix_sep=sep,
+                                     dummy_na=dummy_na, sparse=sparse)
+             with_dummies.append(dummy)
+         result = concat(with_dummies, axis=1)
+",True,True
+10708,pandas-dev/pandas,pandas-dev__pandas-10054,30f672c4559964bfa501e923d2243694b920278e,"diff --git a/doc/source/merging.rst b/doc/source/merging.rst
+--- a/doc/source/merging.rst
++++ b/doc/source/merging.rst
+@@ -489,9 +489,9 @@ standard database join operations between DataFrame objects:
+ 
+ ::
+ 
+-    pd.merge(left, right, how='inner', on=None, left_on=None, right_on=None,
+-             left_index=False, right_index=False, sort=True,
+-             suffixes=('_x', '_y'), copy=True)
++    merge(left, right, how='inner', on=None, left_on=None, right_on=None,
++          left_index=False, right_index=False, sort=True,
++          suffixes=('_x', '_y'), copy=True, indicator=False)
+ 
+ Here's a description of what each argument is for:
+ 
+@@ -522,6 +522,15 @@ Here's a description of what each argument is for:
+     cases but may improve performance / memory usage. The cases where copying
+     can be avoided are somewhat pathological but this option is provided
+     nonetheless.
++  - ``indicator``: Add a column to the output DataFrame called ``_merge``
++    with information on the source of each row. ``_merge`` is Categorical-type 
++    and takes on a value of ``left_only`` for observations whose merge key 
++    only appears in ``'left'`` DataFrame, ``right_only`` for observations whose 
++    merge key only appears in ``'right'`` DataFrame, and ``both`` if the 
++    observation's merge key is found in both. 
++    
++    .. versionadded:: 0.17.0
++
+ 
+ The return type will be the same as ``left``. If ``left`` is a ``DataFrame``
+ and ``right`` is a subclass of DataFrame, the return type will still be
+@@ -667,6 +676,36 @@ either the left or right tables, the values in the joined table will be
+           labels=['left', 'right'], vertical=False);
+    plt.close('all');
+ 
++.. _merging.indicator:
++
++The merge indicator
++~~~~~~~~~~~~~~~~~~~
++
++.. versionadded:: 0.17.0
++
++``merge`` now accepts the argument ``indicator``. If ``True``, a Categorical-type column called ``_merge`` will be added to the output object that takes on values:
++
++  ===================================   ================
++  Observation Origin                    ``_merge`` value
++  ===================================   ================
++  Merge key only in ``'left'`` frame    ``left_only``
++  Merge key only in ``'right'`` frame   ``right_only``
++  Merge key in both frames              ``both``
++  ===================================   ================
++
++.. ipython:: python
++
++   df1 = DataFrame({'col1':[0,1], 'col_left':['a','b']})
++   df2 = DataFrame({'col1':[1,2,2],'col_right':[2,2,2]})
++   merge(df1, df2, on='col1', how='outer', indicator=True)
++
++The ``indicator`` argument will also accept string arguments, in which case the indicator function will use the value of the passed string as the name for the indicator column. 
++
++.. ipython:: python
++
++   merge(df1, df2, on='col1', how='outer', indicator='indicator_column')
++
++
+ .. _merging.join.index:
+ 
+ Joining on index
+diff --git a/doc/source/whatsnew/v0.17.0.txt b/doc/source/whatsnew/v0.17.0.txt
+--- a/doc/source/whatsnew/v0.17.0.txt
++++ b/doc/source/whatsnew/v0.17.0.txt
+@@ -51,6 +51,27 @@ Check the :ref:`API Changes <whatsnew_0170.api>` and :ref:`deprecations <whatsne
+ New features
+ ~~~~~~~~~~~~
+ 
++- ``merge`` now accepts the argument ``indicator`` which adds a Categorical-type column (by default called ``_merge``) to the output object that takes on the values:
++
++  ===================================   ================
++  Observation Origin                    ``_merge`` value
++  ===================================   ================
++  Merge key only in ``'left'`` frame    ``left_only``
++  Merge key only in ``'right'`` frame   ``right_only``
++  Merge key in both frames              ``both``
++  ===================================   ================
++
++For more, see the :ref:`updated docs <merging.indicator>`
++
++  .. ipython:: python
++
++    df1 = pd.DataFrame({'col1':[0,1], 'col_left':['a','b']})
++    df2 = pd.DataFrame({'col1':[1,2,2],'col_right':[2,2,2]})
++    pd.merge(df1, df2, on='col1', how='outer', indicator=True)
++
++
++
++
+ - ``DataFrame`` has the ``nlargest`` and ``nsmallest`` methods (:issue:`10393`)
+ - SQL io functions now accept a SQLAlchemy connectable. (:issue:`7877`)
+ - Enable writing complex values to HDF stores when using table format (:issue:`10447`)
+diff --git a/pandas/core/frame.py b/pandas/core/frame.py
+--- a/pandas/core/frame.py
++++ b/pandas/core/frame.py
+@@ -115,6 +115,17 @@
+     side, respectively
+ copy : boolean, default True
+     If False, do not copy data unnecessarily
++indicator : boolean or string, default False
++    If True, adds a column to output DataFrame called ""_merge"" with 
++    information on the source of each row. 
++    If string, column with information on source of each row will be added to 
++    output DataFrame, and column will be named value of string. 
++    Information column is Categorical-type and takes on a value of ""left_only"" 
++    for observations whose merge key only appears in 'left' DataFrame, 
++    ""right_only"" for observations whose merge key only appears in 'right' 
++    DataFrame, and ""both"" if the observation's merge key is found in both. 
++
++    .. versionadded:: 0.17.0
+ 
+ Examples
+ --------
+diff --git a/pandas/tools/merge.py b/pandas/tools/merge.py
+--- a/pandas/tools/merge.py
++++ b/pandas/tools/merge.py
+@@ -27,11 +27,11 @@
+ @Appender(_merge_doc, indents=0)
+ def merge(left, right, how='inner', on=None, left_on=None, right_on=None,
+           left_index=False, right_index=False, sort=False,
+-          suffixes=('_x', '_y'), copy=True):
++          suffixes=('_x', '_y'), copy=True, indicator=False):
+     op = _MergeOperation(left, right, how=how, on=on, left_on=left_on,
+                          right_on=right_on, left_index=left_index,
+                          right_index=right_index, sort=sort, suffixes=suffixes,
+-                         copy=copy)
++                         copy=copy, indicator=indicator)
+     return op.get_result()
+ if __debug__:
+     merge.__doc__ = _merge_doc % '\nleft : DataFrame'
+@@ -157,7 +157,7 @@ class _MergeOperation(object):
+     def __init__(self, left, right, how='inner', on=None,
+                  left_on=None, right_on=None, axis=1,
+                  left_index=False, right_index=False, sort=True,
+-                 suffixes=('_x', '_y'), copy=True):
++                 suffixes=('_x', '_y'), copy=True, indicator=False):
+         self.left = self.orig_left = left
+         self.right = self.orig_right = right
+         self.how = how
+@@ -174,12 +174,25 @@ def __init__(self, left, right, how='inner', on=None,
+         self.left_index = left_index
+         self.right_index = right_index
+ 
++        self.indicator = indicator
++
++        if isinstance(self.indicator, compat.string_types):
++            self.indicator_name = self.indicator
++        elif isinstance(self.indicator, bool):
++            self.indicator_name = '_merge' if self.indicator else None
++        else:
++            raise ValueError('indicator option can only accept boolean or string arguments')
++
++
+         # note this function has side effects
+         (self.left_join_keys,
+          self.right_join_keys,
+          self.join_names) = self._get_merge_keys()
+ 
+     def get_result(self):
++        if self.indicator:
++            self.left, self.right = self._indicator_pre_merge(self.left, self.right)
++
+         join_index, left_indexer, right_indexer = self._get_join_info()
+ 
+         ldata, rdata = self.left._data, self.right._data
+@@ -199,10 +212,46 @@ def get_result(self):
+         typ = self.left._constructor
+         result = typ(result_data).__finalize__(self, method='merge')
+ 
++        if self.indicator:
++            result = self._indicator_post_merge(result)
++
+         self._maybe_add_join_keys(result, left_indexer, right_indexer)
+ 
+         return result
+ 
++    def _indicator_pre_merge(self, left, right):
++                
++        columns = left.columns.union(right.columns)  
++
++        for i in ['_left_indicator', '_right_indicator']:
++            if i in columns:
++                raise ValueError(""Cannot use `indicator=True` option when data contains a column named {}"".format(i))
++        if self.indicator_name in columns:
++            raise ValueError(""Cannot use name of an existing column for indicator column"")
++
++        left = left.copy()
++        right = right.copy()
++
++        left['_left_indicator'] = 1  
++        left['_left_indicator'] = left['_left_indicator'].astype('int8')  
++        
++        right['_right_indicator'] = 2     
++        right['_right_indicator'] = right['_right_indicator'].astype('int8') 
++        
++        return left, right
++
++    def _indicator_post_merge(self, result):
++
++        result['_left_indicator'] = result['_left_indicator'].fillna(0)
++        result['_right_indicator'] = result['_right_indicator'].fillna(0)
++
++        result[self.indicator_name] = Categorical((result['_left_indicator'] + result['_right_indicator']), categories=[1,2,3])
++        result[self.indicator_name] = result[self.indicator_name].cat.rename_categories(['left_only', 'right_only', 'both'])        
++ 
++        result = result.drop(labels=['_left_indicator', '_right_indicator'], axis=1)
++
++        return result
++
+     def _maybe_add_join_keys(self, result, left_indexer, right_indexer):
+         # insert group keys
+","diff --git a/pandas/tools/tests/test_merge.py b/pandas/tools/tests/test_merge.py
+--- a/pandas/tools/tests/test_merge.py
++++ b/pandas/tools/tests/test_merge.py
+@@ -946,6 +946,85 @@ def test_overlapping_columns_error_message(self):
+         df2.columns = ['key1', 'foo', 'foo']
+         self.assertRaises(ValueError, merge, df, df2)
+ 
++    def test_indicator(self):
++        # PR #10054. xref #7412 and closes #8790.
++        df1 = pd.DataFrame({'col1':[0,1], 'col_left':['a','b'], 'col_conflict':[1,2]})
++        df1_copy = df1.copy()
++
++        df2 = pd.DataFrame({'col1':[1,2,3,4,5],'col_right':[2,2,2,2,2], 
++                            'col_conflict':[1,2,3,4,5]})
++        df2_copy = df2.copy()
++        
++        df_result = pd.DataFrame({'col1':[0,1,2,3,4,5], 
++                'col_conflict_x':[1,2,np.nan,np.nan,np.nan,np.nan],
++                'col_left':['a','b', np.nan,np.nan,np.nan,np.nan], 
++                'col_conflict_y':[np.nan,1,2,3,4,5], 
++                'col_right':[np.nan, 2,2,2,2,2]},
++                dtype='float64')
++        df_result['_merge'] = pd.Categorical(['left_only','both','right_only',
++            'right_only','right_only','right_only']
++            , categories=['left_only', 'right_only', 'both'])
++
++        df_result = df_result[['col1', 'col_conflict_x', 'col_left', 
++                               'col_conflict_y', 'col_right', '_merge' ]]
++
++        test = pd.merge(df1, df2, on='col1', how='outer', indicator=True)
++        assert_frame_equal(test, df_result)
++
++        # No side effects
++        assert_frame_equal(df1, df1_copy)
++        assert_frame_equal(df2, df2_copy)
++
++        # Check with custom name
++        df_result_custom_name = df_result
++        df_result_custom_name = df_result_custom_name.rename(columns={'_merge':'custom_name'})
++
++        test_custom_name = pd.merge(df1, df2, on='col1', how='outer', indicator='custom_name')
++        assert_frame_equal(test_custom_name, df_result_custom_name)
++
++        # Check only accepts strings and booleans
++        with tm.assertRaises(ValueError):
++            pd.merge(df1, df2, on='col1', how='outer', indicator=5)
++
++        # Check result integrity
++    
++        test2 = pd.merge(df1, df2, on='col1', how='left', indicator=True)
++        self.assertTrue((test2._merge != 'right_only').all())
++
++        test3 = pd.merge(df1, df2, on='col1', how='right', indicator=True)
++        self.assertTrue((test3._merge != 'left_only').all())
++
++        test4 = pd.merge(df1, df2, on='col1', how='inner', indicator=True)
++        self.assertTrue((test4._merge == 'both').all())
++
++        # Check if working name in df
++        for i in ['_right_indicator', '_left_indicator', '_merge']:
++            df_badcolumn = pd.DataFrame({'col1':[1,2], i:[2,2]})
++        
++            with tm.assertRaises(ValueError):
++                pd.merge(df1, df_badcolumn, on='col1', how='outer', indicator=True)
++
++        # Check for name conflict with custom name
++        df_badcolumn = pd.DataFrame({'col1':[1,2], 'custom_column_name':[2,2]})
++        
++        with tm.assertRaises(ValueError):
++            pd.merge(df1, df_badcolumn, on='col1', how='outer', indicator='custom_column_name')
++
++        # Merge on multiple columns
++        df3 = pd.DataFrame({'col1':[0,1], 'col2':['a','b']})
++
++        df4 = pd.DataFrame({'col1':[1,1,3], 'col2':['b','x','y']})
++
++        hand_coded_result = pd.DataFrame({'col1':[0,1,1,3.0], 
++                                         'col2':['a','b','x','y']})
++        hand_coded_result['_merge'] = pd.Categorical(
++            ['left_only','both','right_only','right_only']
++            , categories=['left_only', 'right_only', 'both'])
++ 
++        test5 = pd.merge(df3, df4, on=['col1', 'col2'], how='outer', indicator=True)
++        assert_frame_equal(test5, hand_coded_result)
++    
++
+ def _check_merge(x, y):
+     for how in ['inner', 'left', 'outer']:
+         result = x.join(y, how=how)
+","Feature Request: row-level Merge Status Variable
+Hello All!
+
+Moving into Pandas from R/Matlab/Stata. One feature I'm finding I really miss: a field generated during a merge that reports, for each row, whether that row came from the left dataset, the right dataset, or was successfully merged. 
+
+I do a lot of work in social science where our data is VERY dirty. For example, I'm often merging transliterated names from Pakistan, and so I just want to see after a merge how many records successfully merged, and then easily pull out the records of each time to compare. I'm including a kludge I'm using below, but an in-line option would be so nice, and I think others in my area would also appreciate it. 
+
+Thanks!
+
+``` python
+    df1['left'] = 1
+    df2['right'] = 1
+
+    mergedDF = pd.merge(df1,df2, how='outer', left_on='key1', right_on='key2')
+
+    def mergeVar(x):
+        if x['left'] == 1 and x['right'] == 1 :
+            return 'both'
+        elif x['left'] == 1 and x['right'] != 1:
+            return 'leftOnly'
+        else: return 'rightOnly'
+
+    mergedDF['mergeReport'] = mergedDF.apply(mergeVar, axis=1)
+    mergedDF.drop(['left', 'right'], axis = 1)
+```
+
+(I'd also be happy to help make it, but I'm relatively new to python, so would need some hand-holding to learn how to integrate a new option into an existing function...)
+
+","mentioned here originall: https://github.com/pydata/pandas/issues/7412
+
+but that's closed. Yep this could be an option. I'll put it on the list. Its not hard, but just takes a bit of work.
+
+Thanks!
+
+As an aside, that would also fill another gap in Pandas, which is a lack of a ""difference"" function that reports what keys aren't shared between dataframes. 
+
+look at set operations on Index objects: http://pandas.pydata.org/pandas-docs/stable/indexing.html#set-operations-on-index-objects
+
+`.difference()/.union()` etc. 
+
+Brilliant! Thanks! You guys are the best!
+On Tue, Nov 11, 2014 at 3:32 PM jreback notifications@github.com wrote:
+
+> look at set operations on Index objects:
+> http://pandas.pydata.org/pandas-docs/stable/indexing.html#set-operations-on-index-objects
+> 
+> .difference()/.union() etc.
+> 
+> —
+> Reply to this email directly or view it on GitHub
+> https://github.com/pydata/pandas/issues/8790#issuecomment-62641624.
+",2015-05-03T17:12:39Z,,[],[],,"diff --git a/pandas/core/frame.py b/pandas/core/frame.py
+--- a/pandas/core/frame.py
++++ b/pandas/core/frame.py
+@@ -115,6 +115,17 @@
+     side, respectively
+ copy : boolean, default True
+     If False, do not copy data unnecessarily
++indicator : boolean or string, default False
++    If True, adds a column to output DataFrame called ""_merge"" with 
++    information on the source of each row. 
++    If string, column with information on source of each row will be added to 
++    output DataFrame, and column will be named value of string. 
++    Information column is Categorical-type and takes on a value of ""left_only"" 
++    for observations whose merge key only appears in 'left' DataFrame, 
++    ""right_only"" for observations whose merge key only appears in 'right' 
++    DataFrame, and ""both"" if the observation's merge key is found in both. 
++
++    .. versionadded:: 0.17.0
+ 
+ Examples
+ --------
+diff --git a/pandas/tools/merge.py b/pandas/tools/merge.py
+--- a/pandas/tools/merge.py
++++ b/pandas/tools/merge.py
+@@ -27,11 +27,11 @@
+ @Appender(_merge_doc, indents=0)
+ def merge(left, right, how='inner', on=None, left_on=None, right_on=None,
+           left_index=False, right_index=False, sort=False,
+-          suffixes=('_x', '_y'), copy=True):
++          suffixes=('_x', '_y'), copy=True, indicator=False):
+     op = _MergeOperation(left, right, how=how, on=on, left_on=left_on,
+                          right_on=right_on, left_index=left_index,
+                          right_index=right_index, sort=sort, suffixes=suffixes,
+-                         copy=copy)
++                         copy=copy, indicator=indicator)
+     return op.get_result()
+ if __debug__:
+     merge.__doc__ = _merge_doc % '\nleft : DataFrame'
+@@ -157,7 +157,7 @@ class _MergeOperation(object):
+     def __init__(self, left, right, how='inner', on=None,
+                  left_on=None, right_on=None, axis=1,
+                  left_index=False, right_index=False, sort=True,
+-                 suffixes=('_x', '_y'), copy=True):
++                 suffixes=('_x', '_y'), copy=True, indicator=False):
+         self.left = self.orig_left = left
+         self.right = self.orig_right = right
+         self.how = how
+@@ -174,12 +174,25 @@ def __init__(self, left, right, how='inner', on=None,
+         self.left_index = left_index
+         self.right_index = right_index
+ 
++        self.indicator = indicator
++
++        if isinstance(self.indicator, compat.string_types):
++            self.indicator_name = self.indicator
++        elif isinstance(self.indicator, bool):
++            self.indicator_name = '_merge' if self.indicator else None
++        else:
++            raise ValueError('indicator option can only accept boolean or string arguments')
++
++
+         # note this function has side effects
+         (self.left_join_keys,
+          self.right_join_keys,
+          self.join_names) = self._get_merge_keys()
+ 
+     def get_result(self):
++        if self.indicator:
++            self.left, self.right = self._indicator_pre_merge(self.left, self.right)
++
+         join_index, left_indexer, right_indexer = self._get_join_info()
+ 
+         ldata, rdata = self.left._data, self.right._data
+@@ -199,10 +212,46 @@ def get_result(self):
+         typ = self.left._constructor
+         result = typ(result_data).__finalize__(self, method='merge')
+ 
++        if self.indicator:
++            result = self._indicator_post_merge(result)
++
+         self._maybe_add_join_keys(result, left_indexer, right_indexer)
+ 
+         return result
+ 
++    def _indicator_pre_merge(self, left, right):
++                
++        columns = left.columns.union(right.columns)  
++
++        for i in ['_left_indicator', '_right_indicator']:
++            if i in columns:
++                raise ValueError(""Cannot use `indicator=True` option when data contains a column named {}"".format(i))
++        if self.indicator_name in columns:
++            raise ValueError(""Cannot use name of an existing column for indicator column"")
++
++        left = left.copy()
++        right = right.copy()
++
++        left['_left_indicator'] = 1  
++        left['_left_indicator'] = left['_left_indicator'].astype('int8')  
++        
++        right['_right_indicator'] = 2     
++        right['_right_indicator'] = right['_right_indicator'].astype('int8') 
++        
++        return left, right
++
++    def _indicator_post_merge(self, result):
++
++        result['_left_indicator'] = result['_left_indicator'].fillna(0)
++        result['_right_indicator'] = result['_right_indicator'].fillna(0)
++
++        result[self.indicator_name] = Categorical((result['_left_indicator'] + result['_right_indicator']), categories=[1,2,3])
++        result[self.indicator_name] = result[self.indicator_name].cat.rename_categories(['left_only', 'right_only', 'both'])        
++ 
++        result = result.drop(labels=['_left_indicator', '_right_indicator'], axis=1)
++
++        return result
++
+     def _maybe_add_join_keys(self, result, left_indexer, right_indexer):
+         # insert group keys
+ 
+",True,True
+10709,pandas-dev/pandas,pandas-dev__pandas-10055,ce05c71483a374fbe8bd5297d2d9f0b815a4a67f,"diff --git a/doc/source/whatsnew/v0.17.0.txt b/doc/source/whatsnew/v0.17.0.txt
+--- a/doc/source/whatsnew/v0.17.0.txt
++++ b/doc/source/whatsnew/v0.17.0.txt
+@@ -60,6 +60,8 @@ Performance Improvements
+ Bug Fixes
+ ~~~~~~~~~
+ 
++- Bug where read_hdf store.select modifies the passed columns list when
++  multi-indexed (:issue:`7212`)
+ - Bug in ``Categorical`` repr with ``display.width`` of ``None`` in Python 3 (:issue:`10087`)
+ 
+ 
+diff --git a/pandas/io/pytables.py b/pandas/io/pytables.py
+--- a/pandas/io/pytables.py
++++ b/pandas/io/pytables.py
+@@ -3453,6 +3453,10 @@ def get_blk_items(mgr, blocks):
+     def process_axes(self, obj, columns=None):
+         """""" process axes filters """"""
+ 
++        # make a copy to avoid side effects
++        if columns is not None:
++            columns = list(columns)
++
+         # make sure to include levels if we have them
+         if columns is not None and self.is_multi_index:
+             for n in self.levels:
+","diff --git a/pandas/io/tests/test_pytables.py b/pandas/io/tests/test_pytables.py
+--- a/pandas/io/tests/test_pytables.py
++++ b/pandas/io/tests/test_pytables.py
+@@ -4617,6 +4617,29 @@ def test_preserve_timedeltaindex_type(self):
+             store['df'] = df
+             assert_frame_equal(store['df'], df)
+ 
++    def test_colums_multiindex_modified(self):
++        # BUG: 7212
++        # read_hdf store.select modified the passed columns parameters
++        # when multi-indexed.
++
++        df = DataFrame(np.random.rand(4, 5),
++                       index=list('abcd'),
++                       columns=list('ABCDE'))
++        df.index.name = 'letters'
++        df = df.set_index(keys='E', append=True)
++
++        data_columns = df.index.names+df.columns.tolist()
++        with ensure_clean_path(self.path) as path:
++            df.to_hdf(path, 'df',
++                      mode='a',
++                      append=True,
++                      data_columns=data_columns,
++                      index=False)
++            cols2load = list('BCD')
++            cols2load_original = list(cols2load)
++            df_loaded = read_hdf(path, 'df', columns=cols2load)
++            self.assertTrue(cols2load_original == cols2load)
++
+ 
+ def _test_sort(obj):
+     if isinstance(obj, DataFrame):
+","read_hdf / store.select modifies the passed columns parameters when multi-indexed
+code to reproduce:
+
+``` python
+import pandas as pd
+import numpy as np
+
+## generate data
+df = pd.DataFrame(np.random.rand(4,5), index=list('abcd'), columns=list('ABCDE'))
+df.index.name = 'letters'
+df = df.set_index(keys='E' , append=True)
+
+## save to hdf5
+h5name = 'tst.h5'
+key = 'tst_key'
+df.to_hdf(h5name, key,
+          mode='a', append=True,
+          data_columns = df.index.names+df.columns.tolist(),
+          index=False, 
+          complevel=5, complib='blosc', 
+          #expectedrows = expectedrows ,
+          )
+
+## load part of df
+cols2load = list('BCD')
+print 'before loading: \n\t cols2load = {}'.format(cols2load)
+df_ = pd.read_hdf(h5name, key, columns= cols2load)
+print 'after loading: \n\t cols2load = {}'.format(cols2load)
+```
+
+The printed output:
+
+> before loading: 
+>    cols2load = ['B', 'C', 'D']
+> after loading: 
+>    cols2load = ['E', 'letters', 'B', 'C', 'D']
+
+pd.**version** = '0.13.1'
+
+","hmm, not sure their any guarantees on this, but makes sense to simply copy this and not modify.
+
+Want to do a pull-request?
+
+my current solution is to pass a copy:
+
+``` python
+df_ = pd.read_hdf(h5name, key, columns= list(cols2load))
+```
+
+BTW, the same problem holds for the `where` parameter of `read_hdf`.
+I do not expect to be able to do the pull-request soon (it'll be my first, so it will take time...).
+I mainly thought it is worth posting as I wasted quite some time on finding the ""bug"" in my code.
+Turned out it wast this (I was using `cols2load` for several different purposes in the code).
+
+no problem
+
+take your time
+
+about to release 0.14.0 in any event
+
+@eldad-a if you have a pull-request for this would be great
+
+@jreback unfortunately i do not expect to be able to get into the matter soon.
+In case I will, I'll defenitely submit a pull-request.
+
+ok, thanks
+
+working on this
+",2015-05-04T03:07:47Z,,[],[],,"diff --git a/pandas/io/pytables.py b/pandas/io/pytables.py
+--- a/pandas/io/pytables.py
++++ b/pandas/io/pytables.py
+@@ -3453,6 +3453,10 @@ def get_blk_items(mgr, blocks):
+     def process_axes(self, obj, columns=None):
+         """""" process axes filters """"""
+ 
++        # make a copy to avoid side effects
++        if columns is not None:
++            columns = list(columns)
++
+         # make sure to include levels if we have them
+         if columns is not None and self.is_multi_index:
+             for n in self.levels:
+",True,True
+10711,pandas-dev/pandas,pandas-dev__pandas-10064,3aa87786b272ece641a9c66f6282ad1b806dea9e,"diff --git a/doc/source/whatsnew/v0.16.1.txt b/doc/source/whatsnew/v0.16.1.txt
+--- a/doc/source/whatsnew/v0.16.1.txt
++++ b/doc/source/whatsnew/v0.16.1.txt
+@@ -231,7 +231,7 @@ Bug Fixes
+ - Fixed bug in ``StataWriter`` resulting in changes to input ``DataFrame`` upon save (:issue:`9795`).
+ - Bug in ``transform`` causing length mismatch when null entries were present and a fast aggregator was being used (:issue:`9697`)
+ - Bug in ``equals`` causing false negatives when block order differed (:issue:`9330`)
+-
++- Bug in grouping with multiple ``pd.Grouper`` where one is non-time based (:issue:`10063`)
+ - Bug in ``read_sql_table`` error when reading postgres table with timezone (:issue:`7139`)
+ - Bug in ``DataFrame`` slicing may not retain metadata (:issue:`9776`)
+ - Bug where ``TimdeltaIndex`` were not properly serialized in fixed ``HDFStore`` (:issue:`9635`)
+diff --git a/pandas/core/groupby.py b/pandas/core/groupby.py
+--- a/pandas/core/groupby.py
++++ b/pandas/core/groupby.py
+@@ -280,7 +280,10 @@ def _set_grouper(self, obj, sort=False):
+         return self.grouper
+ 
+     def _get_binner_for_grouping(self, obj):
+-        raise AbstractMethodError(self)
++        """""" default to the standard binner here """"""
++        group_axis = obj._get_axis(self.axis)
++        return Grouping(group_axis, None, obj=obj, name=self.key,
++                        level=self.level, sort=self.sort, in_axis=False)
+ 
+     @property
+     def groups(self):
+@@ -1964,8 +1967,12 @@ def __init__(self, index, grouper=None, obj=None, name=None, level=None,
+                 if self.name is None:
+                     self.name = grouper.name
+ 
++            # we are done
++            if isinstance(self.grouper, Grouping):
++                self.grouper = self.grouper.grouper
++
+             # no level passed
+-            if not isinstance(self.grouper, (Series, Index, Categorical, np.ndarray)):
++            elif not isinstance(self.grouper, (Series, Index, Categorical, np.ndarray)):
+                 if getattr(self.grouper, 'ndim', 1) != 1:
+                     t = self.name or str(type(self.grouper))
+                     raise ValueError(""Grouper for '%s' not 1-dimensional"" % t)
+@@ -2834,7 +2841,7 @@ def _wrap_applied_output(self, keys, values, not_indexed_same=False):
+                     v = next(v for v in values if v is not None)
+                 except StopIteration:
+                     # If all values are None, then this will throw an error.
+-                    # We'd prefer it return an empty dataframe. 
++                    # We'd prefer it return an empty dataframe.
+                     return DataFrame()
+                 if v is None:
+                     return DataFrame()
+","diff --git a/pandas/tests/test_groupby.py b/pandas/tests/test_groupby.py
+--- a/pandas/tests/test_groupby.py
++++ b/pandas/tests/test_groupby.py
+@@ -430,6 +430,21 @@ def test_grouper_creation_bug(self):
+         expected = s.groupby(level='one').sum()
+         assert_series_equal(result, expected)
+ 
++    def test_grouper_getting_correct_binner(self):
++
++        # GH 10063
++        # using a non-time-based grouper and a time-based grouper
++        # and specifying levels
++        df = DataFrame({'A' : 1 },
++                       index=pd.MultiIndex.from_product([list('ab'),
++                                                         date_range('20130101',periods=80)],
++                                                        names=['one','two']))
++        result = df.groupby([pd.Grouper(level='one'),pd.Grouper(level='two',freq='M')]).sum()
++        expected = DataFrame({'A' : [31,28,21,31,28,21]},
++                              index=MultiIndex.from_product([list('ab'),date_range('20130101',freq='M',periods=3)],
++                                                            names=['one','two']))
++        assert_frame_equal(result, expected)
++
+     def test_grouper_iter(self):
+         self.assertEqual(sorted(self.df.groupby('A').grouper), ['bar', 'foo'])
+ 
+","Grouped timeseries operations fail on multi-indexed DataFrames
+This might be a potential bug: doing grouped timeseries operations fails silently on a multi-indexed DataFrame.
+
+``` python
+    import pandas as pd
+    import pandas.io.data as web
+
+    # Get some market data
+    df = web.DataReader(['AAPL', 'GOOG'], 'yahoo', pd.Timestamp('2013'), pd.Timestamp('2014')).to_frame()
+    df.index.names = ('dt', 'symbol')
+
+    In [21]: df.head()
+    Out[21]: 
+                            Open       High        Low      Close     Volume  \
+    dt         symbol                                                          
+    2013-01-02 AAPL    553.82001  555.00000  541.62994  549.03003  140129500   
+    2013-01-03 AAPL    547.88000  549.67004  541.00000  542.10004   88241300   
+    2013-01-04 AAPL    536.96997  538.63000  525.82996  527.00000  148583400   
+    2013-01-07 AAPL    522.00000  529.30005  515.20001  523.90002  121039100   
+    2013-01-08 AAPL    529.21002  531.89001  521.25000  525.31000  114676800   
+
+                       Adj Close  
+    dt         symbol             
+    2013-01-02 AAPL     74.63931  
+    2013-01-03 AAPL     73.69719  
+    2013-01-04 AAPL     71.64438  
+    2013-01-07 AAPL     71.22294  
+    2013-01-08 AAPL     71.41463 
+```
+
+Let's say we want to resample this to monthly data. This fails and returns an empty DataFrame:
+
+``` python
+    df_M = df.groupby(level='symbol').resample('M', how='mean')
+    In [23]: df_M
+    Out[23]: 
+    Empty DataFrame
+    Columns: []
+    Index: []
+```
+
+This, however, works, but requires a seemingly-unnecessary re-indexing:
+
+``` python
+    df_M = df.reset_index().set_index('dt').groupby('symbol').resample('M', how='mean')
+    In [26]: df_M.head()
+    Out[26]: 
+                       Adj Close       Close        High         Low        Open  \
+    symbol dt                                                                      
+    AAPL   2013-01-31  67.677750  497.822382  504.407623  492.969997  500.083329   
+           2013-02-28  62.388477  456.808942  463.231056  452.106325  458.503692   
+           2013-03-31  60.417287  441.841000  446.803495  437.337996  442.011512   
+           2013-04-30  57.398619  419.765001  425.553183  414.722271  419.766820   
+           2013-05-31  61.340151  446.452734  451.658190  441.495455  446.400919   
+
+                             Volume  
+    symbol dt                        
+    AAPL   2013-01-31  1.562312e+08  
+           2013-02-28  1.229478e+08  
+           2013-03-31  1.147110e+08  
+           2013-04-30  1.245851e+08  
+           2013-05-31  1.073583e+08  
+```
+
+The fact that you need to do the `reset_index().set_index('dt')` and then `groupby('symbol')` instead of `groupby(level='symbol')` seems to defeat the purpose of a multi-index! What gives?
+
+I also realize that data like this is perhaps more well-suited to a Panel than a DataFrame, but when dealing with very large amounts of (often sparse) data, the 3D Panel structure presents performance and memory issues compared to the flat DataFrame.
+
+",,2015-05-05T14:34:47Z,,[],[],,"diff --git a/pandas/core/groupby.py b/pandas/core/groupby.py
+--- a/pandas/core/groupby.py
++++ b/pandas/core/groupby.py
+@@ -280,7 +280,10 @@ def _set_grouper(self, obj, sort=False):
+         return self.grouper
+ 
+     def _get_binner_for_grouping(self, obj):
+-        raise AbstractMethodError(self)
++        """""" default to the standard binner here """"""
++        group_axis = obj._get_axis(self.axis)
++        return Grouping(group_axis, None, obj=obj, name=self.key,
++                        level=self.level, sort=self.sort, in_axis=False)
+ 
+     @property
+     def groups(self):
+@@ -1964,8 +1967,12 @@ def __init__(self, index, grouper=None, obj=None, name=None, level=None,
+                 if self.name is None:
+                     self.name = grouper.name
+ 
++            # we are done
++            if isinstance(self.grouper, Grouping):
++                self.grouper = self.grouper.grouper
++
+             # no level passed
+-            if not isinstance(self.grouper, (Series, Index, Categorical, np.ndarray)):
++            elif not isinstance(self.grouper, (Series, Index, Categorical, np.ndarray)):
+                 if getattr(self.grouper, 'ndim', 1) != 1:
+                     t = self.name or str(type(self.grouper))
+                     raise ValueError(""Grouper for '%s' not 1-dimensional"" % t)
+@@ -2834,7 +2841,7 @@ def _wrap_applied_output(self, keys, values, not_indexed_same=False):
+                     v = next(v for v in values if v is not None)
+                 except StopIteration:
+                     # If all values are None, then this will throw an error.
+-                    # We'd prefer it return an empty dataframe. 
++                    # We'd prefer it return an empty dataframe.
+                     return DataFrame()
+                 if v is None:
+                     return DataFrame()
+",True,True

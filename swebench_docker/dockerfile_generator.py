@@ -81,7 +81,6 @@ class DockerfileGenerator:
         specifications = MAP_VERSION_TO_INSTALL[repo][version]
 
         use_conda = repo not in PYENV_REPOS
-        print("USE_CONDA IS:", use_conda)
         if repo_name not in testbeds:
           deb_packages = None
           if repo in MAP_REPO_TO_DEB_PACKAGES:
