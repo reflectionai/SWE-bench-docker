@@ -18,6 +18,7 @@ async def main(
     split: str,
     swe_bench_tasks: str,
     instance_id: str,
+    log_dir_path: str,
 ):
   # Step 1: Load the dataset
   if swe_bench_tasks.endswith(".jsonl"):  # Use a local file.
@@ -42,7 +43,7 @@ index 0000000..e69de29
 """
   predictions_path = pathlib.Path(
       tempfile.NamedTemporaryFile(delete=False, suffix='.jsonl').name)
-  log_dir = pathlib.Path(log_dir)
+  log_dir = pathlib.Path(log_dir_path)
   print("LOGGING RESULTS ON HOST MACHINE AT: ", log_dir)
 
   # Add suffix indicating if no_op or gold patch was applied during this run.
