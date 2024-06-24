@@ -1,0 +1,100 @@
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Task Metadata:
+	- Instance ID: conan-io__conan-5218
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git -c advice.detachedHead=false checkout 5a614a568ad0c5b4f958736b161f23746f0df949 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+HEAD is now at 5a614a568 Exception errors to stderr (#5206)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git diff > /home/swe-bench/temp_conan-io__conan-5218_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5218_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+Checking patch conans/client/graph/build_mode.py...
+Checking patch conans/client/graph/graph_binaries.py...
+Applied patch conans/client/graph/build_mode.py cleanly.
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git diff > /home/swe-bench/temp_conan-io__conan-5218_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-5218_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+Checking patch conans/client/graph/graph_binaries.py...
+Checking patch conans/client/graph/build_mode.py...
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+Applied patch conans/client/graph/build_mode.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git diff > /home/swe-bench/temp_conan-io__conan-5218_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5218_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+Checking patch conans/client/graph/build_mode.py...
+Checking patch conans/client/graph/graph_binaries.py...
+Applied patch conans/client/graph/build_mode.py cleanly.
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git diff > /home/swe-bench/temp_conan-io__conan-5218_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git restore conans/test/unittests/client/graph/build_mode_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5218_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+Checking patch conans/test/integration/install_cascade_test.py...
+Checking patch conans/test/unittests/client/graph/build_mode_test.py...
+Applied patch conans/test/integration/install_cascade_test.py cleanly.
+Applied patch conans/test/unittests/client/graph/build_mode_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/install_cascade_test.py conans/test/unittests/client/graph/build_mode_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/install_cascade_test.py conans/test/unittests/client/graph/build_mode_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/install_cascade_test.py conans/test/unittests/client/graph/build_mode_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 2 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/integration/install_cascade_test.py
+ERROR conans/test/unittests/client/graph/build_mode_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.34s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-5218] Test script run successful 

@@ -85,7 +85,7 @@ PASSED conans/test/unittests/tools/cmake/test_cmake_install.py::test_run_install
 PASSED conans/test/unittests/tools/cmake/test_cmake_install.py::test_run_install_strip
 PASSED conans/test/unittests/tools/cmake/test_cmake_install.py::test_run_install_cli_args
 PASSED conans/test/unittests/tools/cmake/test_cmake_install.py::test_run_install_cli_args_strip
-============================== 4 passed in 0.64s ===============================
+============================== 4 passed in 1.26s ===============================
 
  
 [conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 

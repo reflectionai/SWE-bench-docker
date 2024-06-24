@@ -1,0 +1,289 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Task Metadata:
+	- Instance ID: conan-io__conan-13661
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git -c advice.detachedHead=false checkout 18b7823559efaabc2c377792248ef9a0d814931c 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+HEAD is now at 18b782355 fix cache files and DB after forbidden downloads (#13626)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git diff > /home/swe-bench/temp_conan-io__conan-13661_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13661_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+Checking patch conans/client/graph/graph_builder.py...
+Checking patch conans/client/graph/graph_error.py...
+Checking patch conans/client/graph/provides.py...
+Applied patch conans/client/graph/graph_builder.py cleanly.
+Applied patch conans/client/graph/graph_error.py cleanly.
+Applied patch conans/client/graph/provides.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git diff > /home/swe-bench/temp_conan-io__conan-13661_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13661_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+Checking patch conans/client/graph/provides.py...
+Checking patch conans/client/graph/graph_error.py...
+Checking patch conans/client/graph/graph_builder.py...
+Applied patch conans/client/graph/provides.py cleanly.
+Applied patch conans/client/graph/graph_error.py cleanly.
+Applied patch conans/client/graph/graph_builder.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git diff > /home/swe-bench/temp_conan-io__conan-13661_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13661_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+Checking patch conans/client/graph/graph_builder.py...
+Checking patch conans/client/graph/graph_error.py...
+Checking patch conans/client/graph/provides.py...
+Applied patch conans/client/graph/graph_builder.py cleanly.
+Applied patch conans/client/graph/graph_error.py cleanly.
+Applied patch conans/client/graph/provides.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git diff > /home/swe-bench/temp_conan-io__conan-13661_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git restore conans/test/integration/graph/core/graph_manager_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git restore conans/test/integration/graph/core/test_build_requires.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git restore conans/test/integration/graph/core/test_options.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git restore conans/test/integration/graph/core/test_provides.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git restore conans/test/integration/graph/core/test_version_ranges.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13661_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+Checking patch conans/test/integration/graph/core/graph_manager_test.py...
+Checking patch conans/test/integration/graph/core/test_build_requires.py...
+Checking patch conans/test/integration/graph/core/test_options.py...
+Checking patch conans/test/integration/graph/core/test_provides.py...
+Checking patch conans/test/integration/graph/core/test_version_ranges.py...
+Applied patch conans/test/integration/graph/core/graph_manager_test.py cleanly.
+Applied patch conans/test/integration/graph/core/test_build_requires.py cleanly.
+Applied patch conans/test/integration/graph/core/test_options.py cleanly.
+Applied patch conans/test/integration/graph/core/test_provides.py cleanly.
+Applied patch conans/test/integration/graph/core/test_version_ranges.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/graph/core/graph_manager_test.py conans/test/integration/graph/core/test_build_requires.py conans/test/integration/graph/core/test_options.py conans/test/integration/graph/core/test_provides.py conans/test/integration/graph/core/test_version_ranges.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/graph/core/graph_manager_test.py conans/test/integration/graph/core/test_build_requires.py conans/test/integration/graph/core/test_options.py conans/test/integration/graph/core/test_provides.py conans/test/integration/graph/core/test_version_ranges.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Std. Output:
+============================= test session starts ==============================
+collected 150 items
+
+conans/test/integration/graph/core/graph_manager_test.py ............... [ 10%]
+...............................................................          [ 52%]
+conans/test/integration/graph/core/test_build_requires.py .........xx... [ 61%]
+...................                                                      [ 74%]
+conans/test/integration/graph/core/test_options.py .....                 [ 77%]
+conans/test/integration/graph/core/test_provides.py ............         [ 85%]
+conans/test/integration/graph/core/test_version_ranges.py .............. [ 94%]
+......s.                                                                 [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_basic
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_build_script_requirement
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_dependency
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_dependency_missing
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_direct_header_only
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_generic_build_require_adjust_run_with_package_type
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_generic_library_without_shared_option
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_header_only
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_header_only_with_transitives
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_middle_shared_up_static
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_middle_shared_up_static_transitive_headers
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_middle_static_up_shared
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_middle_static_up_shared_transitive_headers
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_multiple_header_only_with_transitives
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_multiple_levels_transitive_headers
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_private
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_static_multiple_header_only_with_transitives
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_transitive
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_transitive_all_shared
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_transitive_all_shared_transitive_headers_libs
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_transitive_all_static
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_transitive_all_static_transitive_headers
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinear::test_transitive_propagate_link
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_default
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_disable_transitive_libs
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_force_run
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_header_only_run_0
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_header_only_run_1
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_libraries_transitive_headers_0_static_library
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_libraries_transitive_headers_1_shared_library
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_negate_headers
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_negate_libs
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_negate_run
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFourLevels::test_shared_depends_static_libraries
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsHeaders::test_all_header_only
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsHeaders::test_all_header_only_aggregating_libc
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsHeaders::test_d_b_header_only
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsHeaders::test_d_b_header_only_transitive_headers_b
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsHeaders::test_first_header_only
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsHeaders::test_first_header_only_reject_libs
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsHeaders::test_first_header_only_transitive_headers_b
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsHeaders::test_first_header_only_transitive_headers_b_a
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsLibraries::test_all_static
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestLinearFiveLevelsLibraries::test_libc_aggregating_static
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_diamond
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_diamond_additive_0
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_diamond_additive_1
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_diamond_conflict
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_half_diamond
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_half_diamond_reverse
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_private
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_private_conflict
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_shared_conflict_shared
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_shared_static
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamond::test_shared_static_private
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamondMultiple::test_consecutive_diamonds
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamondMultiple::test_consecutive_diamonds_private
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamondMultiple::test_loop
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamondMultiple::test_multiple_transitive
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamondMultiple::test_nested_diamond
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestDiamondMultiple::test_parallel_diamond
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TransitiveOverridesGraphTest::test_build_script_no_conflict
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TransitiveOverridesGraphTest::test_diamond
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TransitiveOverridesGraphTest::test_diamond_conflict
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TransitiveOverridesGraphTest::test_diamond_reverse_order
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TransitiveOverridesGraphTest::test_diamond_reverse_order_conflict
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TransitiveOverridesGraphTest::test_invisible_not_forced
+PASSED conans/test/integration/graph/core/graph_manager_test.py::PureOverrideTest::test_diamond
+PASSED conans/test/integration/graph/core/graph_manager_test.py::PureOverrideTest::test_discarded_override
+PASSED conans/test/integration/graph/core/graph_manager_test.py::PureOverrideTest::test_invisible_not_overriden
+PASSED conans/test/integration/graph/core/graph_manager_test.py::PureOverrideTest::test_nested_overrides
+PASSED conans/test/integration/graph/core/graph_manager_test.py::PureOverrideTest::test_override_solve_upstream_conflict
+PASSED conans/test/integration/graph/core/graph_manager_test.py::PackageIDDeductions::test_static_dep_to_shared
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestProjectApp::test_project_require_apps_transitive
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestProjectApp::test_project_require_apps_transitive_conflict
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestProjectApp::test_project_require_private
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestProjectApp::test_project_require_transitive
+PASSED conans/test/integration/graph/core/graph_manager_test.py::TestProjectApp::test_project_require_transitive_conflict
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_basic_0_recipe
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_basic_1_profile
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_build_require_bootstrap
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_build_require_private
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_build_require_transitive_0_shared
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_build_require_transitive_1_static
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_build_require_transitive_2_notrun
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_build_require_transitive_3_run
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresGraphTest::test_lib_build_require
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestBuildRequiresTransitivityDiamond::test_build_require_transitive_shared
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestBuildRequiresTransitivityDiamond::test_build_require_transitive_static
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestTestRequire::test_basic
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestTestRequire::test_lib_build_require
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestTestRequire::test_lib_build_require_transitive
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestTestRequire::test_test_require_transitive_0_shared
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestTestRequire::test_test_require_transitive_1_static
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestTestRequire::test_test_require_transitive_2_notrun
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestTestRequire::test_test_require_transitive_3_run
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestTestRequire::test_trait_aggregated
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresPackageIDTest::test_default_no_affect
+PASSED conans/test/integration/graph/core/test_build_requires.py::BuildRequiresPackageIDTest::test_minor_mode
+PASSED conans/test/integration/graph/core/test_build_requires.py::PublicBuildRequiresTest::test_conflict_diamond
+PASSED conans/test/integration/graph/core/test_build_requires.py::PublicBuildRequiresTest::test_simple
+PASSED conans/test/integration/graph/core/test_build_requires.py::PublicBuildRequiresTest::test_test_require
+PASSED conans/test/integration/graph/core/test_build_requires.py::PublicBuildRequiresTest::test_tool_requires
+PASSED conans/test/integration/graph/core/test_build_requires.py::PublicBuildRequiresTest::test_tool_requires_override
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestLoops::test_direct_loop_error
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestLoops::test_indirect_loop_error
+PASSED conans/test/integration/graph/core/test_build_requires.py::test_tool_requires
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestDuplicateBuildRequires::test_tool_requires_in_test_package
+PASSED conans/test/integration/graph/core/test_build_requires.py::TestDuplicateBuildRequires::test_test_requires_in_test_package
+PASSED conans/test/integration/graph/core/test_options.py::TestOptions::test_app_override
+PASSED conans/test/integration/graph/core/test_options.py::TestOptions::test_basic
+PASSED conans/test/integration/graph/core/test_options.py::TestOptions::test_diamond_downstream_priority
+PASSED conans/test/integration/graph/core/test_options.py::TestOptions::test_diamond_no_conflict
+PASSED conans/test/integration/graph/core/test_options.py::TestBuildRequireOptions::test_protobuf_different_options_profile
+PASSED conans/test/integration/graph/core/test_provides.py::TestProvidesTest::test_branches_conflict_0
+PASSED conans/test/integration/graph/core/test_provides.py::TestProvidesTest::test_branches_conflict_1
+PASSED conans/test/integration/graph/core/test_provides.py::TestProvidesTest::test_diamond_conflict
+PASSED conans/test/integration/graph/core/test_provides.py::TestProvidesTest::test_direct_conflict
+PASSED conans/test/integration/graph/core/test_provides.py::TestProvidesTest::test_loop
+PASSED conans/test/integration/graph/core/test_provides.py::TestProvidesTest::test_private_no_conflict
+PASSED conans/test/integration/graph/core/test_provides.py::TestProvidesTest::test_transitive_conflict
+PASSED conans/test/integration/graph/core/test_provides.py::ProvidesBuildRequireTest::test_build_require_no_conflict
+PASSED conans/test/integration/graph/core/test_provides.py::ProvidesBuildRequireTest::test_transitive_br_no_conflict
+PASSED conans/test/integration/graph/core/test_provides.py::ProvidesBuildRequireTest::test_transitive_test_require_conflict
+PASSED conans/test/integration/graph/core/test_provides.py::ProvidesBuildRequireTest::test_two_br_conflict
+PASSED conans/test/integration/graph/core/test_provides.py::test_conditional
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRanges::test_missing
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRanges::test_required_userchannel_no_match
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRanges::test_transitive
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRanges::test_transitive_local_conditions
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRanges::test_transitive_out_range
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRanges::test_userchannel_no_match
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesDiamond::test_transitive
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesDiamond::test_transitive_conflict
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesDiamond::test_transitive_fixed
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesDiamond::test_transitive_fixed_conflict
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesDiamond::test_transitive_interval
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesOverridesDiamond::test_transitive
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesOverridesDiamond::test_transitive_fixed
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesOverridesDiamond::test_transitive_fixed_conflict
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesOverridesDiamond::test_transitive_fixed_conflict_forced
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesOverridesDiamond::test_transitive_overriden
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesOverridesDiamond::test_two_ranges_overriden
+PASSED conans/test/integration/graph/core/test_version_ranges.py::TestVersionRangesOverridesDiamond::test_two_ranges_overriden_conflict
+PASSED conans/test/integration/graph/core/test_version_ranges.py::test_mixed_user_channel
+PASSED conans/test/integration/graph/core/test_version_ranges.py::test_remote_version_ranges
+PASSED conans/test/integration/graph/core/test_version_ranges.py::test_different_user_channel_resolved_correctly
+SKIPPED [1] conans/test/integration/graph/core/test_version_ranges.py:394: TODO: Test that the server is only hit once for dep/*@user/channel
+XFAIL conans/test/integration/graph/core/test_build_requires.py::TestBuildRequiresTransitivityDiamond::test_build_require_conflict
+  Not updated yet
+XFAIL conans/test/integration/graph/core/test_build_requires.py::TestBuildRequiresTransitivityDiamond::test_build_require_link_order
+  Not updated yet
+============= 147 passed, 1 skipped, 2 xfailed in 67.58s (0:01:07) =============
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-13661] Test script run successful 

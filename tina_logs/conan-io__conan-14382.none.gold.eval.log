@@ -1,0 +1,171 @@
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Task Metadata:
+	- Instance ID: conan-io__conan-14382
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git -c advice.detachedHead=false checkout bc4ed4d79fd92edd825fc846dfa515c7b3912138 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+HEAD is now at bc4ed4d79 Implement test_package ``--build-test=missing`` for full control of ``test_package`` deps (#14347)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git diff > /home/swe-bench/temp_conan-io__conan-14382_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14382_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+Checking patch conan/tools/system/package_manager.py...
+Applied patch conan/tools/system/package_manager.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git diff > /home/swe-bench/temp_conan-io__conan-14382_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-14382_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+Checking patch conan/tools/system/package_manager.py...
+Applied patch conan/tools/system/package_manager.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git diff > /home/swe-bench/temp_conan-io__conan-14382_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14382_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+Checking patch conan/tools/system/package_manager.py...
+Applied patch conan/tools/system/package_manager.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git diff > /home/swe-bench/temp_conan-io__conan-14382_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git restore conans/test/integration/tools/system/package_manager_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14382_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+Checking patch conans/test/integration/tools/system/package_manager_test.py...
+Applied patch conans/test/integration/tools/system/package_manager_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/tools/system/package_manager_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/tools/system/package_manager_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Std. Output:
+============================= test session starts ==============================
+collected 80 items
+
+conans/test/integration/tools/system/package_manager_test.py ....s...... [ 13%]
+.....................................................................    [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_platform[Linux-apt-get]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_platform[Windows-choco]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_platform[Darwin-brew]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_platform[Solaris-pkgutil]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[ubuntu-apt-get]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[debian-apt-get]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[pidora-yum]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[rocky-yum]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[fedora-dnf]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[arch-pacman]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[opensuse-zypper0]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[sles-zypper]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[opensuse-zypper1]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[opensuse-tumbleweed-zypper]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[opensuse-leap-zypper]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[opensuse-next_version-zypper]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[freebsd-pkg]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_package_manager_distro[alpine-apk]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_sudo_str[True-True-sudo -A ]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_sudo_str[True-False-sudo ]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_sudo_str[False-True-]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_sudo_str[False-False-]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_apt_install_recommends[False---no-install-recommends ]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_apt_install_recommends[True-]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[Apk]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[Apt]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[Yum]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[Dnf]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[Brew]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[Pkg]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[PkgUtil]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[Chocolatey]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[PacMan]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_check[Zypper]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[Apk-apk update]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[Apt-apt-get update]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[Yum-yum check-update -y]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[Dnf-dnf check-update -y]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[Brew-brew update]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[Pkg-pkg update]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[PkgUtil-pkgutil --catalog]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[Chocolatey-choco outdated]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[PacMan-pacman -Syyu --noconfirm]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_update_mode_install[Zypper-zypper --non-interactive ref]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_dnf_yum_return_code_100[Yum-yum check-update -y]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_dnf_yum_return_code_100[Dnf-dnf check-update -y]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Apk-x86_64-apk add --no-cache package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Apt-x86_64-apt-get install -y --no-install-recommends package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Yum-x86_64-yum install -y package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Dnf-x86_64-dnf install -y package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Brew-x86_64-brew install package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Pkg-x86_64-pkg install -y package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[PkgUtil-x86_64-pkgutil --install --yes package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Chocolatey-x86_64-choco install --yes package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[PacMan-x86_64-pacman -S --noconfirm package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Zypper-x86_64-zypper --non-interactive in package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Apt-x86-apt-get install -y --no-install-recommends package1:i386 package2:i386]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Yum-x86-yum install -y package1.i?86 package2.i?86]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Dnf-x86-dnf install -y package1.i?86 package2.i?86]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Brew-x86-brew install package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Pkg-x86-pkg install -y package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[PkgUtil-x86-pkgutil --install --yes package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Chocolatey-x86-choco install --yes package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[PacMan-x86-pacman -S --noconfirm package1-lib32 package2-lib32]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_mode_install_different_archs[Zypper-x86-zypper --non-interactive in package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_archless[Apt-apt-get install -y --no-install-recommends package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_archless[Yum-yum install -y package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_archless[Dnf-dnf install -y package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_install_archless[PacMan-pacman -S --noconfirm package1 package2]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[Apk-apk info -e package]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[Apt-dpkg-query -W -f='${Status}' package | grep -q "ok installed"]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[Yum-rpm -q package]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[Dnf-rpm -q package]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[Brew-test -n "$(brew ls --versions package)"]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[Pkg-pkg info package]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[PkgUtil-test -n "`pkgutil --list package`"]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[Chocolatey-choco search --local-only --exact package | findstr /c:"1 packages installed."]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[PacMan-pacman -Qi package]
+PASSED conans/test/integration/tools/system/package_manager_test.py::test_tools_check[Zypper-rpm -q package]
+SKIPPED [1] conans/test/integration/tools/system/package_manager_test.py:34: Only Windows
+======================== 79 passed, 1 skipped in 0.83s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-14382] Test script run successful 

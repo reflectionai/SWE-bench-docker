@@ -1,0 +1,107 @@
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Task Metadata:
+	- Instance ID: conan-io__conan-14051
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git -c advice.detachedHead=false checkout a930709b420553593032fb86e747b05d4e025566 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+HEAD is now at a930709b4 Allow specifying a custom output for the deployers (#13757)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git diff > /home/swe-bench/temp_conan-io__conan-14051_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14051_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+Checking patch conan/tools/gnu/pkgconfigdeps.py...
+Applied patch conan/tools/gnu/pkgconfigdeps.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git diff > /home/swe-bench/temp_conan-io__conan-14051_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-14051_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+Checking patch conan/tools/gnu/pkgconfigdeps.py...
+Applied patch conan/tools/gnu/pkgconfigdeps.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git diff > /home/swe-bench/temp_conan-io__conan-14051_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14051_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+Checking patch conan/tools/gnu/pkgconfigdeps.py...
+Applied patch conan/tools/gnu/pkgconfigdeps.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git diff > /home/swe-bench/temp_conan-io__conan-14051_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git restore conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14051_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+Checking patch conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py...
+Applied patch conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py;
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Std. Output:
+============================= test session starts ==============================
+collected 16 items
+
+conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py ........... [ 68%]
+.....                                                                    [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkg_config_dirs
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_empty_dirs
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_system_libs
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_multiple_include
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_custom_content
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_custom_content_and_version_components
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkg_with_public_deps_and_component_requires
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkg_with_public_deps_and_component_requires_2
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkg_config_name_full_aliases
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_components_and_package_pc_creation_order
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkgconfigdeps_with_test_requires
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_with_editable_layout
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_tool_requires
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_tool_requires_not_created_if_no_activated
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_tool_requires_raise_exception_if_exist_both_require_and_build_one
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_error_missing_pc_build_context
+============================= 16 passed in 25.61s ==============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-14051] Test script run successful 

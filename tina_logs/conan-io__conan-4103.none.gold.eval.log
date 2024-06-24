@@ -1,0 +1,112 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Task Metadata:
+	- Instance ID: conan-io__conan-4103
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git -c advice.detachedHead=false checkout e250f738c68383c06b46dde32fe386d160c5bd5a 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+HEAD is now at e250f738c Merged 1.10.2
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git diff > /home/swe-bench/temp_conan-io__conan-4103_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4103_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+Checking patch conans/client/conan_api.py...
+Checking patch conans/client/tools/apple.py...
+Checking patch conans/client/tools/files.py...
+/home/swe-bench/temp_conan-io__conan-4103_pred_try.patch:51: new blank line at EOF.
++
+Applied patch conans/client/conan_api.py cleanly.
+Applied patch conans/client/tools/apple.py cleanly.
+Applied patch conans/client/tools/files.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git diff > /home/swe-bench/temp_conan-io__conan-4103_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4103_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+Checking patch conans/client/tools/files.py...
+Checking patch conans/client/tools/apple.py...
+Checking patch conans/client/conan_api.py...
+Applied patch conans/client/tools/files.py cleanly.
+Applied patch conans/client/tools/apple.py cleanly.
+Applied patch conans/client/conan_api.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git diff > /home/swe-bench/temp_conan-io__conan-4103_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4103_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+Checking patch conans/client/conan_api.py...
+Checking patch conans/client/tools/apple.py...
+Checking patch conans/client/tools/files.py...
+/home/swe-bench/temp_conan-io__conan-4103_pred.patch:51: new blank line at EOF.
++
+Applied patch conans/client/conan_api.py cleanly.
+Applied patch conans/client/tools/apple.py cleanly.
+Applied patch conans/client/tools/files.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git diff > /home/swe-bench/temp_conan-io__conan-4103_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4103_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+/home/swe-bench/temp_conan-io__conan-4103_test.patch:72: trailing whitespace.
+            
+/home/swe-bench/temp_conan-io__conan-4103_test.patch:77: trailing whitespace.
+                
+Checking patch conans/test/functional/tgz_macos_dot_files.py...
+Checking patch conans/test/unittests/client/tools/test_files.py...
+Applied patch conans/test/functional/tgz_macos_dot_files.py cleanly.
+Applied patch conans/test/unittests/client/tools/test_files.py cleanly.
+warning: 2 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/tgz_macos_dot_files.py conans/test/unittests/client/tools/test_files.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/tgz_macos_dot_files.py conans/test/unittests/client/tools/test_files.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/tgz_macos_dot_files.py conans/test/unittests/client/tools/test_files.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 2 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/tgz_macos_dot_files.py
+ERROR conans/test/unittests/client/tools/test_files.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.25s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4103] Test script run successful 

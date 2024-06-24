@@ -1,0 +1,134 @@
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Task Metadata:
+	- Instance ID: conan-io__conan-10978
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git -c advice.detachedHead=false checkout 83976a6980ba1c13c49323473803d6fa406030db 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+HEAD is now at 83976a698 adding conf for activate powershell env scripts (#11061)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git diff > /home/swe-bench/temp_conan-io__conan-10978_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10978_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+Checking patch conan/tools/gnu/autotools.py...
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Checking patch conans/assets/templates/new_v2_autotools.py...
+Checking patch conans/client/cmd/new.py...
+Applied patch conan/tools/gnu/autotools.py cleanly.
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+Applied patch conans/assets/templates/new_v2_autotools.py cleanly.
+Applied patch conans/client/cmd/new.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git diff > /home/swe-bench/temp_conan-io__conan-10978_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-10978_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+Checking patch conans/client/cmd/new.py...
+Checking patch conans/assets/templates/new_v2_autotools.py...
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Checking patch conan/tools/gnu/autotools.py...
+Applied patch conans/client/cmd/new.py cleanly.
+Applied patch conans/assets/templates/new_v2_autotools.py cleanly.
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+Applied patch conan/tools/gnu/autotools.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git diff > /home/swe-bench/temp_conan-io__conan-10978_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10978_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+Checking patch conan/tools/gnu/autotools.py...
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Checking patch conans/assets/templates/new_v2_autotools.py...
+Checking patch conans/client/cmd/new.py...
+Applied patch conan/tools/gnu/autotools.py cleanly.
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+Applied patch conans/assets/templates/new_v2_autotools.py cleanly.
+Applied patch conans/client/cmd/new.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git diff > /home/swe-bench/temp_conan-io__conan-10978_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git restore conans/test/functional/toolchains/gnu/autotools/test_ios.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git restore conans/test/unittests/tools/gnu/autotools_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10978_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+Checking patch conans/test/functional/toolchains/gnu/autotools/test_ios.py...
+Checking patch conans/test/functional/toolchains/gnu/test_v2_autotools_template.py...
+/home/swe-bench/temp_conan-io__conan-10978_test.patch:77: new blank line at EOF.
++
+Checking patch conans/test/unittests/tools/gnu/autotools_test.py...
+Applied patch conans/test/functional/toolchains/gnu/autotools/test_ios.py cleanly.
+Applied patch conans/test/functional/toolchains/gnu/test_v2_autotools_template.py cleanly.
+Applied patch conans/test/unittests/tools/gnu/autotools_test.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/gnu/autotools/test_ios.py conans/test/functional/toolchains/gnu/test_v2_autotools_template.py conans/test/unittests/tools/gnu/autotools_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/gnu/autotools/test_ios.py conans/test/functional/toolchains/gnu/test_v2_autotools_template.py conans/test/unittests/tools/gnu/autotools_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Std. Output:
+ImportError while loading conftest '/home/swe-bench/conan-io__conan/conans/test/conftest.py'.
+conans/__init__.py:1: in <module>
+    from conans.client.build.autotools_environment import AutoToolsBuildEnvironment
+conans/client/build/autotools_environment.py:6: in <module>
+    from conans.client.build.compiler_flags import (architecture_flag, build_type_define,
+conans/client/build/compiler_flags.py:13: in <module>
+    from conans.client.tools.apple import to_apple_arch
+conans/client/tools/__init__.py:12: in <module>
+    from .net import *
+conans/client/tools/net.py:3: in <module>
+    from conans.client.downloaders.download import run_downloader
+conans/client/downloaders/download.py:1: in <module>
+    from conans.client.downloaders.cached_file_downloader import CachedFileDownloader
+conans/client/downloaders/cached_file_downloader.py:8: in <module>
+    from conans.client.downloaders.file_downloader import check_checksum
+conans/client/downloaders/file_downloader.py:12: in <module>
+    from conans.util import progress_bar
+conans/util/progress_bar.py:5: in <module>
+    from tqdm import tqdm
+E   ModuleNotFoundError: No module named 'tqdm'
+
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/gnu/autotools/test_ios.py conans/test/functional/toolchains/gnu/test_v2_autotools_template.py conans/test/unittests/tools/gnu/autotools_test.py` failed. (See above for error)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Return Code: 4 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-10978] Test script run successful 

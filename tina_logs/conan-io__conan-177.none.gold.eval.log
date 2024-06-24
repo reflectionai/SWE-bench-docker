@@ -1,0 +1,196 @@
+[conan-io__conan__1.60.2] [conan-io__conan-177] Task Metadata:
+	- Instance ID: conan-io__conan-177
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git -c advice.detachedHead=false checkout 4c8b47e3ce3b2ef79150fb7ecc384c6682e931b1 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+HEAD is now at 4c8b47e3c Merge pull request #175 from memsharded/feature/upgrade_mingw4.9
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git diff > /home/swe-bench/temp_conan-io__conan-177_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git apply -v /home/swe-bench/temp_conan-io__conan-177_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+Checking patch conans/client/cmake.py...
+error: while searching for:
+
+        if operating_system == "Windows":
+            if compiler == "gcc":
+                if self._settings.compiler.version == "4.9":
+                    return "Unix Makefiles"
+                return "MinGW Makefiles"
+            if compiler in ["clang", "apple-clang"]:
+                return "MinGW Makefiles"
+
+error: patch failed: conans/client/cmake.py:41
+error: conans/client/cmake.py: patch does not apply
+Checking patch conans/client/manager.py...
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 1 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git restore . 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git apply /home/swe-bench/temp_conan-io__conan-177_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+error: No valid patches in input (allow with "--allow-empty")
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 128 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Output (git apply - revert to initial state): error: No valid patches in input (allow with "--allow-empty")
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: patch --batch --fuzz=5 -p1 -i /home/swe-bench/temp_conan-io__conan-177_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+patching file conans/client/cmake.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+patching file conans/client/manager.py
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git diff > /home/swe-bench/temp_conan-io__conan-177_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-177_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+Checking patch conans/client/manager.py...
+Checking patch conans/client/cmake.py...
+error: while searching for:
+
+        if operating_system == "Windows":
+            if compiler == "gcc":
+                return "MinGW Makefiles"
+            if compiler in ["clang", "apple-clang"]:
+                return "MinGW Makefiles"
+
+error: patch failed: conans/client/cmake.py:41
+error: conans/client/cmake.py: patch does not apply
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 1 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git restore . 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git apply /home/swe-bench/temp_conan-io__conan-177_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Output (git apply - revert to initial state):  
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: patch -R --batch --fuzz=5 -p1 -i /home/swe-bench/temp_conan-io__conan-177_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+patching file conans/client/cmake.py
+Unreversed patch detected!  Ignoring -R.
+patching file conans/client/manager.py
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git diff > /home/swe-bench/temp_conan-io__conan-177_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git apply -v /home/swe-bench/temp_conan-io__conan-177_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+Checking patch conans/client/cmake.py...
+error: while searching for:
+
+        if operating_system == "Windows":
+            if compiler == "gcc":
+                if self._settings.compiler.version == "4.9":
+                    return "Unix Makefiles"
+                return "MinGW Makefiles"
+            if compiler in ["clang", "apple-clang"]:
+                return "MinGW Makefiles"
+
+error: patch failed: conans/client/cmake.py:41
+error: conans/client/cmake.py: patch does not apply
+Checking patch conans/client/manager.py...
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 1 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git restore . 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git apply /home/swe-bench/temp_conan-io__conan-177_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+error: No valid patches in input (allow with "--allow-empty")
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 128 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Output (git apply - revert to initial state): error: No valid patches in input (allow with "--allow-empty")
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: patch --batch --fuzz=5 -p1 -i /home/swe-bench/temp_conan-io__conan-177_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+patching file conans/client/cmake.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+patching file conans/client/manager.py
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git diff > /home/swe-bench/temp_conan-io__conan-177_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git restore conans/test/command/export_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: git apply -v /home/swe-bench/temp_conan-io__conan-177_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+Checking patch conans/test/command/export_test.py...
+Applied patch conans/test/command/export_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/command/export_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-177] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/command/export_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/command/export_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 1 error
+
+=============================== warnings summary ===============================
+conans/model/ref.py:38
+  /home/swe-bench/conan-io__conan/conans/model/ref.py:38: DeprecationWarning: invalid escape sequence \.
+    base_er = "[a-zA-Z0-9_]+[a-zA-Z0-9_\.-]{%s,%s}" % (min_chars - 1, max_chars)
+
+conans/model/build_info.py:86
+  /home/swe-bench/conan-io__conan/conans/model/build_info.py:86: DeprecationWarning: invalid escape sequence \[
+    pattern = re.compile("^\[([a-zA-Z0-9_-]{2,50})\]")
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+ERROR conans/test/command/export_test.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+========================= 2 warnings, 1 error in 0.30s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-177] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-177] Test script run successful 

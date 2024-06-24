@@ -1,0 +1,103 @@
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Task Metadata:
+	- Instance ID: conan-io__conan-14185
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git -c advice.detachedHead=false checkout f1b9c37a65f5b3742eaebc0f3a1e22fe94b194fd 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+HEAD is now at f1b9c37a6 Always indicate when patches are applied (#14165) (#14177)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git diff > /home/swe-bench/temp_conan-io__conan-14185_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14185_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+Checking patch conans/client/downloaders/download_cache.py...
+Applied patch conans/client/downloaders/download_cache.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git diff > /home/swe-bench/temp_conan-io__conan-14185_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-14185_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+Checking patch conans/client/downloaders/download_cache.py...
+Applied patch conans/client/downloaders/download_cache.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git diff > /home/swe-bench/temp_conan-io__conan-14185_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14185_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+Checking patch conans/client/downloaders/download_cache.py...
+Applied patch conans/client/downloaders/download_cache.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git diff > /home/swe-bench/temp_conan-io__conan-14185_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git restore conans/test/integration/cache/backup_sources_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14185_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+Checking patch conans/test/integration/cache/backup_sources_test.py...
+Applied patch conans/test/integration/cache/backup_sources_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/cache/backup_sources_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/cache/backup_sources_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Std. Output:
+============================= test session starts ==============================
+collected 13 items
+
+conans/test/integration/cache/backup_sources_test.py .............       [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_users_download_cache_summary
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_upload_sources_backup
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_download_origin_first
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_download_origin_last
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_sources_backup_server_error_500
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_upload_sources_backup_creds_needed
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_download_sources_multiurl
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_list_urls_miss
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_ok_when_origin_breaks_midway_list
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_ok_when_origin_authorization_error
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_ok_when_origin_bad_sha256
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_export_then_upload_workflow
+PASSED conans/test/integration/cache/backup_sources_test.py::TestDownloadCacheBackupSources::test_export_then_upload_recipe_only_workflow
+============================= 13 passed in 43.09s ==============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-14185] Test script run successful 

@@ -1,0 +1,154 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Task Metadata:
+	- Instance ID: conan-io__conan-4249
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git -c advice.detachedHead=false checkout 71984ba3e533c53ae1390afe97d49ca4544f9e31 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+HEAD is now at 71984ba3e Fixed mocked check_output() for uname command (#4326)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git diff > /home/swe-bench/temp_conan-io__conan-4249_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4249_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+Checking patch conans/client/cmd/export.py...
+Checking patch conans/client/source.py...
+Checking patch conans/client/tools/scm.py...
+Checking patch conans/model/scm.py...
+Applied patch conans/client/cmd/export.py cleanly.
+Applied patch conans/client/source.py cleanly.
+Applied patch conans/client/tools/scm.py cleanly.
+Applied patch conans/model/scm.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git diff > /home/swe-bench/temp_conan-io__conan-4249_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4249_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+Checking patch conans/model/scm.py...
+Checking patch conans/client/tools/scm.py...
+Checking patch conans/client/source.py...
+Checking patch conans/client/cmd/export.py...
+Applied patch conans/model/scm.py cleanly.
+Applied patch conans/client/tools/scm.py cleanly.
+Applied patch conans/client/source.py cleanly.
+Applied patch conans/client/cmd/export.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git diff > /home/swe-bench/temp_conan-io__conan-4249_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4249_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+Checking patch conans/client/cmd/export.py...
+Checking patch conans/client/source.py...
+Checking patch conans/client/tools/scm.py...
+Checking patch conans/model/scm.py...
+Applied patch conans/client/cmd/export.py cleanly.
+Applied patch conans/client/source.py cleanly.
+Applied patch conans/client/tools/scm.py cleanly.
+Applied patch conans/model/scm.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git diff > /home/swe-bench/temp_conan-io__conan-4249_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git restore conans/test/functional/command/source_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git restore conans/test/functional/scm/scm_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4249_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+/home/swe-bench/temp_conan-io__conan-4249_test.patch:54: trailing whitespace.
+    
+/home/swe-bench/temp_conan-io__conan-4249_test.patch:388: trailing whitespace.
+                self.output.info(">>>> I'm {{}}/{{}}@{{}}/{{}}".format(self.name, self.version, 
+/home/swe-bench/temp_conan-io__conan-4249_test.patch:390: trailing whitespace.
+                self.output.info(">>>> content: {{}} ".format(content)) 
+Checking patch conans/test/functional/command/source_test.py...
+Checking patch conans/test/functional/scm/scm_test.py...
+Checking patch conans/test/functional/scm/test_command_export.py...
+Checking patch conans/test/functional/scm/workflows/__init__.py...
+Checking patch conans/test/functional/scm/workflows/common.py...
+Checking patch conans/test/functional/scm/workflows/test_conanfile_in_repo_root.py...
+Checking patch conans/test/functional/scm/workflows/test_conanfile_in_subfolder.py...
+Checking patch conans/test/functional/scm/workflows/test_scm_subfolder.py...
+Checking patch conans/test/unittests/client/cmd/export/__init__.py...
+Checking patch conans/test/unittests/client/cmd/export/test_capture_export_scm_data.py...
+Checking patch conans/test/unittests/client/source/__init__.py...
+Checking patch conans/test/unittests/client/source/test_run_scm.py...
+Applied patch conans/test/functional/command/source_test.py cleanly.
+Applied patch conans/test/functional/scm/scm_test.py cleanly.
+Applied patch conans/test/functional/scm/test_command_export.py cleanly.
+Applied patch conans/test/functional/scm/workflows/__init__.py cleanly.
+Applied patch conans/test/functional/scm/workflows/common.py cleanly.
+Applied patch conans/test/functional/scm/workflows/test_conanfile_in_repo_root.py cleanly.
+Applied patch conans/test/functional/scm/workflows/test_conanfile_in_subfolder.py cleanly.
+Applied patch conans/test/functional/scm/workflows/test_scm_subfolder.py cleanly.
+Applied patch conans/test/unittests/client/cmd/export/__init__.py cleanly.
+Applied patch conans/test/unittests/client/cmd/export/test_capture_export_scm_data.py cleanly.
+Applied patch conans/test/unittests/client/source/__init__.py cleanly.
+Applied patch conans/test/unittests/client/source/test_run_scm.py cleanly.
+warning: 3 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/source_test.py conans/test/functional/scm/scm_test.py conans/test/functional/scm/test_command_export.py conans/test/functional/scm/workflows/__init__.py conans/test/functional/scm/workflows/common.py conans/test/functional/scm/workflows/test_conanfile_in_repo_root.py conans/test/functional/scm/workflows/test_conanfile_in_subfolder.py conans/test/functional/scm/workflows/test_scm_subfolder.py conans/test/unittests/client/cmd/export/__init__.py conans/test/unittests/client/cmd/export/test_capture_export_scm_data.py conans/test/unittests/client/source/__init__.py conans/test/unittests/client/source/test_run_scm.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/source_test.py conans/test/functional/scm/scm_test.py conans/test/functional/scm/test_command_export.py conans/test/functional/scm/workflows/__init__.py conans/test/functional/scm/workflows/common.py conans/test/functional/scm/workflows/test_conanfile_in_repo_root.py conans/test/functional/scm/workflows/test_conanfile_in_subfolder.py conans/test/functional/scm/workflows/test_scm_subfolder.py conans/test/unittests/client/cmd/export/__init__.py conans/test/unittests/client/cmd/export/test_capture_export_scm_data.py conans/test/unittests/client/source/__init__.py conans/test/unittests/client/source/test_run_scm.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/source_test.py conans/test/functional/scm/scm_test.py conans/test/functional/scm/test_command_export.py conans/test/functional/scm/workflows/__init__.py conans/test/functional/scm/workflows/common.py conans/test/functional/scm/workflows/test_conanfile_in_repo_root.py conans/test/functional/scm/workflows/test_conanfile_in_subfolder.py conans/test/functional/scm/workflows/test_scm_subfolder.py conans/test/unittests/client/cmd/export/__init__.py conans/test/unittests/client/cmd/export/test_capture_export_scm_data.py conans/test/unittests/client/source/__init__.py conans/test/unittests/client/source/test_run_scm.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 12 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/command/source_test.py
+ERROR conans/test/functional/scm/scm_test.py
+ERROR conans/test/functional/scm/test_command_export.py
+ERROR conans/test/functional/scm/workflows/common.py
+ERROR conans/test/functional/scm/workflows/common.py
+ERROR conans/test/functional/scm/workflows/test_conanfile_in_repo_root.py
+ERROR conans/test/functional/scm/workflows/test_conanfile_in_subfolder.py
+ERROR conans/test/functional/scm/workflows/test_scm_subfolder.py
+ERROR conans/test/unittests/client/cmd/export/test_capture_export_scm_data.py
+ERROR conans/test/unittests/client/cmd/export/test_capture_export_scm_data.py
+ERROR conans/test/unittests/client/source/test_run_scm.py
+ERROR conans/test/unittests/client/source/test_run_scm.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 12 errors during collection !!!!!!!!!!!!!!!!!!!
+============================== 12 errors in 0.89s ==============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4249] Test script run successful 

@@ -1,0 +1,113 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Task Metadata:
+	- Instance ID: conan-io__conan-4615
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git -c advice.detachedHead=false checkout c099be8e501154e9901c733736f8f846f00f026f 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+HEAD is now at c099be8e5 no_lock in migrations
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git diff > /home/swe-bench/temp_conan-io__conan-4615_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4615_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+Checking patch conans/client/cmd/uploader.py...
+Checking patch conans/client/remover.py...
+Applied patch conans/client/cmd/uploader.py cleanly.
+Applied patch conans/client/remover.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git diff > /home/swe-bench/temp_conan-io__conan-4615_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4615_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+Checking patch conans/client/remover.py...
+Checking patch conans/client/cmd/uploader.py...
+Applied patch conans/client/remover.py cleanly.
+Applied patch conans/client/cmd/uploader.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git diff > /home/swe-bench/temp_conan-io__conan-4615_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4615_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+Checking patch conans/client/cmd/uploader.py...
+Checking patch conans/client/remover.py...
+Applied patch conans/client/cmd/uploader.py cleanly.
+Applied patch conans/client/remover.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git diff > /home/swe-bench/temp_conan-io__conan-4615_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git restore conans/test/functional/command/info_folders_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git restore conans/test/functional/command/upload_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git restore conans/test/functional/old/package_integrity_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4615_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+Checking patch conans/test/functional/command/info_folders_test.py...
+Checking patch conans/test/functional/command/upload_test.py...
+Checking patch conans/test/functional/old/package_integrity_test.py...
+Applied patch conans/test/functional/command/info_folders_test.py cleanly.
+Applied patch conans/test/functional/command/upload_test.py cleanly.
+Applied patch conans/test/functional/old/package_integrity_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/info_folders_test.py conans/test/functional/command/upload_test.py conans/test/functional/old/package_integrity_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/info_folders_test.py conans/test/functional/command/upload_test.py conans/test/functional/old/package_integrity_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/info_folders_test.py conans/test/functional/command/upload_test.py conans/test/functional/old/package_integrity_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 3 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/command/info_folders_test.py
+ERROR conans/test/functional/command/upload_test.py
+ERROR conans/test/functional/old/package_integrity_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 3 errors in 0.31s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4615] Test script run successful 

@@ -1,0 +1,118 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Task Metadata:
+	- Instance ID: conan-io__conan-4250
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git -c advice.detachedHead=false checkout b3856467cab48aaf8aa873221d8b4c1bbd232917 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+HEAD is now at b3856467c fixing develop
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git diff > /home/swe-bench/temp_conan-io__conan-4250_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4250_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+Checking patch conans/client/build/msbuild.py...
+Checking patch conans/client/generators/visualstudio_multi.py...
+Checking patch conans/client/tools/win.py...
+Checking patch conans/model/info.py...
+Applied patch conans/client/build/msbuild.py cleanly.
+Applied patch conans/client/generators/visualstudio_multi.py cleanly.
+Applied patch conans/client/tools/win.py cleanly.
+Applied patch conans/model/info.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git diff > /home/swe-bench/temp_conan-io__conan-4250_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4250_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+Checking patch conans/model/info.py...
+Checking patch conans/client/tools/win.py...
+Checking patch conans/client/generators/visualstudio_multi.py...
+Checking patch conans/client/build/msbuild.py...
+Applied patch conans/model/info.py cleanly.
+Applied patch conans/client/tools/win.py cleanly.
+Applied patch conans/client/generators/visualstudio_multi.py cleanly.
+Applied patch conans/client/build/msbuild.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git diff > /home/swe-bench/temp_conan-io__conan-4250_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4250_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+Checking patch conans/client/build/msbuild.py...
+Checking patch conans/client/generators/visualstudio_multi.py...
+Checking patch conans/client/tools/win.py...
+Checking patch conans/model/info.py...
+Applied patch conans/client/build/msbuild.py cleanly.
+Applied patch conans/client/generators/visualstudio_multi.py cleanly.
+Applied patch conans/client/tools/win.py cleanly.
+Applied patch conans/model/info.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git diff > /home/swe-bench/temp_conan-io__conan-4250_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git restore conans/test/unittests/client/build/msbuild_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4250_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+Checking patch conans/test/unittests/client/build/msbuild_test.py...
+Checking patch conans/test/unittests/model/info/__init__.py...
+Checking patch conans/test/unittests/model/info/vs_toolset_compatible_test.py...
+Checking patch conans/test/unittests/util/msvs_toolset_test.py...
+Applied patch conans/test/unittests/client/build/msbuild_test.py cleanly.
+Applied patch conans/test/unittests/model/info/__init__.py cleanly.
+Applied patch conans/test/unittests/model/info/vs_toolset_compatible_test.py cleanly.
+Applied patch conans/test/unittests/util/msvs_toolset_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/build/msbuild_test.py conans/test/unittests/model/info/__init__.py conans/test/unittests/model/info/vs_toolset_compatible_test.py conans/test/unittests/util/msvs_toolset_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/build/msbuild_test.py conans/test/unittests/model/info/__init__.py conans/test/unittests/model/info/vs_toolset_compatible_test.py conans/test/unittests/util/msvs_toolset_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/build/msbuild_test.py conans/test/unittests/model/info/__init__.py conans/test/unittests/model/info/vs_toolset_compatible_test.py conans/test/unittests/util/msvs_toolset_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 4 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/unittests/client/build/msbuild_test.py
+ERROR conans/test/unittests/model/info/vs_toolset_compatible_test.py
+ERROR conans/test/unittests/model/info/vs_toolset_compatible_test.py
+ERROR conans/test/unittests/util/msvs_toolset_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 4 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 4 errors in 0.41s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4250] Test script run successful 

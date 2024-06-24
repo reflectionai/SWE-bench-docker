@@ -1,0 +1,225 @@
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Task Metadata:
+	- Instance ID: conan-io__conan-7243
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git -c advice.detachedHead=false checkout 7182852030e67a7330c24a44fd010c74ef215e3b 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+HEAD is now at 718285203 package_id_unknown transitive failures fix (#7353)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git diff > /home/swe-bench/temp_conan-io__conan-7243_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git apply -v /home/swe-bench/temp_conan-io__conan-7243_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+Checking patch conans/build_info/build_info.py...
+Checking patch conans/client/cmd/create.py...
+Checking patch conans/client/cmd/export.py...
+Checking patch conans/client/cmd/export_pkg.py...
+Checking patch conans/client/command.py...
+Checking patch conans/client/conan_api.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/graph/graph.py...
+Checking patch conans/client/graph/graph_binaries.py...
+Checking patch conans/client/graph/graph_manager.py...
+Checking patch conans/client/installer.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/model/graph_info.py...
+Checking patch conans/model/graph_lock.py...
+Checking patch conans/model/requires.py...
+Applied patch conans/build_info/build_info.py cleanly.
+Applied patch conans/client/cmd/create.py cleanly.
+Applied patch conans/client/cmd/export.py cleanly.
+Applied patch conans/client/cmd/export_pkg.py cleanly.
+Applied patch conans/client/command.py cleanly.
+Applied patch conans/client/conan_api.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/graph/graph.py cleanly.
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+Applied patch conans/client/graph/graph_manager.py cleanly.
+Applied patch conans/client/installer.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/model/graph_info.py cleanly.
+Applied patch conans/model/graph_lock.py cleanly.
+Applied patch conans/model/requires.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git diff > /home/swe-bench/temp_conan-io__conan-7243_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-7243_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+Checking patch conans/model/requires.py...
+Checking patch conans/model/graph_lock.py...
+Checking patch conans/model/graph_info.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/client/installer.py...
+Checking patch conans/client/graph/graph_manager.py...
+Checking patch conans/client/graph/graph_binaries.py...
+Checking patch conans/client/graph/graph.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/conan_api.py...
+Checking patch conans/client/command.py...
+Checking patch conans/client/cmd/export_pkg.py...
+Checking patch conans/client/cmd/export.py...
+Checking patch conans/client/cmd/create.py...
+Checking patch conans/build_info/build_info.py...
+Applied patch conans/model/requires.py cleanly.
+Applied patch conans/model/graph_lock.py cleanly.
+Applied patch conans/model/graph_info.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/client/installer.py cleanly.
+Applied patch conans/client/graph/graph_manager.py cleanly.
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+Applied patch conans/client/graph/graph.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/conan_api.py cleanly.
+Applied patch conans/client/command.py cleanly.
+Applied patch conans/client/cmd/export_pkg.py cleanly.
+Applied patch conans/client/cmd/export.py cleanly.
+Applied patch conans/client/cmd/create.py cleanly.
+Applied patch conans/build_info/build_info.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git diff > /home/swe-bench/temp_conan-io__conan-7243_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git apply -v /home/swe-bench/temp_conan-io__conan-7243_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+Checking patch conans/build_info/build_info.py...
+Checking patch conans/client/cmd/create.py...
+Checking patch conans/client/cmd/export.py...
+Checking patch conans/client/cmd/export_pkg.py...
+Checking patch conans/client/command.py...
+Checking patch conans/client/conan_api.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/graph/graph.py...
+Checking patch conans/client/graph/graph_binaries.py...
+Checking patch conans/client/graph/graph_manager.py...
+Checking patch conans/client/installer.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/model/graph_info.py...
+Checking patch conans/model/graph_lock.py...
+Checking patch conans/model/requires.py...
+Applied patch conans/build_info/build_info.py cleanly.
+Applied patch conans/client/cmd/create.py cleanly.
+Applied patch conans/client/cmd/export.py cleanly.
+Applied patch conans/client/cmd/export_pkg.py cleanly.
+Applied patch conans/client/command.py cleanly.
+Applied patch conans/client/conan_api.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/graph/graph.py cleanly.
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+Applied patch conans/client/graph/graph_manager.py cleanly.
+Applied patch conans/client/installer.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/model/graph_info.py cleanly.
+Applied patch conans/model/graph_lock.py cleanly.
+Applied patch conans/model/requires.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git diff > /home/swe-bench/temp_conan-io__conan-7243_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git restore conans/test/functional/conan_build_info/test_build_info_creation.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git restore conans/test/functional/graph_lock/dynamic_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git restore conans/test/functional/graph_lock/graph_lock_ci_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git restore conans/test/functional/graph_lock/graph_lock_py_requires_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git restore conans/test/functional/graph_lock/graph_lock_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git restore conans/test/functional/graph_lock/test_package_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git restore conans/test/functional/python_requires/python_requires_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: git apply -v /home/swe-bench/temp_conan-io__conan-7243_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+Checking patch conans/test/functional/conan_build_info/test_build_info_creation.py...
+Checking patch conans/test/functional/graph_lock/build_order_test.py...
+Checking patch conans/test/functional/graph_lock/dynamic_test.py...
+Checking patch conans/test/functional/graph_lock/graph_lock_build_requires_test.py...
+Checking patch conans/test/functional/graph_lock/graph_lock_ci_test.py...
+Checking patch conans/test/functional/graph_lock/graph_lock_py_requires_test.py...
+Checking patch conans/test/functional/graph_lock/graph_lock_test.py...
+Checking patch conans/test/functional/graph_lock/lock_recipe_test.py...
+Checking patch conans/test/functional/graph_lock/test_package_test.py...
+Checking patch conans/test/functional/graph_lock/version_range_test.py...
+Checking patch conans/test/functional/python_requires/python_requires_test.py...
+Applied patch conans/test/functional/conan_build_info/test_build_info_creation.py cleanly.
+Applied patch conans/test/functional/graph_lock/build_order_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/dynamic_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/graph_lock_build_requires_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/graph_lock_ci_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/graph_lock_py_requires_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/graph_lock_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/lock_recipe_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/test_package_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/version_range_test.py cleanly.
+Applied patch conans/test/functional/python_requires/python_requires_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/conan_build_info/test_build_info_creation.py conans/test/functional/graph_lock/build_order_test.py conans/test/functional/graph_lock/dynamic_test.py conans/test/functional/graph_lock/graph_lock_build_requires_test.py conans/test/functional/graph_lock/graph_lock_ci_test.py conans/test/functional/graph_lock/graph_lock_py_requires_test.py conans/test/functional/graph_lock/graph_lock_test.py conans/test/functional/graph_lock/lock_recipe_test.py conans/test/functional/graph_lock/test_package_test.py conans/test/functional/graph_lock/version_range_test.py conans/test/functional/python_requires/python_requires_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/conan_build_info/test_build_info_creation.py conans/test/functional/graph_lock/build_order_test.py conans/test/functional/graph_lock/dynamic_test.py conans/test/functional/graph_lock/graph_lock_build_requires_test.py conans/test/functional/graph_lock/graph_lock_ci_test.py conans/test/functional/graph_lock/graph_lock_py_requires_test.py conans/test/functional/graph_lock/graph_lock_test.py conans/test/functional/graph_lock/lock_recipe_test.py conans/test/functional/graph_lock/test_package_test.py conans/test/functional/graph_lock/version_range_test.py conans/test/functional/python_requires/python_requires_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Std. Output:
+ERROR: file or directory not found: conans/test/functional/graph_lock/test_package_test.py
+
+
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/conan_build_info/test_build_info_creation.py conans/test/functional/graph_lock/build_order_test.py conans/test/functional/graph_lock/dynamic_test.py conans/test/functional/graph_lock/graph_lock_build_requires_test.py conans/test/functional/graph_lock/graph_lock_ci_test.py conans/test/functional/graph_lock/graph_lock_py_requires_test.py conans/test/functional/graph_lock/graph_lock_test.py conans/test/functional/graph_lock/lock_recipe_test.py conans/test/functional/graph_lock/test_package_test.py conans/test/functional/graph_lock/version_range_test.py conans/test/functional/python_requires/python_requires_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items
+
+============================ no tests ran in 0.00s =============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Return Code: 4 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-7243] Test script run successful 

@@ -1,0 +1,110 @@
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Task Metadata:
+	- Instance ID: conan-io__conan-10943
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git -c advice.detachedHead=false checkout e8237a0981158ea7a7bce7153acefced7905f677 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+HEAD is now at e8237a098 conan 1.48.0-dev
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git diff > /home/swe-bench/temp_conan-io__conan-10943_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10943_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+Checking patch conan/tools/cmake/cmake.py...
+Checking patch conan/tools/cmake/toolchain/toolchain.py...
+Applied patch conan/tools/cmake/cmake.py cleanly.
+Applied patch conan/tools/cmake/toolchain/toolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git diff > /home/swe-bench/temp_conan-io__conan-10943_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-10943_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+Checking patch conan/tools/cmake/toolchain/toolchain.py...
+Checking patch conan/tools/cmake/cmake.py...
+Applied patch conan/tools/cmake/toolchain/toolchain.py cleanly.
+Applied patch conan/tools/cmake/cmake.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git diff > /home/swe-bench/temp_conan-io__conan-10943_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10943_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+Checking patch conan/tools/cmake/cmake.py...
+Checking patch conan/tools/cmake/toolchain/toolchain.py...
+Applied patch conan/tools/cmake/cmake.py cleanly.
+Applied patch conan/tools/cmake/toolchain/toolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git diff > /home/swe-bench/temp_conan-io__conan-10943_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git restore conans/test/integration/toolchains/test_toolchain_namespaces.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10943_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+Checking patch conans/test/integration/toolchains/test_toolchain_namespaces.py...
+Applied patch conans/test/integration/toolchains/test_toolchain_namespaces.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/test_toolchain_namespaces.py;
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/test_toolchain_namespaces.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Std. Output:
+ImportError while loading conftest '/home/swe-bench/conan-io__conan/conans/test/conftest.py'.
+conans/__init__.py:1: in <module>
+    from conans.client.build.autotools_environment import AutoToolsBuildEnvironment
+conans/client/build/autotools_environment.py:6: in <module>
+    from conans.client.build.compiler_flags import (architecture_flag, build_type_define,
+conans/client/build/compiler_flags.py:13: in <module>
+    from conans.client.tools.apple import to_apple_arch
+conans/client/tools/__init__.py:12: in <module>
+    from .net import *
+conans/client/tools/net.py:3: in <module>
+    from conans.client.downloaders.download import run_downloader
+conans/client/downloaders/download.py:1: in <module>
+    from conans.client.downloaders.cached_file_downloader import CachedFileDownloader
+conans/client/downloaders/cached_file_downloader.py:8: in <module>
+    from conans.client.downloaders.file_downloader import check_checksum
+conans/client/downloaders/file_downloader.py:12: in <module>
+    from conans.util import progress_bar
+conans/util/progress_bar.py:5: in <module>
+    from tqdm import tqdm
+E   ModuleNotFoundError: No module named 'tqdm'
+
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/test_toolchain_namespaces.py` failed. (See above for error)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Return Code: 4 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-10943] Test script run successful 

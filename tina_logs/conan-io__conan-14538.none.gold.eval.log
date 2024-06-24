@@ -95,7 +95,7 @@ XFAIL conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTes
   Intel-cc compiler c++flags to be defined
 XFAIL conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_intel_visual_cppstd_flag
   Intel-cc compiler c++flags to be defined
-======================== 10 passed, 2 xfailed in 0.39s =========================
+======================== 10 passed, 2 xfailed in 0.44s =========================
 
  
 [conan-io__conan__1.60.2] [conan-io__conan-14538] Return Code: 0 

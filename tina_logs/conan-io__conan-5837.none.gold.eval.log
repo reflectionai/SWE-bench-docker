@@ -1,0 +1,113 @@
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Task Metadata:
+	- Instance ID: conan-io__conan-5837
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git -c advice.detachedHead=false checkout 5ea1b15362a332834ec97258e036ed46aa7e3c71 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+HEAD is now at 5ea1b1536 fixing export conflict when no user channel (#5981)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git diff > /home/swe-bench/temp_conan-io__conan-5837_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5837_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+Checking patch conans/__init__.py...
+Checking patch conans/client/graph/graph_binaries.py...
+Checking patch conans/model/compatible_package.py...
+Checking patch conans/model/conan_file.py...
+Checking patch conans/model/options.py...
+Applied patch conans/__init__.py cleanly.
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+Applied patch conans/model/compatible_package.py cleanly.
+Applied patch conans/model/conan_file.py cleanly.
+Applied patch conans/model/options.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git diff > /home/swe-bench/temp_conan-io__conan-5837_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-5837_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+Checking patch conans/model/options.py...
+Checking patch conans/model/conan_file.py...
+Checking patch conans/model/compatible_package.py...
+Checking patch conans/client/graph/graph_binaries.py...
+Checking patch conans/__init__.py...
+Applied patch conans/model/options.py cleanly.
+Applied patch conans/model/conan_file.py cleanly.
+Applied patch conans/model/compatible_package.py cleanly.
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+Applied patch conans/__init__.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git diff > /home/swe-bench/temp_conan-io__conan-5837_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5837_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+Checking patch conans/__init__.py...
+Checking patch conans/client/graph/graph_binaries.py...
+Checking patch conans/model/compatible_package.py...
+Checking patch conans/model/conan_file.py...
+Checking patch conans/model/options.py...
+Applied patch conans/__init__.py cleanly.
+Applied patch conans/client/graph/graph_binaries.py cleanly.
+Applied patch conans/model/compatible_package.py cleanly.
+Applied patch conans/model/conan_file.py cleanly.
+Applied patch conans/model/options.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git diff > /home/swe-bench/temp_conan-io__conan-5837_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5837_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+Checking patch conans/test/functional/package_id/__init__.py...
+Checking patch conans/test/functional/package_id/compatible_test.py...
+Applied patch conans/test/functional/package_id/__init__.py cleanly.
+Applied patch conans/test/functional/package_id/compatible_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/package_id/__init__.py conans/test/functional/package_id/compatible_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/package_id/__init__.py conans/test/functional/package_id/compatible_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/package_id/__init__.py conans/test/functional/package_id/compatible_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 2 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/package_id/compatible_test.py
+ERROR conans/test/functional/package_id/compatible_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.37s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-5837] Test script run successful 

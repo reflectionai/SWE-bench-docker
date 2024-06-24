@@ -1,0 +1,184 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Task Metadata:
+	- Instance ID: conan-io__conan-4205
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git -c advice.detachedHead=false checkout db11550dd02323812a11e03798047415b0dea987 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+HEAD is now at db11550dd cautious treatment of compiler in b2 generator (#4202)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git diff > /home/swe-bench/temp_conan-io__conan-4205_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4205_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+Checking patch conans/client/conan_api.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/rest/rest_client.py...
+Checking patch conans/client/rest/version_checker.py...
+Checking patch conans/server/rest/api_v1.py...
+Checking patch conans/server/rest/api_v2.py...
+Checking patch conans/server/rest/bottle_plugins/authorization_header.py...
+Checking patch conans/server/rest/bottle_plugins/http_basic_authentication.py...
+Checking patch conans/server/rest/bottle_plugins/jwt_authentication.py...
+Checking patch conans/server/rest/bottle_plugins/return_handler.py...
+Checking patch conans/server/rest/bottle_plugins/version_checker.py...
+Checking patch conans/server/rest/controllers/ping_controller.py...
+Checking patch conans/server/rest/server.py...
+Applied patch conans/client/conan_api.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/rest/rest_client.py cleanly.
+Applied patch conans/client/rest/version_checker.py cleanly.
+Applied patch conans/server/rest/api_v1.py cleanly.
+Applied patch conans/server/rest/api_v2.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/authorization_header.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/http_basic_authentication.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/jwt_authentication.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/return_handler.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/version_checker.py cleanly.
+Applied patch conans/server/rest/controllers/ping_controller.py cleanly.
+Applied patch conans/server/rest/server.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git diff > /home/swe-bench/temp_conan-io__conan-4205_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4205_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+Checking patch conans/server/rest/server.py...
+Checking patch conans/server/rest/controllers/ping_controller.py...
+Checking patch conans/server/rest/bottle_plugins/version_checker.py...
+Checking patch conans/server/rest/bottle_plugins/return_handler.py...
+Checking patch conans/server/rest/bottle_plugins/jwt_authentication.py...
+Checking patch conans/server/rest/bottle_plugins/http_basic_authentication.py...
+Checking patch conans/server/rest/bottle_plugins/authorization_header.py...
+Checking patch conans/server/rest/api_v2.py...
+Checking patch conans/server/rest/api_v1.py...
+Checking patch conans/client/rest/version_checker.py...
+Checking patch conans/client/rest/rest_client.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/conan_api.py...
+Applied patch conans/server/rest/server.py cleanly.
+Applied patch conans/server/rest/controllers/ping_controller.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/version_checker.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/return_handler.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/jwt_authentication.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/http_basic_authentication.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/authorization_header.py cleanly.
+Applied patch conans/server/rest/api_v2.py cleanly.
+Applied patch conans/server/rest/api_v1.py cleanly.
+Applied patch conans/client/rest/version_checker.py cleanly.
+Applied patch conans/client/rest/rest_client.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/conan_api.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git diff > /home/swe-bench/temp_conan-io__conan-4205_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4205_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+Checking patch conans/client/conan_api.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/rest/rest_client.py...
+Checking patch conans/client/rest/version_checker.py...
+Checking patch conans/server/rest/api_v1.py...
+Checking patch conans/server/rest/api_v2.py...
+Checking patch conans/server/rest/bottle_plugins/authorization_header.py...
+Checking patch conans/server/rest/bottle_plugins/http_basic_authentication.py...
+Checking patch conans/server/rest/bottle_plugins/jwt_authentication.py...
+Checking patch conans/server/rest/bottle_plugins/return_handler.py...
+Checking patch conans/server/rest/bottle_plugins/version_checker.py...
+Checking patch conans/server/rest/controllers/ping_controller.py...
+Checking patch conans/server/rest/server.py...
+Applied patch conans/client/conan_api.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/rest/rest_client.py cleanly.
+Applied patch conans/client/rest/version_checker.py cleanly.
+Applied patch conans/server/rest/api_v1.py cleanly.
+Applied patch conans/server/rest/api_v2.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/authorization_header.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/http_basic_authentication.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/jwt_authentication.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/return_handler.py cleanly.
+Applied patch conans/server/rest/bottle_plugins/version_checker.py cleanly.
+Applied patch conans/server/rest/controllers/ping_controller.py cleanly.
+Applied patch conans/server/rest/server.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git diff > /home/swe-bench/temp_conan-io__conan-4205_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git restore conans/test/functional/remote/rest_api_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git restore conans/test/integration/version_check_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git restore conans/test/utils/server_launcher.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git restore conans/test/utils/tools.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4205_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+Checking patch conans/test/functional/remote/rest_api_test.py...
+Checking patch conans/test/integration/version_check_test.py...
+Checking patch conans/test/utils/server_launcher.py...
+Checking patch conans/test/utils/tools.py...
+Applied patch conans/test/functional/remote/rest_api_test.py cleanly.
+Applied patch conans/test/integration/version_check_test.py cleanly.
+Applied patch conans/test/utils/server_launcher.py cleanly.
+Applied patch conans/test/utils/tools.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/remote/rest_api_test.py conans/test/integration/version_check_test.py conans/test/utils/server_launcher.py conans/test/utils/tools.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/remote/rest_api_test.py conans/test/integration/version_check_test.py conans/test/utils/server_launcher.py conans/test/utils/tools.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Std. Output:
+ERROR: file or directory not found: conans/test/integration/version_check_test.py
+
+
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/remote/rest_api_test.py conans/test/integration/version_check_test.py conans/test/utils/server_launcher.py conans/test/utils/tools.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items
+
+============================ no tests ran in 0.00s =============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Return Code: 4 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4205] Test script run successful 

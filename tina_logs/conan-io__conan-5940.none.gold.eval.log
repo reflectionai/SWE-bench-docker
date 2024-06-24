@@ -1,0 +1,145 @@
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Task Metadata:
+	- Instance ID: conan-io__conan-5940
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git -c advice.detachedHead=false checkout 9b6028e604ef76895d8edd6b467693b831c44e1c 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+HEAD is now at 9b6028e60 Model system_libs in cpp_info/deps_cpp_info and generators (#5582)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git diff > /home/swe-bench/temp_conan-io__conan-5940_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5940_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+Checking patch conans/client/generators/cmake.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/generators/cmake_find_package_common.py...
+Checking patch conans/client/generators/cmake_find_package_multi.py...
+Checking patch conans/client/generators/cmake_multi.py...
+Checking patch conans/model/build_info.py...
+Applied patch conans/client/generators/cmake.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_multi.py cleanly.
+Applied patch conans/client/generators/cmake_multi.py cleanly.
+Applied patch conans/model/build_info.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git diff > /home/swe-bench/temp_conan-io__conan-5940_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-5940_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+Checking patch conans/model/build_info.py...
+Checking patch conans/client/generators/cmake_multi.py...
+Checking patch conans/client/generators/cmake_find_package_multi.py...
+Checking patch conans/client/generators/cmake_find_package_common.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/generators/cmake.py...
+Applied patch conans/model/build_info.py cleanly.
+Applied patch conans/client/generators/cmake_multi.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_multi.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_common.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/generators/cmake.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git diff > /home/swe-bench/temp_conan-io__conan-5940_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5940_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+Checking patch conans/client/generators/cmake.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/generators/cmake_find_package_common.py...
+Checking patch conans/client/generators/cmake_find_package_multi.py...
+Checking patch conans/client/generators/cmake_multi.py...
+Checking patch conans/model/build_info.py...
+Applied patch conans/client/generators/cmake.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_multi.py cleanly.
+Applied patch conans/client/generators/cmake_multi.py cleanly.
+Applied patch conans/model/build_info.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git diff > /home/swe-bench/temp_conan-io__conan-5940_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git restore conans/test/functional/generators/cmake_find_package_multi_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git restore conans/test/functional/generators/cmake_find_package_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git restore conans/test/unittests/client/generators/cmake_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git restore conans/test/unittests/model/build_info_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5940_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+Checking patch conans/test/functional/generators/cmake_find_package_multi_test.py...
+Checking patch conans/test/functional/generators/cmake_find_package_test.py...
+Checking patch conans/test/unittests/client/generators/cmake_test.py...
+Checking patch conans/test/unittests/model/build_info_test.py...
+Applied patch conans/test/functional/generators/cmake_find_package_multi_test.py cleanly.
+Applied patch conans/test/functional/generators/cmake_find_package_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/cmake_test.py cleanly.
+Applied patch conans/test/unittests/model/build_info_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/generators/cmake_find_package_multi_test.py conans/test/functional/generators/cmake_find_package_test.py conans/test/unittests/client/generators/cmake_test.py conans/test/unittests/model/build_info_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/generators/cmake_find_package_multi_test.py conans/test/functional/generators/cmake_find_package_test.py conans/test/unittests/client/generators/cmake_test.py conans/test/unittests/model/build_info_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/generators/cmake_find_package_multi_test.py conans/test/functional/generators/cmake_find_package_test.py conans/test/unittests/client/generators/cmake_test.py conans/test/unittests/model/build_info_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 4 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/generators/cmake_find_package_multi_test.py
+ERROR conans/test/functional/generators/cmake_find_package_test.py
+ERROR conans/test/unittests/client/generators/cmake_test.py
+ERROR conans/test/unittests/model/build_info_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 4 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 4 errors in 0.44s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-5940] Test script run successful 

@@ -1,0 +1,126 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Task Metadata:
+	- Instance ID: conan-io__conan-13230
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git -c advice.detachedHead=false checkout c2001bad8aa873eaf2c392ab6e3ff8b8bdfec971 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+HEAD is now at c2001bad8 remove --logger and traces (#13287)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git diff > /home/swe-bench/temp_conan-io__conan-13230_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13230_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git diff > /home/swe-bench/temp_conan-io__conan-13230_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13230_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git diff > /home/swe-bench/temp_conan-io__conan-13230_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13230_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git diff > /home/swe-bench/temp_conan-io__conan-13230_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git restore conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13230_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+Checking patch conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py...
+Applied patch conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Std. Output:
+============================= test session starts ==============================
+collected 35 items
+
+conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py . [  2%]
+..................................                                       [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_modify_environment
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_target_triple
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_invalid_target_triple
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_custom_host_triple
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_cppstd
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_fpic
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_ndebug
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config0]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config1]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config2]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config3]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config4]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config5]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config6]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config7]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config8]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config9]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config10]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config11]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config12]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_libcxx[config13]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_cxx11_abi_define
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_architecture_flag[config0]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_architecture_flag[config1]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_build_type_flag[msvc]
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_apple_arch_flag
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_apple_min_os_flag
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_crossbuild_from_macos_to_non_apple_os
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_apple_isysrootflag
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_sysrootflag
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_custom_defines
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_custom_cxxflags
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_custom_cflags
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_custom_ldflags
+PASSED conans/test/unittests/client/toolchain/autotools/autotools_toolchain_test.py::test_extra_flags_via_conf
+============================== 35 passed in 0.97s ==============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-13230] Test script run successful 

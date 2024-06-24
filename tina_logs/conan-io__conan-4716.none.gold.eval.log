@@ -1,0 +1,364 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Task Metadata:
+	- Instance ID: conan-io__conan-4716
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git -c advice.detachedHead=false checkout fabc86ae672cdc928ae421c2e32216e32ffe784e 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+HEAD is now at fabc86ae6 python requires updates (#4660)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git diff > /home/swe-bench/temp_conan-io__conan-4716_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4716_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+Checking patch conans/client/build/autotools_environment.py...
+Checking patch conans/client/build/visual_environment.py...
+Checking patch conans/client/generators/b2.py...
+Checking patch conans/client/generators/boostbuild.py...
+Checking patch conans/client/generators/cmake.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/generators/cmake_find_package.py...
+Checking patch conans/client/generators/cmake_multi.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/generators/json_generator.py...
+Checking patch conans/client/generators/make.py...
+Checking patch conans/client/generators/pkg_config.py...
+Checking patch conans/client/generators/premake.py...
+Checking patch conans/client/generators/qbs.py...
+Checking patch conans/client/generators/qmake.py...
+Checking patch conans/client/generators/scons.py...
+Checking patch conans/client/generators/text.py...
+Checking patch conans/client/generators/visualstudio.py...
+Checking patch conans/client/generators/visualstudiolegacy.py...
+Checking patch conans/client/generators/xcode.py...
+Checking patch conans/client/generators/ycm.py...
+Applied patch conans/client/build/autotools_environment.py cleanly.
+Applied patch conans/client/build/visual_environment.py cleanly.
+Applied patch conans/client/generators/b2.py cleanly.
+Applied patch conans/client/generators/boostbuild.py cleanly.
+Applied patch conans/client/generators/cmake.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package.py cleanly.
+Applied patch conans/client/generators/cmake_multi.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/generators/json_generator.py cleanly.
+Applied patch conans/client/generators/make.py cleanly.
+Applied patch conans/client/generators/pkg_config.py cleanly.
+Applied patch conans/client/generators/premake.py cleanly.
+Applied patch conans/client/generators/qbs.py cleanly.
+Applied patch conans/client/generators/qmake.py cleanly.
+Applied patch conans/client/generators/scons.py cleanly.
+Applied patch conans/client/generators/text.py cleanly.
+Applied patch conans/client/generators/visualstudio.py cleanly.
+Applied patch conans/client/generators/visualstudiolegacy.py cleanly.
+Applied patch conans/client/generators/xcode.py cleanly.
+Applied patch conans/client/generators/ycm.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git diff > /home/swe-bench/temp_conan-io__conan-4716_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4716_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+Checking patch conans/client/generators/ycm.py...
+Checking patch conans/client/generators/xcode.py...
+Checking patch conans/client/generators/visualstudiolegacy.py...
+Checking patch conans/client/generators/visualstudio.py...
+Checking patch conans/client/generators/text.py...
+Checking patch conans/client/generators/scons.py...
+Checking patch conans/client/generators/qmake.py...
+Checking patch conans/client/generators/qbs.py...
+Checking patch conans/client/generators/premake.py...
+Checking patch conans/client/generators/pkg_config.py...
+Checking patch conans/client/generators/make.py...
+Checking patch conans/client/generators/json_generator.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/generators/cmake_multi.py...
+Checking patch conans/client/generators/cmake_find_package.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/generators/cmake.py...
+Checking patch conans/client/generators/boostbuild.py...
+Checking patch conans/client/generators/b2.py...
+Checking patch conans/client/build/visual_environment.py...
+Checking patch conans/client/build/autotools_environment.py...
+Applied patch conans/client/generators/ycm.py cleanly.
+Applied patch conans/client/generators/xcode.py cleanly.
+Applied patch conans/client/generators/visualstudiolegacy.py cleanly.
+Applied patch conans/client/generators/visualstudio.py cleanly.
+Applied patch conans/client/generators/text.py cleanly.
+Applied patch conans/client/generators/scons.py cleanly.
+Applied patch conans/client/generators/qmake.py cleanly.
+Applied patch conans/client/generators/qbs.py cleanly.
+Applied patch conans/client/generators/premake.py cleanly.
+Applied patch conans/client/generators/pkg_config.py cleanly.
+Applied patch conans/client/generators/make.py cleanly.
+Applied patch conans/client/generators/json_generator.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/generators/cmake_multi.py cleanly.
+Applied patch conans/client/generators/cmake_find_package.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/generators/cmake.py cleanly.
+Applied patch conans/client/generators/boostbuild.py cleanly.
+Applied patch conans/client/generators/b2.py cleanly.
+Applied patch conans/client/build/visual_environment.py cleanly.
+Applied patch conans/client/build/autotools_environment.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git diff > /home/swe-bench/temp_conan-io__conan-4716_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4716_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+Checking patch conans/client/build/autotools_environment.py...
+Checking patch conans/client/build/visual_environment.py...
+Checking patch conans/client/generators/b2.py...
+Checking patch conans/client/generators/boostbuild.py...
+Checking patch conans/client/generators/cmake.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/generators/cmake_find_package.py...
+Checking patch conans/client/generators/cmake_multi.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/generators/json_generator.py...
+Checking patch conans/client/generators/make.py...
+Checking patch conans/client/generators/pkg_config.py...
+Checking patch conans/client/generators/premake.py...
+Checking patch conans/client/generators/qbs.py...
+Checking patch conans/client/generators/qmake.py...
+Checking patch conans/client/generators/scons.py...
+Checking patch conans/client/generators/text.py...
+Checking patch conans/client/generators/visualstudio.py...
+Checking patch conans/client/generators/visualstudiolegacy.py...
+Checking patch conans/client/generators/xcode.py...
+Checking patch conans/client/generators/ycm.py...
+Applied patch conans/client/build/autotools_environment.py cleanly.
+Applied patch conans/client/build/visual_environment.py cleanly.
+Applied patch conans/client/generators/b2.py cleanly.
+Applied patch conans/client/generators/boostbuild.py cleanly.
+Applied patch conans/client/generators/cmake.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package.py cleanly.
+Applied patch conans/client/generators/cmake_multi.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/generators/json_generator.py cleanly.
+Applied patch conans/client/generators/make.py cleanly.
+Applied patch conans/client/generators/pkg_config.py cleanly.
+Applied patch conans/client/generators/premake.py cleanly.
+Applied patch conans/client/generators/qbs.py cleanly.
+Applied patch conans/client/generators/qmake.py cleanly.
+Applied patch conans/client/generators/scons.py cleanly.
+Applied patch conans/client/generators/text.py cleanly.
+Applied patch conans/client/generators/visualstudio.py cleanly.
+Applied patch conans/client/generators/visualstudiolegacy.py cleanly.
+Applied patch conans/client/generators/xcode.py cleanly.
+Applied patch conans/client/generators/ycm.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git diff > /home/swe-bench/temp_conan-io__conan-4716_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/functional/build_helpers/autotools_environment_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/functional/build_helpers/cmake_flags_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/functional/build_helpers/visual_environment_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/functional/command/source_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/functional/generators/cmake_find_package_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/functional/generators/xcode_gcc_vs_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/functional/old/compile_helpers_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/functional/old/folders_access_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/build/autotools_environment_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/generators/b2_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/generators/boost_build_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/generators/cmake_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/generators/compiler_args_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/generators/json_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/generators/make_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/generators/pkg_config_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/client/generators/premake_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/unittests/model/build_info_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git restore conans/test/utils/conanfile.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4716_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+Checking patch conans/test/functional/build_helpers/autotools_environment_test.py...
+Checking patch conans/test/functional/build_helpers/cmake_flags_test.py...
+Checking patch conans/test/functional/build_helpers/visual_environment_test.py...
+Checking patch conans/test/functional/command/source_test.py...
+Checking patch conans/test/functional/generators/cmake_find_package_test.py...
+Checking patch conans/test/functional/generators/xcode_gcc_vs_test.py...
+Checking patch conans/test/functional/old/compile_helpers_test.py...
+Checking patch conans/test/functional/old/folders_access_test.py...
+Checking patch conans/test/unittests/client/build/autotools_environment_test.py...
+Checking patch conans/test/unittests/client/generators/b2_test.py...
+Checking patch conans/test/unittests/client/generators/boost_build_test.py...
+Checking patch conans/test/unittests/client/generators/cmake_test.py...
+Checking patch conans/test/unittests/client/generators/compiler_args_test.py...
+Checking patch conans/test/unittests/client/generators/json_test.py...
+Checking patch conans/test/unittests/client/generators/make_test.py...
+Checking patch conans/test/unittests/client/generators/pkg_config_test.py...
+Checking patch conans/test/unittests/client/generators/premake_test.py...
+Checking patch conans/test/unittests/client/generators/text_test.py...
+Checking patch conans/test/unittests/model/build_info/__init__.py...
+Checking patch conans/test/unittests/model/build_info/cppflags_test.py...
+Checking patch conans/test/unittests/model/build_info_test.py...
+Checking patch conans/test/utils/conanfile.py...
+Applied patch conans/test/functional/build_helpers/autotools_environment_test.py cleanly.
+Applied patch conans/test/functional/build_helpers/cmake_flags_test.py cleanly.
+Applied patch conans/test/functional/build_helpers/visual_environment_test.py cleanly.
+Applied patch conans/test/functional/command/source_test.py cleanly.
+Applied patch conans/test/functional/generators/cmake_find_package_test.py cleanly.
+Applied patch conans/test/functional/generators/xcode_gcc_vs_test.py cleanly.
+Applied patch conans/test/functional/old/compile_helpers_test.py cleanly.
+Applied patch conans/test/functional/old/folders_access_test.py cleanly.
+Applied patch conans/test/unittests/client/build/autotools_environment_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/b2_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/boost_build_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/cmake_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/compiler_args_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/json_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/make_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/pkg_config_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/premake_test.py cleanly.
+Applied patch conans/test/unittests/client/generators/text_test.py cleanly.
+Applied patch conans/test/unittests/model/build_info/__init__.py cleanly.
+Applied patch conans/test/unittests/model/build_info/cppflags_test.py cleanly.
+Applied patch conans/test/unittests/model/build_info_test.py cleanly.
+Applied patch conans/test/utils/conanfile.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/build_helpers/autotools_environment_test.py conans/test/functional/build_helpers/cmake_flags_test.py conans/test/functional/build_helpers/visual_environment_test.py conans/test/functional/command/source_test.py conans/test/functional/generators/cmake_find_package_test.py conans/test/functional/generators/xcode_gcc_vs_test.py conans/test/functional/old/compile_helpers_test.py conans/test/functional/old/folders_access_test.py conans/test/unittests/client/build/autotools_environment_test.py conans/test/unittests/client/generators/b2_test.py conans/test/unittests/client/generators/boost_build_test.py conans/test/unittests/client/generators/cmake_test.py conans/test/unittests/client/generators/compiler_args_test.py conans/test/unittests/client/generators/json_test.py conans/test/unittests/client/generators/make_test.py conans/test/unittests/client/generators/pkg_config_test.py conans/test/unittests/client/generators/premake_test.py conans/test/unittests/client/generators/text_test.py conans/test/unittests/model/build_info/__init__.py conans/test/unittests/model/build_info/cppflags_test.py conans/test/unittests/model/build_info_test.py conans/test/utils/conanfile.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/build_helpers/autotools_environment_test.py conans/test/functional/build_helpers/cmake_flags_test.py conans/test/functional/build_helpers/visual_environment_test.py conans/test/functional/command/source_test.py conans/test/functional/generators/cmake_find_package_test.py conans/test/functional/generators/xcode_gcc_vs_test.py conans/test/functional/old/compile_helpers_test.py conans/test/functional/old/folders_access_test.py conans/test/unittests/client/build/autotools_environment_test.py conans/test/unittests/client/generators/b2_test.py conans/test/unittests/client/generators/boost_build_test.py conans/test/unittests/client/generators/cmake_test.py conans/test/unittests/client/generators/compiler_args_test.py conans/test/unittests/client/generators/json_test.py conans/test/unittests/client/generators/make_test.py conans/test/unittests/client/generators/pkg_config_test.py conans/test/unittests/client/generators/premake_test.py conans/test/unittests/client/generators/text_test.py conans/test/unittests/model/build_info/__init__.py conans/test/unittests/model/build_info/cppflags_test.py conans/test/unittests/model/build_info_test.py conans/test/utils/conanfile.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/build_helpers/autotools_environment_test.py conans/test/functional/build_helpers/cmake_flags_test.py conans/test/functional/build_helpers/visual_environment_test.py conans/test/functional/command/source_test.py conans/test/functional/generators/cmake_find_package_test.py conans/test/functional/generators/xcode_gcc_vs_test.py conans/test/functional/old/compile_helpers_test.py conans/test/functional/old/folders_access_test.py conans/test/unittests/client/build/autotools_environment_test.py conans/test/unittests/client/generators/b2_test.py conans/test/unittests/client/generators/boost_build_test.py conans/test/unittests/client/generators/cmake_test.py conans/test/unittests/client/generators/compiler_args_test.py conans/test/unittests/client/generators/json_test.py conans/test/unittests/client/generators/make_test.py conans/test/unittests/client/generators/pkg_config_test.py conans/test/unittests/client/generators/premake_test.py conans/test/unittests/client/generators/text_test.py conans/test/unittests/model/build_info/__init__.py conans/test/unittests/model/build_info/cppflags_test.py conans/test/unittests/model/build_info_test.py conans/test/utils/conanfile.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 22 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/build_helpers/autotools_environment_test.py
+ERROR conans/test/functional/build_helpers/cmake_flags_test.py
+ERROR conans/test/functional/build_helpers/visual_environment_test.py
+ERROR conans/test/functional/command/source_test.py
+ERROR conans/test/functional/generators/cmake_find_package_test.py
+ERROR conans/test/functional/generators/xcode_gcc_vs_test.py
+ERROR conans/test/functional/old/compile_helpers_test.py
+ERROR conans/test/functional/old/folders_access_test.py
+ERROR conans/test/unittests/client/build/autotools_environment_test.py
+ERROR conans/test/unittests/client/generators/b2_test.py
+ERROR conans/test/unittests/client/generators/boost_build_test.py
+ERROR conans/test/unittests/client/generators/cmake_test.py
+ERROR conans/test/unittests/client/generators/compiler_args_test.py
+ERROR conans/test/unittests/client/generators/json_test.py
+ERROR conans/test/unittests/client/generators/make_test.py
+ERROR conans/test/unittests/client/generators/pkg_config_test.py
+ERROR conans/test/unittests/client/generators/premake_test.py
+ERROR conans/test/unittests/client/generators/text_test.py
+ERROR conans/test/unittests/model/build_info/cppflags_test.py
+ERROR conans/test/unittests/model/build_info/cppflags_test.py
+ERROR conans/test/unittests/model/build_info_test.py
+ERROR conans/test/utils/conanfile.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 22 errors during collection !!!!!!!!!!!!!!!!!!!
+============================== 22 errors in 1.53s ==============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4716] Test script run successful 

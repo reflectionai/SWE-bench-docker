@@ -1,0 +1,180 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Task Metadata:
+	- Instance ID: conan-io__conan-4714
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git -c advice.detachedHead=false checkout 823a1276179bfdfd78ac66d29b419f269536fa5f 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+HEAD is now at 823a12761 avoiding double call to package() method (#4748)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git diff > /home/swe-bench/temp_conan-io__conan-4714_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4714_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+/home/swe-bench/temp_conan-io__conan-4714_pred_try.patch:175: trailing whitespace.
+    set_property(TARGET {name}::{name} PROPERTY INTERFACE_COMPILE_OPTIONS "${{{name}_COMPILE_OPTIONS_LIST}}")   
+/home/swe-bench/temp_conan-io__conan-4714_pred_try.patch:279: trailing whitespace.
+set({name}_LINKER_FLAGS{build_type_suffix}_LIST "{deps.sharedlinkflags_list}" "{deps.exelinkflags_list}")  
+/home/swe-bench/temp_conan-io__conan-4714_pred_try.patch:286: trailing whitespace.
+mark_as_advanced({name}_INCLUDE_DIRS{build_type_suffix} 
+/home/swe-bench/temp_conan-io__conan-4714_pred_try.patch:289: trailing whitespace.
+                 {name}_LINKER_FLAGS{build_type_suffix}_LIST 
+/home/swe-bench/temp_conan-io__conan-4714_pred_try.patch:292: trailing whitespace.
+                 {name}_LIBRARIES{build_type_suffix} 
+Checking patch conans/client/build/cmake.py...
+Checking patch conans/client/build/cmake_flags.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conans/client/generators/cmake_find_package.py...
+Checking patch conans/client/generators/cmake_find_package_common.py...
+Checking patch conans/client/generators/cmake_find_package_multi.py...
+Applied patch conans/client/build/cmake.py cleanly.
+Applied patch conans/client/build/cmake_flags.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conans/client/generators/cmake_find_package.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_multi.py cleanly.
+warning: squelched 10 whitespace errors
+warning: 15 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git diff > /home/swe-bench/temp_conan-io__conan-4714_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4714_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+Checking patch conans/client/generators/cmake_find_package_multi.py...
+Checking patch conans/client/generators/cmake_find_package_common.py...
+Checking patch conans/client/generators/cmake_find_package.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conans/client/build/cmake_flags.py...
+Checking patch conans/client/build/cmake.py...
+Applied patch conans/client/generators/cmake_find_package_multi.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conans/client/build/cmake_flags.py cleanly.
+Applied patch conans/client/build/cmake.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git diff > /home/swe-bench/temp_conan-io__conan-4714_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4714_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+/home/swe-bench/temp_conan-io__conan-4714_pred.patch:175: trailing whitespace.
+    set_property(TARGET {name}::{name} PROPERTY INTERFACE_COMPILE_OPTIONS "${{{name}_COMPILE_OPTIONS_LIST}}")   
+/home/swe-bench/temp_conan-io__conan-4714_pred.patch:279: trailing whitespace.
+set({name}_LINKER_FLAGS{build_type_suffix}_LIST "{deps.sharedlinkflags_list}" "{deps.exelinkflags_list}")  
+/home/swe-bench/temp_conan-io__conan-4714_pred.patch:286: trailing whitespace.
+mark_as_advanced({name}_INCLUDE_DIRS{build_type_suffix} 
+/home/swe-bench/temp_conan-io__conan-4714_pred.patch:289: trailing whitespace.
+                 {name}_LINKER_FLAGS{build_type_suffix}_LIST 
+/home/swe-bench/temp_conan-io__conan-4714_pred.patch:292: trailing whitespace.
+                 {name}_LIBRARIES{build_type_suffix} 
+Checking patch conans/client/build/cmake.py...
+Checking patch conans/client/build/cmake_flags.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conans/client/generators/cmake_find_package.py...
+Checking patch conans/client/generators/cmake_find_package_common.py...
+Checking patch conans/client/generators/cmake_find_package_multi.py...
+Applied patch conans/client/build/cmake.py cleanly.
+Applied patch conans/client/build/cmake_flags.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conans/client/generators/cmake_find_package.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_common.py cleanly.
+Applied patch conans/client/generators/cmake_find_package_multi.py cleanly.
+warning: squelched 10 whitespace errors
+warning: 15 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git diff > /home/swe-bench/temp_conan-io__conan-4714_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git restore conans/test/utils/tools.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4714_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+/home/swe-bench/temp_conan-io__conan-4714_test.patch:202: trailing whitespace.
+                
+/home/swe-bench/temp_conan-io__conan-4714_test.patch:209: trailing whitespace.
+                
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/bye/conanfile.py...
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/CMakeLists.txt...
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.cpp...
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.h...
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/hello/conanfile.py...
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/CMakeLists.txt...
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.cpp...
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.h...
+Checking patch conans/test/functional/generators/assets/cmake_find_package_multi/project_targets/CMakeLists.txt...
+Checking patch conans/test/functional/generators/cmake_find_package_multi_test.py...
+Checking patch conans/test/utils/tools.py...
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/bye/conanfile.py cleanly.
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/CMakeLists.txt cleanly.
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.cpp cleanly.
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.h cleanly.
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/hello/conanfile.py cleanly.
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/CMakeLists.txt cleanly.
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.cpp cleanly.
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.h cleanly.
+Applied patch conans/test/functional/generators/assets/cmake_find_package_multi/project_targets/CMakeLists.txt cleanly.
+Applied patch conans/test/functional/generators/cmake_find_package_multi_test.py cleanly.
+Applied patch conans/test/utils/tools.py cleanly.
+warning: 2 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/generators/assets/cmake_find_package_multi/bye/conanfile.py conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.cpp conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.h conans/test/functional/generators/assets/cmake_find_package_multi/hello/conanfile.py conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.cpp conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.h conans/test/functional/generators/cmake_find_package_multi_test.py conans/test/utils/tools.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/generators/assets/cmake_find_package_multi/bye/conanfile.py conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.cpp conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.h conans/test/functional/generators/assets/cmake_find_package_multi/hello/conanfile.py conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.cpp conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.h conans/test/functional/generators/cmake_find_package_multi_test.py conans/test/utils/tools.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Std. Output:
+ERROR: not found: /home/swe-bench/conan-io__conan/conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.cpp
+(no name '/home/swe-bench/conan-io__conan/conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.cpp' in any of [])
+
+ERROR: not found: /home/swe-bench/conan-io__conan/conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.h
+(no name '/home/swe-bench/conan-io__conan/conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.h' in any of [])
+
+ERROR: not found: /home/swe-bench/conan-io__conan/conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.cpp
+(no name '/home/swe-bench/conan-io__conan/conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.cpp' in any of [])
+
+ERROR: not found: /home/swe-bench/conan-io__conan/conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.h
+(no name '/home/swe-bench/conan-io__conan/conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.h' in any of [])
+
+
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/generators/assets/cmake_find_package_multi/bye/conanfile.py conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.cpp conans/test/functional/generators/assets/cmake_find_package_multi/bye/src/bye.h conans/test/functional/generators/assets/cmake_find_package_multi/hello/conanfile.py conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.cpp conans/test/functional/generators/assets/cmake_find_package_multi/hello/src/hello.h conans/test/functional/generators/cmake_find_package_multi_test.py conans/test/utils/tools.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items
+
+============================ no tests ran in 0.01s =============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Return Code: 4 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4714] Test script run successful 

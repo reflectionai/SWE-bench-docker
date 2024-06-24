@@ -1,0 +1,95 @@
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Task Metadata:
+	- Instance ID: conan-io__conan-7843
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git -c advice.detachedHead=false checkout d27ac1743facf2b29b0964c5cc47762411e6aab3 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+HEAD is now at d27ac1743 Remove arbitrary or unnecessary content from make toolchain (#7942)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git diff > /home/swe-bench/temp_conan-io__conan-7843_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git apply -v /home/swe-bench/temp_conan-io__conan-7843_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+Checking patch conans/client/toolchain/cmake/android.py...
+Applied patch conans/client/toolchain/cmake/android.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git diff > /home/swe-bench/temp_conan-io__conan-7843_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-7843_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+Checking patch conans/client/toolchain/cmake/android.py...
+Applied patch conans/client/toolchain/cmake/android.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git diff > /home/swe-bench/temp_conan-io__conan-7843_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git apply -v /home/swe-bench/temp_conan-io__conan-7843_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+Checking patch conans/client/toolchain/cmake/android.py...
+Applied patch conans/client/toolchain/cmake/android.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git diff > /home/swe-bench/temp_conan-io__conan-7843_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: git apply -v /home/swe-bench/temp_conan-io__conan-7843_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+Checking patch conans/test/integration/toolchains/__init__.py...
+Checking patch conans/test/integration/toolchains/android/__init__.py...
+Checking patch conans/test/integration/toolchains/android/_utils.py...
+Checking patch conans/test/integration/toolchains/android/test_using_cmake.py...
+Applied patch conans/test/integration/toolchains/__init__.py cleanly.
+Applied patch conans/test/integration/toolchains/android/__init__.py cleanly.
+Applied patch conans/test/integration/toolchains/android/_utils.py cleanly.
+Applied patch conans/test/integration/toolchains/android/test_using_cmake.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/__init__.py conans/test/integration/toolchains/android/__init__.py conans/test/integration/toolchains/android/_utils.py conans/test/integration/toolchains/android/test_using_cmake.py;
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/__init__.py conans/test/integration/toolchains/android/__init__.py conans/test/integration/toolchains/android/_utils.py conans/test/integration/toolchains/android/test_using_cmake.py 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/__init__.py conans/test/integration/toolchains/android/__init__.py conans/test/integration/toolchains/android/_utils.py conans/test/integration/toolchains/android/test_using_cmake.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 4 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/integration/toolchains/android/test_using_cmake.py
+ERROR conans/test/integration/toolchains/android/_utils.py
+ERROR conans/test/integration/toolchains/android/_utils.py
+ERROR conans/test/integration/toolchains/android/test_using_cmake.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 4 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 4 errors in 0.48s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-7843] Test script run successful 

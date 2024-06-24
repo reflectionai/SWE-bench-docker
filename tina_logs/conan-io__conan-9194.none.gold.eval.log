@@ -1,0 +1,233 @@
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Task Metadata:
+	- Instance ID: conan-io__conan-9194
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git -c advice.detachedHead=false checkout 1ba594cc8597093d6c2e60eaf7d393890548eb5f 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+HEAD is now at 1ba594cc8 Environment Automanage (#9161)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git diff > /home/swe-bench/temp_conan-io__conan-9194_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git apply -v /home/swe-bench/temp_conan-io__conan-9194_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+Checking patch conan/tools/cmake/toolchain.py...
+Checking patch conan/tools/env/environment.py...
+Checking patch conan/tools/env/virtualbuildenv.py...
+Checking patch conan/tools/env/virtualrunenv.py...
+Checking patch conan/tools/gnu/autotools.py...
+Checking patch conan/tools/gnu/autotoolsdeps.py...
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Checking patch conan/tools/gnu/gnudeps_flags.py...
+Checking patch conan/tools/meson/toolchain.py...
+Checking patch conan/tools/microsoft/__init__.py...
+Checking patch conan/tools/microsoft/msbuild.py...
+Checking patch conan/tools/microsoft/subsystems.py...
+Checking patch conan/tools/microsoft/toolchain.py...
+Checking patch conan/tools/microsoft/visual.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conans/model/conan_file.py...
+Applied patch conan/tools/cmake/toolchain.py cleanly.
+Applied patch conan/tools/env/environment.py cleanly.
+Applied patch conan/tools/env/virtualbuildenv.py cleanly.
+Applied patch conan/tools/env/virtualrunenv.py cleanly.
+Applied patch conan/tools/gnu/autotools.py cleanly.
+Applied patch conan/tools/gnu/autotoolsdeps.py cleanly.
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+Applied patch conan/tools/gnu/gnudeps_flags.py cleanly.
+Applied patch conan/tools/meson/toolchain.py cleanly.
+Applied patch conan/tools/microsoft/__init__.py cleanly.
+Applied patch conan/tools/microsoft/msbuild.py cleanly.
+Applied patch conan/tools/microsoft/subsystems.py cleanly.
+Applied patch conan/tools/microsoft/toolchain.py cleanly.
+Applied patch conan/tools/microsoft/visual.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conans/model/conan_file.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git diff > /home/swe-bench/temp_conan-io__conan-9194_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-9194_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+Checking patch conans/model/conan_file.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conan/tools/microsoft/visual.py...
+Checking patch conan/tools/microsoft/toolchain.py...
+Checking patch conan/tools/microsoft/subsystems.py...
+Checking patch conan/tools/microsoft/msbuild.py...
+Checking patch conan/tools/microsoft/__init__.py...
+Checking patch conan/tools/meson/toolchain.py...
+Checking patch conan/tools/gnu/gnudeps_flags.py...
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Checking patch conan/tools/gnu/autotoolsdeps.py...
+Checking patch conan/tools/gnu/autotools.py...
+Checking patch conan/tools/env/virtualrunenv.py...
+Checking patch conan/tools/env/virtualbuildenv.py...
+Checking patch conan/tools/env/environment.py...
+Checking patch conan/tools/cmake/toolchain.py...
+Applied patch conans/model/conan_file.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conan/tools/microsoft/visual.py cleanly.
+Applied patch conan/tools/microsoft/toolchain.py cleanly.
+Applied patch conan/tools/microsoft/subsystems.py cleanly.
+Applied patch conan/tools/microsoft/msbuild.py cleanly.
+Applied patch conan/tools/microsoft/__init__.py cleanly.
+Applied patch conan/tools/meson/toolchain.py cleanly.
+Applied patch conan/tools/gnu/gnudeps_flags.py cleanly.
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+Applied patch conan/tools/gnu/autotoolsdeps.py cleanly.
+Applied patch conan/tools/gnu/autotools.py cleanly.
+Applied patch conan/tools/env/virtualrunenv.py cleanly.
+Applied patch conan/tools/env/virtualbuildenv.py cleanly.
+Applied patch conan/tools/env/environment.py cleanly.
+Applied patch conan/tools/cmake/toolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git diff > /home/swe-bench/temp_conan-io__conan-9194_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git apply -v /home/swe-bench/temp_conan-io__conan-9194_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+Checking patch conan/tools/cmake/toolchain.py...
+Checking patch conan/tools/env/environment.py...
+Checking patch conan/tools/env/virtualbuildenv.py...
+Checking patch conan/tools/env/virtualrunenv.py...
+Checking patch conan/tools/gnu/autotools.py...
+Checking patch conan/tools/gnu/autotoolsdeps.py...
+Checking patch conan/tools/gnu/autotoolstoolchain.py...
+Checking patch conan/tools/gnu/gnudeps_flags.py...
+Checking patch conan/tools/meson/toolchain.py...
+Checking patch conan/tools/microsoft/__init__.py...
+Checking patch conan/tools/microsoft/msbuild.py...
+Checking patch conan/tools/microsoft/subsystems.py...
+Checking patch conan/tools/microsoft/toolchain.py...
+Checking patch conan/tools/microsoft/visual.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conans/model/conan_file.py...
+Applied patch conan/tools/cmake/toolchain.py cleanly.
+Applied patch conan/tools/env/environment.py cleanly.
+Applied patch conan/tools/env/virtualbuildenv.py cleanly.
+Applied patch conan/tools/env/virtualrunenv.py cleanly.
+Applied patch conan/tools/gnu/autotools.py cleanly.
+Applied patch conan/tools/gnu/autotoolsdeps.py cleanly.
+Applied patch conan/tools/gnu/autotoolstoolchain.py cleanly.
+Applied patch conan/tools/gnu/gnudeps_flags.py cleanly.
+Applied patch conan/tools/meson/toolchain.py cleanly.
+Applied patch conan/tools/microsoft/__init__.py cleanly.
+Applied patch conan/tools/microsoft/msbuild.py cleanly.
+Applied patch conan/tools/microsoft/subsystems.py cleanly.
+Applied patch conan/tools/microsoft/toolchain.py cleanly.
+Applied patch conan/tools/microsoft/visual.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conans/model/conan_file.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git diff > /home/swe-bench/temp_conan-io__conan-9194_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git restore conans/test/functional/toolchains/cmake/test_shared_cmake.py 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git restore conans/test/functional/toolchains/gnu/autotools/test_basic.py 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git restore conans/test/functional/utils.py 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git restore conans/test/integration/environment/test_env.py 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git restore conans/test/unittests/tools/env/test_env.py 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git restore conans/test/utils/mocks.py 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: git apply -v /home/swe-bench/temp_conan-io__conan-9194_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+Checking patch conans/test/functional/toolchains/cmake/test_shared_cmake.py...
+Checking patch conans/test/functional/toolchains/gnu/autotools/test_basic.py...
+Checking patch conans/test/functional/toolchains/gnu/autotools/test_win_bash.py...
+Checking patch conans/test/functional/utils.py...
+Checking patch conans/test/integration/environment/test_env.py...
+Checking patch conans/test/integration/toolchains/env/test_virtualenv_winbash.py...
+Checking patch conans/test/unittests/tools/env/test_env.py...
+Checking patch conans/test/utils/mocks.py...
+Applied patch conans/test/functional/toolchains/cmake/test_shared_cmake.py cleanly.
+Applied patch conans/test/functional/toolchains/gnu/autotools/test_basic.py cleanly.
+Applied patch conans/test/functional/toolchains/gnu/autotools/test_win_bash.py cleanly.
+Applied patch conans/test/functional/utils.py cleanly.
+Applied patch conans/test/integration/environment/test_env.py cleanly.
+Applied patch conans/test/integration/toolchains/env/test_virtualenv_winbash.py cleanly.
+Applied patch conans/test/unittests/tools/env/test_env.py cleanly.
+Applied patch conans/test/utils/mocks.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/cmake/test_shared_cmake.py conans/test/functional/toolchains/gnu/autotools/test_basic.py conans/test/functional/toolchains/gnu/autotools/test_win_bash.py conans/test/functional/utils.py conans/test/integration/environment/test_env.py conans/test/integration/toolchains/env/test_virtualenv_winbash.py conans/test/unittests/tools/env/test_env.py conans/test/utils/mocks.py;
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/cmake/test_shared_cmake.py conans/test/functional/toolchains/gnu/autotools/test_basic.py conans/test/functional/toolchains/gnu/autotools/test_win_bash.py conans/test/functional/utils.py conans/test/integration/environment/test_env.py conans/test/integration/toolchains/env/test_virtualenv_winbash.py conans/test/unittests/tools/env/test_env.py conans/test/utils/mocks.py 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Std. Output:
+ImportError while loading conftest '/home/swe-bench/conan-io__conan/conans/test/conftest.py'.
+conans/__init__.py:1: in <module>
+    from conans.client.build.autotools_environment import AutoToolsBuildEnvironment
+conans/client/build/autotools_environment.py:6: in <module>
+    from conans.client.build.compiler_flags import (architecture_flag, build_type_define,
+conans/client/build/compiler_flags.py:13: in <module>
+    from conans.client.tools.apple import to_apple_arch
+conans/client/tools/__init__.py:12: in <module>
+    from .net import *
+conans/client/tools/net.py:3: in <module>
+    from conans.client.downloaders.download import run_downloader
+conans/client/downloaders/download.py:1: in <module>
+    from conans.client.downloaders.cached_file_downloader import CachedFileDownloader
+conans/client/downloaders/cached_file_downloader.py:8: in <module>
+    from conans.client.downloaders.file_downloader import check_checksum
+conans/client/downloaders/file_downloader.py:12: in <module>
+    from conans.util import progress_bar
+conans/util/progress_bar.py:5: in <module>
+    from tqdm import tqdm
+E   ModuleNotFoundError: No module named 'tqdm'
+
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/cmake/test_shared_cmake.py conans/test/functional/toolchains/gnu/autotools/test_basic.py conans/test/functional/toolchains/gnu/autotools/test_win_bash.py conans/test/functional/utils.py conans/test/integration/environment/test_env.py conans/test/integration/toolchains/env/test_virtualenv_winbash.py conans/test/unittests/tools/env/test_env.py conans/test/utils/mocks.py` failed. (See above for error)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Return Code: 4 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-9194] Test script run successful 

@@ -1,0 +1,92 @@
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Task Metadata:
+	- Instance ID: conan-io__conan-8952
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git -c advice.detachedHead=false checkout 9b678d32beda0f3823511f1140be6873f2df2dad 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+HEAD is now at 9b678d32b rename reference=>requires (#10721)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git diff > /home/swe-bench/temp_conan-io__conan-8952_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git apply -v /home/swe-bench/temp_conan-io__conan-8952_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+Checking patch conans/server/crypto/jwt/jwt_manager.py...
+Applied patch conans/server/crypto/jwt/jwt_manager.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git diff > /home/swe-bench/temp_conan-io__conan-8952_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-8952_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+Checking patch conans/server/crypto/jwt/jwt_manager.py...
+Applied patch conans/server/crypto/jwt/jwt_manager.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git diff > /home/swe-bench/temp_conan-io__conan-8952_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git apply -v /home/swe-bench/temp_conan-io__conan-8952_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+Checking patch conans/server/crypto/jwt/jwt_manager.py...
+Applied patch conans/server/crypto/jwt/jwt_manager.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git diff > /home/swe-bench/temp_conan-io__conan-8952_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git restore conans/test/unittests/server/crypto/jwt_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: git apply -v /home/swe-bench/temp_conan-io__conan-8952_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+Checking patch conans/test/unittests/server/crypto/jwt_test.py...
+Applied patch conans/test/unittests/server/crypto/jwt_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/server/crypto/jwt_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/server/crypto/jwt_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Std. Output:
+============================= test session starts ==============================
+collected 2 items
+
+conans/test/unittests/server/crypto/jwt_test.py ..                       [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/unittests/server/crypto/jwt_test.py::JwtTest::test_jwt_credentials_manager
+PASSED conans/test/unittests/server/crypto/jwt_test.py::JwtTest::test_jwt_manager
+============================== 2 passed in 2.08s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-8952] Test script run successful 

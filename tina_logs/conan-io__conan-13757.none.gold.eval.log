@@ -1,0 +1,201 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Task Metadata:
+	- Instance ID: conan-io__conan-13757
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git -c advice.detachedHead=false checkout a8074a2be4f7e48b328ced4417846a1b318a925e 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+HEAD is now at a8074a2be Feature/pkg list (#13928)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git diff > /home/swe-bench/temp_conan-io__conan-13757_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13757_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+Checking patch conan/api/subapi/install.py...
+Checking patch conan/cli/commands/graph.py...
+Checking patch conan/cli/commands/install.py...
+Checking patch conan/internal/deploy.py...
+Applied patch conan/api/subapi/install.py cleanly.
+Applied patch conan/cli/commands/graph.py cleanly.
+Applied patch conan/cli/commands/install.py cleanly.
+Applied patch conan/internal/deploy.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git diff > /home/swe-bench/temp_conan-io__conan-13757_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13757_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+Checking patch conan/internal/deploy.py...
+Checking patch conan/cli/commands/install.py...
+Checking patch conan/cli/commands/graph.py...
+Checking patch conan/api/subapi/install.py...
+Applied patch conan/internal/deploy.py cleanly.
+Applied patch conan/cli/commands/install.py cleanly.
+Applied patch conan/cli/commands/graph.py cleanly.
+Applied patch conan/api/subapi/install.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git diff > /home/swe-bench/temp_conan-io__conan-13757_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13757_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+Checking patch conan/api/subapi/install.py...
+Checking patch conan/cli/commands/graph.py...
+Checking patch conan/cli/commands/install.py...
+Checking patch conan/internal/deploy.py...
+Applied patch conan/api/subapi/install.py cleanly.
+Applied patch conan/cli/commands/graph.py cleanly.
+Applied patch conan/cli/commands/install.py cleanly.
+Applied patch conan/internal/deploy.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git diff > /home/swe-bench/temp_conan-io__conan-13757_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git restore conans/test/functional/command/test_install_deploy.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git restore conans/test/functional/toolchains/cmake/test_ninja.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git restore conans/test/integration/command/info/info_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git restore conans/test/integration/symlinks/symlinks_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13757_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+Checking patch conans/test/functional/command/test_install_deploy.py...
+Checking patch conans/test/functional/toolchains/cmake/test_ninja.py...
+Checking patch conans/test/integration/command/info/info_test.py...
+Checking patch conans/test/integration/symlinks/symlinks_test.py...
+Applied patch conans/test/functional/command/test_install_deploy.py cleanly.
+Applied patch conans/test/functional/toolchains/cmake/test_ninja.py cleanly.
+Applied patch conans/test/integration/command/info/info_test.py cleanly.
+Applied patch conans/test/integration/symlinks/symlinks_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/test_install_deploy.py conans/test/functional/toolchains/cmake/test_ninja.py conans/test/integration/command/info/info_test.py conans/test/integration/symlinks/symlinks_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/test_install_deploy.py conans/test/functional/toolchains/cmake/test_ninja.py conans/test/integration/command/info/info_test.py conans/test/integration/symlinks/symlinks_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/test_install_deploy.py conans/test/functional/toolchains/cmake/test_ninja.py conans/test/integration/command/info/info_test.py conans/test/integration/symlinks/symlinks_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 49 items
+
+conans/test/functional/command/test_install_deploy.py EE.........        [ 22%]
+conans/test/functional/toolchains/cmake/test_ninja.py EEssssssss         [ 42%]
+conans/test/integration/command/info/info_test.py ..................     [ 79%]
+conans/test/integration/symlinks/symlinks_test.py ..........             [100%]
+
+=============================== warnings summary ===============================
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/functional/command/test_install_deploy.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/functional/toolchains/cmake/test_ninja.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/integration/command/info/info_test.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:244
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:244: PytestCollectionWarning: cannot collect test class 'TestServer' because it has a __init__ constructor (from: conans/test/integration/symlinks/symlinks_test.py)
+    class TestServer(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/integration/symlinks/symlinks_test.py)
+    class TestClient(object):
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+PASSED conans/test/functional/command/test_install_deploy.py::test_copy_files_deploy
+PASSED conans/test/functional/command/test_install_deploy.py::test_multi_deploy
+PASSED conans/test/functional/command/test_install_deploy.py::test_deploy_local_import
+PASSED conans/test/functional/command/test_install_deploy.py::test_builtin_full_deploy
+PASSED conans/test/functional/command/test_install_deploy.py::test_deploy_reference
+PASSED conans/test/functional/command/test_install_deploy.py::test_deploy_overwrite
+PASSED conans/test/functional/command/test_install_deploy.py::test_deploy_editable
+PASSED conans/test/functional/command/test_install_deploy.py::test_deploy_single_package
+PASSED conans/test/functional/command/test_install_deploy.py::test_deploy_output_locations
+PASSED conans/test/integration/command/info/info_test.py::TestBasicCliOutput::test_info_settings
+PASSED conans/test/integration/command/info/info_test.py::TestBasicCliOutput::test_nontuple_topics
+PASSED conans/test/integration/command/info/info_test.py::TestConanfilePath::test_cwd
+PASSED conans/test/integration/command/info/info_test.py::TestConanfilePath::test_wrong_path_parameter
+PASSED conans/test/integration/command/info/info_test.py::TestFilters::test_filter_fields
+PASSED conans/test/integration/command/info/info_test.py::TestFilters::test_filter_fields_json
+PASSED conans/test/integration/command/info/info_test.py::TestJsonOutput::test_json_package_filter
+PASSED conans/test/integration/command/info/info_test.py::TestJsonOutput::test_json_info_outputs
+PASSED conans/test/integration/command/info/info_test.py::TestAdvancedCliOutput::test_python_requires
+PASSED conans/test/integration/command/info/info_test.py::TestAdvancedCliOutput::test_build_id_info
+PASSED conans/test/integration/command/info/info_test.py::TestEditables::test_info_paths
+PASSED conans/test/integration/command/info/info_test.py::TestInfoRevisions::test_info_command_showing_revision
+PASSED conans/test/integration/command/info/info_test.py::TestInfoTestPackage::test_tested_reference_str
+PASSED conans/test/integration/command/info/info_test.py::TestDeployers::test_custom_deploy
+PASSED conans/test/integration/command/info/info_test.py::TestErrorsInGraph::test_error_in_recipe
+PASSED conans/test/integration/command/info/info_test.py::TestErrorsInGraph::test_error_exports
+PASSED conans/test/integration/command/info/info_test.py::TestInfoUpdate::test_update
+PASSED conans/test/integration/command/info/info_test.py::test_info_not_hit_server
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_complete_round_trip
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_complete_round_trip_broken_link
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_complete_round_trip_external_link
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_complete_round_trip_folders
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_package_with_symlinks[package_files0]
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_package_with_symlinks[package_files1]
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_package_with_symlinks[package_files2]
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_package_with_symlinks[package_files3]
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_exports_does_not_follow_symlink
+PASSED conans/test/integration/symlinks/symlinks_test.py::test_package_symlinks_zero_size
+SKIPPED [2] conans/test/functional/toolchains/cmake/test_ninja.py:87: Only windows
+SKIPPED [1] conans/test/functional/toolchains/cmake/test_ninja.py:119: Only windows
+SKIPPED [2] conans/test/functional/toolchains/cmake/test_ninja.py:153: Only windows
+SKIPPED [2] conans/test/functional/toolchains/cmake/test_ninja.py:178: Requires apple-clang
+SKIPPED [1] conans/test/functional/toolchains/cmake/test_ninja.py:199: Only windows
+ERROR conans/test/functional/command/test_install_deploy.py::test_install_deploy
+ERROR conans/test/functional/command/test_install_deploy.py::test_install_full_deploy_layout
+ERROR conans/test/functional/toolchains/cmake/test_ninja.py::test_locally_build_linux[Release-False]
+ERROR conans/test/functional/toolchains/cmake/test_ninja.py::test_locally_build_linux[Debug-True]
+============= 37 passed, 8 skipped, 5 warnings, 4 errors in 49.06s =============
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-13757] Test script run successful 

@@ -1,0 +1,207 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Task Metadata:
+	- Instance ID: conan-io__conan-13622
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git -c advice.detachedHead=false checkout 425cbcc72538121ca9dede55350f330ecce3595c 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+HEAD is now at 425cbcc72 Add `-d tool_requires` to `conan new` (#13608)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git diff > /home/swe-bench/temp_conan-io__conan-13622_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13622_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+Checking patch conan/cli/commands/remove.py...
+Applied patch conan/cli/commands/remove.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git diff > /home/swe-bench/temp_conan-io__conan-13622_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13622_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+Checking patch conan/cli/commands/remove.py...
+Applied patch conan/cli/commands/remove.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git diff > /home/swe-bench/temp_conan-io__conan-13622_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13622_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+Checking patch conan/cli/commands/remove.py...
+Applied patch conan/cli/commands/remove.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git diff > /home/swe-bench/temp_conan-io__conan-13622_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git restore conans/test/integration/command/remove_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git restore conans/test/integration/settings/settings_override_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13622_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+Checking patch conans/test/integration/command/remove_test.py...
+Checking patch conans/test/integration/settings/settings_override_test.py...
+Applied patch conans/test/integration/command/remove_test.py cleanly.
+Applied patch conans/test/integration/settings/settings_override_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/command/remove_test.py conans/test/integration/settings/settings_override_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/command/remove_test.py conans/test/integration/settings/settings_override_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Std. Output:
+============================= test session starts ==============================
+collected 107 items
+
+conans/test/integration/command/remove_test.py ......................... [ 23%]
+........................................................................ [ 90%]
+......                                                                   [ 96%]
+conans/test/integration/settings/settings_override_test.py ....          [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/command/remove_test.py::RemoveWithoutUserChannel::test_local
+PASSED conans/test/integration/command/remove_test.py::RemoveWithoutUserChannel::test_remote
+PASSED conans/test/integration/command/remove_test.py::RemovePackageRevisionsTest::test_remove_all_packages_but_the_recipe_at_remote
+PASSED conans/test/integration/command/remove_test.py::RemovePackageRevisionsTest::test_remove_local_package_id_argument
+PASSED conans/test/integration/command/remove_test.py::RemovePackageRevisionsTest::test_remove_local_package_id_reference
+PASSED conans/test/integration/command/remove_test.py::RemovePackageRevisionsTest::test_remove_remote_package_id_reference
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data0-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data0-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data1-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data1-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data2-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data2-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data3-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data3-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data4-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data4-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data5-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data5-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data6-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data6-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data7-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data7-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data8-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data8-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data9-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data9-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data10-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data10-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data11-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data11-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data12-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data12-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data13-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data13-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data14-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data14-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data15-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipes_expressions[data15-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data0-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data0-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data1-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data1-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data2-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data2-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data3-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data3-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data4-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data4-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data5-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data5-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data6-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_recipe_revisions_expressions[data6-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data0-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data0-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data1-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data1-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data2-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data2-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data3-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data3-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data4-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data4-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data5-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data5-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data6-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data6-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data7-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data7-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data8-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data8-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data9-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data9-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data10-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data10-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data11-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data11-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data12-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data12-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data13-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data13-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data14-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data14-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data15-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_expressions[data15-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data0-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data0-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data1-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data1-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data2-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data2-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data3-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data3-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data4-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data4-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data5-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data5-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data6-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data6-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data7-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data7-False]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data8-True]
+PASSED conans/test/integration/command/remove_test.py::test_new_remove_package_revisions_expressions[data8-False]
+PASSED conans/test/integration/command/remove_test.py::test_package_query_no_package_ref
+PASSED conans/test/integration/settings/settings_override_test.py::test_override
+PASSED conans/test/integration/settings/settings_override_test.py::test_non_existing_setting
+PASSED conans/test/integration/settings/settings_override_test.py::test_override_in_non_existing_recipe
+PASSED conans/test/integration/settings/settings_override_test.py::test_exclude_patterns_settings
+======================== 107 passed in 65.13s (0:01:05) ========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-13622] Test script run successful 

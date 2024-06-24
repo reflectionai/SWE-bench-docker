@@ -1,0 +1,557 @@
+[conan-io__conan__1.60.2] [conan-io__conan-136] Task Metadata:
+	- Instance ID: conan-io__conan-136
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git -c advice.detachedHead=false checkout 1baaa1dd474f499ee97f0d74df6e95c27b1d34db 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+HEAD is now at 1baaa1dd4 Merge branch 'release/0.6'
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git diff > /home/swe-bench/temp_conan-io__conan-136_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git apply -v /home/swe-bench/temp_conan-io__conan-136_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+/home/swe-bench/temp_conan-io__conan-136_pred_try.patch:1263: trailing whitespace.
+        self.include_paths = delimiter.join('"%s"' % p.replace("\\", "/") 
+/home/swe-bench/temp_conan-io__conan-136_pred_try.patch:1265: trailing whitespace.
+        self.lib_paths = delimiter.join('"%s"' % p.replace("\\", "/") 
+/home/swe-bench/temp_conan-io__conan-136_pred_try.patch:1272: trailing whitespace.
+        self.sharedlinkflags = delimiter.join('"%s"' % d 
+/home/swe-bench/temp_conan-io__conan-136_pred_try.patch:1274: trailing whitespace.
+        self.sharedlinkflags += delimiter.join('"%s"' % d 
+/home/swe-bench/temp_conan-io__conan-136_pred_try.patch:1276: trailing whitespace.
+        self.bin_paths = delimiter.join('"%s"' % p.replace("\\", "/") 
+Checking patch conans/__init__.py...
+Checking patch conans/client/cmake.py...
+Checking patch conans/client/command.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/export.py...
+Checking patch conans/client/file_copier.py...
+Checking patch conans/client/generators.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conans/client/generators/cmake.py...
+Checking patch conans/client/generators/gcc.py...
+Checking patch conans/client/generators/qbs.py...
+Checking patch conans/client/generators/qmake.py...
+Checking patch conans/client/generators/text.py...
+Checking patch conans/client/generators/visualstudio.py...
+Checking patch conans/client/generators/xcode.py...
+Checking patch conans/client/generators/ycm.py...
+Checking patch conans/client/importer.py...
+Checking patch conans/client/installer.py...
+Checking patch conans/client/loader.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/client/migrations.py...
+Checking patch conans/client/output.py...
+Checking patch conans/client/package_copier.py...
+Checking patch conans/client/packager.py...
+Checking patch conans/client/printer.py...
+Checking patch conans/client/remote_manager.py...
+Checking patch conans/client/runner.py...
+Checking patch conans/model/__init__.py...
+Checking patch conans/model/conan_file.py...
+Checking patch conans/model/conan_generator.py...
+Checking patch conans/model/manifest.py...
+Checking patch conans/model/ref.py...
+Checking patch conans/paths.py...
+Checking patch conans/server/conf/__init__.py...
+Checking patch conans/tools.py...
+Checking patch conans/util/files.py...
+Applied patch conans/__init__.py cleanly.
+Applied patch conans/client/cmake.py cleanly.
+Applied patch conans/client/command.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/export.py cleanly.
+Applied patch conans/client/file_copier.py cleanly.
+Applied patch conans/client/generators.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conans/client/generators/cmake.py cleanly.
+Applied patch conans/client/generators/gcc.py cleanly.
+Applied patch conans/client/generators/qbs.py cleanly.
+Applied patch conans/client/generators/qmake.py cleanly.
+Applied patch conans/client/generators/text.py cleanly.
+Applied patch conans/client/generators/visualstudio.py cleanly.
+Applied patch conans/client/generators/xcode.py cleanly.
+Applied patch conans/client/generators/ycm.py cleanly.
+Applied patch conans/client/importer.py cleanly.
+Applied patch conans/client/installer.py cleanly.
+Applied patch conans/client/loader.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/client/migrations.py cleanly.
+Applied patch conans/client/output.py cleanly.
+Applied patch conans/client/package_copier.py cleanly.
+Applied patch conans/client/packager.py cleanly.
+Applied patch conans/client/printer.py cleanly.
+Applied patch conans/client/remote_manager.py cleanly.
+Applied patch conans/client/runner.py cleanly.
+Applied patch conans/model/__init__.py cleanly.
+Applied patch conans/model/conan_file.py cleanly.
+Applied patch conans/model/conan_generator.py cleanly.
+Applied patch conans/model/manifest.py cleanly.
+Applied patch conans/model/ref.py cleanly.
+Applied patch conans/paths.py cleanly.
+Applied patch conans/server/conf/__init__.py cleanly.
+Applied patch conans/tools.py cleanly.
+Applied patch conans/util/files.py cleanly.
+warning: squelched 3 whitespace errors
+warning: 8 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git diff > /home/swe-bench/temp_conan-io__conan-136_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-136_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+/home/swe-bench/temp_conan-io__conan-136_pred_try.patch:1917: trailing whitespace.
+        raise ConanException('''Can't find a '%s' package for the specified options and settings. 
+/home/swe-bench/temp_conan-io__conan-136_pred_try.patch:2947: trailing whitespace.
+    """Case sensitive, for windows, optional 
+Checking patch conans/util/files.py...
+Checking patch conans/tools.py...
+Checking patch conans/server/conf/__init__.py...
+Checking patch conans/paths.py...
+Checking patch conans/model/ref.py...
+Checking patch conans/model/manifest.py...
+Checking patch conans/model/conan_generator.py...
+Checking patch conans/model/conan_file.py...
+Checking patch conans/model/__init__.py...
+Checking patch conans/client/runner.py...
+Checking patch conans/client/remote_manager.py...
+Checking patch conans/client/printer.py...
+Checking patch conans/client/packager.py...
+Checking patch conans/client/package_copier.py...
+Checking patch conans/client/output.py...
+Checking patch conans/client/migrations.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/client/loader.py...
+Checking patch conans/client/installer.py...
+Checking patch conans/client/importer.py...
+Checking patch conans/client/generators/ycm.py...
+Checking patch conans/client/generators/xcode.py...
+Checking patch conans/client/generators/visualstudio.py...
+Checking patch conans/client/generators/text.py...
+Checking patch conans/client/generators/qmake.py...
+Checking patch conans/client/generators/qbs.py...
+Checking patch conans/client/generators/gcc.py...
+Checking patch conans/client/generators/cmake.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conans/client/generators.py...
+Checking patch conans/client/file_copier.py...
+Checking patch conans/client/export.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/command.py...
+Checking patch conans/client/cmake.py...
+Checking patch conans/__init__.py...
+Applied patch conans/util/files.py cleanly.
+Applied patch conans/tools.py cleanly.
+Applied patch conans/server/conf/__init__.py cleanly.
+Applied patch conans/paths.py cleanly.
+Applied patch conans/model/ref.py cleanly.
+Applied patch conans/model/manifest.py cleanly.
+Applied patch conans/model/conan_generator.py cleanly.
+Applied patch conans/model/conan_file.py cleanly.
+Applied patch conans/model/__init__.py cleanly.
+Applied patch conans/client/runner.py cleanly.
+Applied patch conans/client/remote_manager.py cleanly.
+Applied patch conans/client/printer.py cleanly.
+Applied patch conans/client/packager.py cleanly.
+Applied patch conans/client/package_copier.py cleanly.
+Applied patch conans/client/output.py cleanly.
+Applied patch conans/client/migrations.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/client/loader.py cleanly.
+Applied patch conans/client/installer.py cleanly.
+Applied patch conans/client/importer.py cleanly.
+Applied patch conans/client/generators/ycm.py cleanly.
+Applied patch conans/client/generators/xcode.py cleanly.
+Applied patch conans/client/generators/visualstudio.py cleanly.
+Applied patch conans/client/generators/text.py cleanly.
+Applied patch conans/client/generators/qmake.py cleanly.
+Applied patch conans/client/generators/qbs.py cleanly.
+Applied patch conans/client/generators/gcc.py cleanly.
+Applied patch conans/client/generators/cmake.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conans/client/generators.py cleanly.
+Applied patch conans/client/file_copier.py cleanly.
+Applied patch conans/client/export.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/command.py cleanly.
+Applied patch conans/client/cmake.py cleanly.
+Applied patch conans/__init__.py cleanly.
+warning: 2 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git diff > /home/swe-bench/temp_conan-io__conan-136_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git apply -v /home/swe-bench/temp_conan-io__conan-136_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+/home/swe-bench/temp_conan-io__conan-136_pred.patch:1263: trailing whitespace.
+        self.include_paths = delimiter.join('"%s"' % p.replace("\\", "/") 
+/home/swe-bench/temp_conan-io__conan-136_pred.patch:1265: trailing whitespace.
+        self.lib_paths = delimiter.join('"%s"' % p.replace("\\", "/") 
+/home/swe-bench/temp_conan-io__conan-136_pred.patch:1272: trailing whitespace.
+        self.sharedlinkflags = delimiter.join('"%s"' % d 
+/home/swe-bench/temp_conan-io__conan-136_pred.patch:1274: trailing whitespace.
+        self.sharedlinkflags += delimiter.join('"%s"' % d 
+/home/swe-bench/temp_conan-io__conan-136_pred.patch:1276: trailing whitespace.
+        self.bin_paths = delimiter.join('"%s"' % p.replace("\\", "/") 
+Checking patch conans/__init__.py...
+Checking patch conans/client/cmake.py...
+Checking patch conans/client/command.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/export.py...
+Checking patch conans/client/file_copier.py...
+Checking patch conans/client/generators.py...
+Checking patch conans/client/generators/__init__.py...
+Checking patch conans/client/generators/cmake.py...
+Checking patch conans/client/generators/gcc.py...
+Checking patch conans/client/generators/qbs.py...
+Checking patch conans/client/generators/qmake.py...
+Checking patch conans/client/generators/text.py...
+Checking patch conans/client/generators/visualstudio.py...
+Checking patch conans/client/generators/xcode.py...
+Checking patch conans/client/generators/ycm.py...
+Checking patch conans/client/importer.py...
+Checking patch conans/client/installer.py...
+Checking patch conans/client/loader.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/client/migrations.py...
+Checking patch conans/client/output.py...
+Checking patch conans/client/package_copier.py...
+Checking patch conans/client/packager.py...
+Checking patch conans/client/printer.py...
+Checking patch conans/client/remote_manager.py...
+Checking patch conans/client/runner.py...
+Checking patch conans/model/__init__.py...
+Checking patch conans/model/conan_file.py...
+Checking patch conans/model/conan_generator.py...
+Checking patch conans/model/manifest.py...
+Checking patch conans/model/ref.py...
+Checking patch conans/paths.py...
+Checking patch conans/server/conf/__init__.py...
+Checking patch conans/tools.py...
+Checking patch conans/util/files.py...
+Applied patch conans/__init__.py cleanly.
+Applied patch conans/client/cmake.py cleanly.
+Applied patch conans/client/command.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/export.py cleanly.
+Applied patch conans/client/file_copier.py cleanly.
+Applied patch conans/client/generators.py cleanly.
+Applied patch conans/client/generators/__init__.py cleanly.
+Applied patch conans/client/generators/cmake.py cleanly.
+Applied patch conans/client/generators/gcc.py cleanly.
+Applied patch conans/client/generators/qbs.py cleanly.
+Applied patch conans/client/generators/qmake.py cleanly.
+Applied patch conans/client/generators/text.py cleanly.
+Applied patch conans/client/generators/visualstudio.py cleanly.
+Applied patch conans/client/generators/xcode.py cleanly.
+Applied patch conans/client/generators/ycm.py cleanly.
+Applied patch conans/client/importer.py cleanly.
+Applied patch conans/client/installer.py cleanly.
+Applied patch conans/client/loader.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/client/migrations.py cleanly.
+Applied patch conans/client/output.py cleanly.
+Applied patch conans/client/package_copier.py cleanly.
+Applied patch conans/client/packager.py cleanly.
+Applied patch conans/client/printer.py cleanly.
+Applied patch conans/client/remote_manager.py cleanly.
+Applied patch conans/client/runner.py cleanly.
+Applied patch conans/model/__init__.py cleanly.
+Applied patch conans/model/conan_file.py cleanly.
+Applied patch conans/model/conan_generator.py cleanly.
+Applied patch conans/model/manifest.py cleanly.
+Applied patch conans/model/ref.py cleanly.
+Applied patch conans/paths.py cleanly.
+Applied patch conans/server/conf/__init__.py cleanly.
+Applied patch conans/tools.py cleanly.
+Applied patch conans/util/files.py cleanly.
+warning: squelched 3 whitespace errors
+warning: 8 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git diff > /home/swe-bench/temp_conan-io__conan-136_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/cmake_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/command/export_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/command/info_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/conanfile_loader_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/conanfile_tools_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/create_package_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/download_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/files_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/basic_build_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/complete_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/diamond_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/go_complete_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/go_diamond_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/manifest_validation_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/multi_build_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/only_source_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/package_command_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/private_deps_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/shared_chain_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/integration/syncronize_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/model/transitive_reqs_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/remote_manager_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/tgz_md5_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/upload_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/utils/cpp_test_files.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git restore conans/test/utils/runner.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: git apply -v /home/swe-bench/temp_conan-io__conan-136_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+/home/swe-bench/temp_conan-io__conan-136_test.patch:1284: trailing whitespace.
+                      so they will need to be fixed/patched in the source() method. 
+Checking patch conans/test/cmake_test.py...
+Checking patch conans/test/command/export_test.py...
+Checking patch conans/test/command/info_test.py...
+Checking patch conans/test/conanfile_extend_test.py...
+Checking patch conans/test/conanfile_loader_test.py...
+Checking patch conans/test/conanfile_tools_test.py...
+Checking patch conans/test/create_package_test.py...
+Checking patch conans/test/download_test.py...
+Checking patch conans/test/files_test.py...
+Checking patch conans/test/integration/basic_build_test.py...
+Checking patch conans/test/integration/complete_test.py...
+Checking patch conans/test/integration/copy_packages_test.py...
+Checking patch conans/test/integration/diamond_test.py...
+Checking patch conans/test/integration/go_complete_test.py...
+Checking patch conans/test/integration/go_diamond_test.py...
+Checking patch conans/test/integration/install_selected_packages_test.py...
+Checking patch conans/test/integration/manifest_validation_test.py...
+Checking patch conans/test/integration/multi_build_test.py...
+Checking patch conans/test/integration/only_source_test.py...
+Checking patch conans/test/integration/package_command_test.py...
+Checking patch conans/test/integration/private_deps_test.py...
+Checking patch conans/test/integration/shared_chain_test.py...
+Checking patch conans/test/integration/syncronize_test.py...
+Checking patch conans/test/model/transitive_reqs_test.py...
+Checking patch conans/test/package_copier_test.py...
+/home/swe-bench/temp_conan-io__conan-136_test.patch:1157: new blank line at EOF.
++
+Checking patch conans/test/remote_manager_test.py...
+Checking patch conans/test/tgz_md5_test.py...
+Checking patch conans/test/upload_test.py...
+Checking patch conans/test/utils/cpp_test_files.py...
+Checking patch conans/test/utils/runner.py...
+Applied patch conans/test/cmake_test.py cleanly.
+Applied patch conans/test/command/export_test.py cleanly.
+Applied patch conans/test/command/info_test.py cleanly.
+Applied patch conans/test/conanfile_extend_test.py cleanly.
+Applied patch conans/test/conanfile_loader_test.py cleanly.
+Applied patch conans/test/conanfile_tools_test.py cleanly.
+Applied patch conans/test/create_package_test.py cleanly.
+Applied patch conans/test/download_test.py cleanly.
+Applied patch conans/test/files_test.py cleanly.
+Applied patch conans/test/integration/basic_build_test.py cleanly.
+Applied patch conans/test/integration/complete_test.py cleanly.
+Applied patch conans/test/integration/copy_packages_test.py cleanly.
+Applied patch conans/test/integration/diamond_test.py cleanly.
+Applied patch conans/test/integration/go_complete_test.py cleanly.
+Applied patch conans/test/integration/go_diamond_test.py cleanly.
+Applied patch conans/test/integration/install_selected_packages_test.py cleanly.
+Applied patch conans/test/integration/manifest_validation_test.py cleanly.
+Applied patch conans/test/integration/multi_build_test.py cleanly.
+Applied patch conans/test/integration/only_source_test.py cleanly.
+Applied patch conans/test/integration/package_command_test.py cleanly.
+Applied patch conans/test/integration/private_deps_test.py cleanly.
+Applied patch conans/test/integration/shared_chain_test.py cleanly.
+Applied patch conans/test/integration/syncronize_test.py cleanly.
+Applied patch conans/test/model/transitive_reqs_test.py cleanly.
+Applied patch conans/test/package_copier_test.py cleanly.
+Applied patch conans/test/remote_manager_test.py cleanly.
+Applied patch conans/test/tgz_md5_test.py cleanly.
+Applied patch conans/test/upload_test.py cleanly.
+Applied patch conans/test/utils/cpp_test_files.py cleanly.
+Applied patch conans/test/utils/runner.py cleanly.
+warning: 2 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/cmake_test.py conans/test/command/export_test.py conans/test/command/info_test.py conans/test/conanfile_extend_test.py conans/test/conanfile_loader_test.py conans/test/conanfile_tools_test.py conans/test/create_package_test.py conans/test/download_test.py conans/test/files_test.py conans/test/integration/basic_build_test.py conans/test/integration/complete_test.py conans/test/integration/copy_packages_test.py conans/test/integration/diamond_test.py conans/test/integration/go_complete_test.py conans/test/integration/go_diamond_test.py conans/test/integration/install_selected_packages_test.py conans/test/integration/manifest_validation_test.py conans/test/integration/multi_build_test.py conans/test/integration/only_source_test.py conans/test/integration/package_command_test.py conans/test/integration/private_deps_test.py conans/test/integration/shared_chain_test.py conans/test/integration/syncronize_test.py conans/test/model/transitive_reqs_test.py conans/test/package_copier_test.py conans/test/remote_manager_test.py conans/test/tgz_md5_test.py conans/test/upload_test.py conans/test/utils/cpp_test_files.py conans/test/utils/runner.py;
+[conan-io__conan__1.60.2] [conan-io__conan-136] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/cmake_test.py conans/test/command/export_test.py conans/test/command/info_test.py conans/test/conanfile_extend_test.py conans/test/conanfile_loader_test.py conans/test/conanfile_tools_test.py conans/test/create_package_test.py conans/test/download_test.py conans/test/files_test.py conans/test/integration/basic_build_test.py conans/test/integration/complete_test.py conans/test/integration/copy_packages_test.py conans/test/integration/diamond_test.py conans/test/integration/go_complete_test.py conans/test/integration/go_diamond_test.py conans/test/integration/install_selected_packages_test.py conans/test/integration/manifest_validation_test.py conans/test/integration/multi_build_test.py conans/test/integration/only_source_test.py conans/test/integration/package_command_test.py conans/test/integration/private_deps_test.py conans/test/integration/shared_chain_test.py conans/test/integration/syncronize_test.py conans/test/model/transitive_reqs_test.py conans/test/package_copier_test.py conans/test/remote_manager_test.py conans/test/tgz_md5_test.py conans/test/upload_test.py conans/test/utils/cpp_test_files.py conans/test/utils/runner.py 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/cmake_test.py conans/test/command/export_test.py conans/test/command/info_test.py conans/test/conanfile_extend_test.py conans/test/conanfile_loader_test.py conans/test/conanfile_tools_test.py conans/test/create_package_test.py conans/test/download_test.py conans/test/files_test.py conans/test/integration/basic_build_test.py conans/test/integration/complete_test.py conans/test/integration/copy_packages_test.py conans/test/integration/diamond_test.py conans/test/integration/go_complete_test.py conans/test/integration/go_diamond_test.py conans/test/integration/install_selected_packages_test.py conans/test/integration/manifest_validation_test.py conans/test/integration/multi_build_test.py conans/test/integration/only_source_test.py conans/test/integration/package_command_test.py conans/test/integration/private_deps_test.py conans/test/integration/shared_chain_test.py conans/test/integration/syncronize_test.py conans/test/model/transitive_reqs_test.py conans/test/package_copier_test.py conans/test/remote_manager_test.py conans/test/tgz_md5_test.py conans/test/upload_test.py conans/test/utils/cpp_test_files.py conans/test/utils/runner.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 30 errors
+
+=============================== warnings summary ===============================
+conans/model/ref.py:38
+  /home/swe-bench/conan-io__conan/conans/model/ref.py:38: DeprecationWarning: invalid escape sequence \.
+    base_er = "[a-zA-Z0-9_]+[a-zA-Z0-9_\.-]{%s,%s}" % (min_chars - 1, max_chars)
+
+conans/model/build_info.py:86
+  /home/swe-bench/conan-io__conan/conans/model/build_info.py:86: DeprecationWarning: invalid escape sequence \[
+    pattern = re.compile("^\[([a-zA-Z0-9_-]{2,50})\]")
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+ERROR conans/test/cmake_test.py
+ERROR conans/test/command/export_test.py
+ERROR conans/test/command/info_test.py
+ERROR conans/test/conanfile_extend_test.py
+ERROR conans/test/conanfile_loader_test.py
+ERROR conans/test/conanfile_tools_test.py
+ERROR conans/test/create_package_test.py
+ERROR conans/test/download_test.py
+ERROR conans/test/files_test.py
+ERROR conans/test/integration/basic_build_test.py
+ERROR conans/test/integration/complete_test.py
+ERROR conans/test/integration/copy_packages_test.py
+ERROR conans/test/integration/diamond_test.py
+ERROR conans/test/integration/go_complete_test.py
+ERROR conans/test/integration/go_diamond_test.py
+ERROR conans/test/integration/install_selected_packages_test.py
+ERROR conans/test/integration/manifest_validation_test.py
+ERROR conans/test/integration/multi_build_test.py
+ERROR conans/test/integration/only_source_test.py
+ERROR conans/test/integration/package_command_test.py
+ERROR conans/test/integration/private_deps_test.py
+ERROR conans/test/integration/shared_chain_test.py
+ERROR conans/test/integration/syncronize_test.py
+ERROR conans/test/model/transitive_reqs_test.py
+ERROR conans/test/package_copier_test.py
+ERROR conans/test/remote_manager_test.py
+ERROR conans/test/tgz_md5_test.py
+ERROR conans/test/upload_test.py
+ERROR conans/test/utils/cpp_test_files.py
+ERROR conans/test/utils/runner.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 30 errors during collection !!!!!!!!!!!!!!!!!!!
+======================== 2 warnings, 30 errors in 0.98s ========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-136] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-136] Test script run successful 

@@ -1,0 +1,104 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Task Metadata:
+	- Instance ID: conan-io__conan-4313
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git -c advice.detachedHead=false checkout 2b3bd4bed632bb50d5bef933aaf122d9f620de59 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+HEAD is now at 2b3bd4bed Feature: define environment variables for CTest (#4299)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git diff > /home/swe-bench/temp_conan-io__conan-4313_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4313_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+Checking patch conans/client/conf/detect.py...
+Checking patch conans/client/tools/oss.py...
+Applied patch conans/client/conf/detect.py cleanly.
+Applied patch conans/client/tools/oss.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git diff > /home/swe-bench/temp_conan-io__conan-4313_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4313_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+/home/swe-bench/temp_conan-io__conan-4313_pred_try.patch:89: trailing whitespace.
+    
+Checking patch conans/client/tools/oss.py...
+Checking patch conans/client/conf/detect.py...
+Applied patch conans/client/tools/oss.py cleanly.
+Applied patch conans/client/conf/detect.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git diff > /home/swe-bench/temp_conan-io__conan-4313_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4313_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+Checking patch conans/client/conf/detect.py...
+Checking patch conans/client/tools/oss.py...
+Applied patch conans/client/conf/detect.py cleanly.
+Applied patch conans/client/tools/oss.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git diff > /home/swe-bench/temp_conan-io__conan-4313_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4313_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+Checking patch conans/test/unittests/client/conf/detect/__init__.py...
+Checking patch conans/test/unittests/client/conf/detect/detected_os_test.py...
+Checking patch conans/test/unittests/client/tools/os_info/__init__.py...
+Checking patch conans/test/unittests/client/tools/os_info/osinfo_test.py...
+Applied patch conans/test/unittests/client/conf/detect/__init__.py cleanly.
+Applied patch conans/test/unittests/client/conf/detect/detected_os_test.py cleanly.
+Applied patch conans/test/unittests/client/tools/os_info/__init__.py cleanly.
+Applied patch conans/test/unittests/client/tools/os_info/osinfo_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/conf/detect/__init__.py conans/test/unittests/client/conf/detect/detected_os_test.py conans/test/unittests/client/tools/os_info/__init__.py conans/test/unittests/client/tools/os_info/osinfo_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/conf/detect/__init__.py conans/test/unittests/client/conf/detect/detected_os_test.py conans/test/unittests/client/tools/os_info/__init__.py conans/test/unittests/client/tools/os_info/osinfo_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/conf/detect/__init__.py conans/test/unittests/client/conf/detect/detected_os_test.py conans/test/unittests/client/tools/os_info/__init__.py conans/test/unittests/client/tools/os_info/osinfo_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 4 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/unittests/client/conf/detect/detected_os_test.py
+ERROR conans/test/unittests/client/conf/detect/detected_os_test.py
+ERROR conans/test/unittests/client/tools/os_info/osinfo_test.py
+ERROR conans/test/unittests/client/tools/os_info/osinfo_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 4 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 4 errors in 0.35s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4313] Test script run successful 

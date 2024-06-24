@@ -1,0 +1,105 @@
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Task Metadata:
+	- Instance ID: conan-io__conan-3844
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git -c advice.detachedHead=false checkout 9ceab64763417c29c2ab8ee48ef63bb18305802e 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+HEAD is now at 9ceab6476 if platform.machine returns an empty string, do not add 'arch' neither 'arch_build' to default profile (#3841)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git diff > /home/swe-bench/temp_conan-io__conan-3844_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git apply -v /home/swe-bench/temp_conan-io__conan-3844_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+Checking patch conans/client/build/cppstd_flags.py...
+Checking patch conans/client/settings_preprocessor.py...
+Applied patch conans/client/build/cppstd_flags.py cleanly.
+Applied patch conans/client/settings_preprocessor.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git diff > /home/swe-bench/temp_conan-io__conan-3844_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-3844_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+Checking patch conans/client/settings_preprocessor.py...
+Checking patch conans/client/build/cppstd_flags.py...
+Applied patch conans/client/settings_preprocessor.py cleanly.
+Applied patch conans/client/build/cppstd_flags.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git diff > /home/swe-bench/temp_conan-io__conan-3844_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git apply -v /home/swe-bench/temp_conan-io__conan-3844_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+Checking patch conans/client/build/cppstd_flags.py...
+Checking patch conans/client/settings_preprocessor.py...
+Applied patch conans/client/build/cppstd_flags.py cleanly.
+Applied patch conans/client/settings_preprocessor.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git diff > /home/swe-bench/temp_conan-io__conan-3844_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git restore conans/test/integration/cppstd_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git restore conans/test/model/other_settings_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: git apply -v /home/swe-bench/temp_conan-io__conan-3844_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+Checking patch conans/test/integration/cppstd_test.py...
+Checking patch conans/test/model/other_settings_test.py...
+Applied patch conans/test/integration/cppstd_test.py cleanly.
+Applied patch conans/test/model/other_settings_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/cppstd_test.py conans/test/model/other_settings_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/cppstd_test.py conans/test/model/other_settings_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/cppstd_test.py conans/test/model/other_settings_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 2 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/integration/cppstd_test.py
+ERROR conans/test/model/other_settings_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.40s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-3844] Test script run successful 

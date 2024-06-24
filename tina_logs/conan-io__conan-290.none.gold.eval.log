@@ -1,0 +1,189 @@
+[conan-io__conan__1.60.2] [conan-io__conan-290] Task Metadata:
+	- Instance ID: conan-io__conan-290
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git -c advice.detachedHead=false checkout 252f758aac62171fedeccb29462cd6510cbfe4fe 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+HEAD is now at 252f758aa removed py3 incompatible assertItemsEqual
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git diff > /home/swe-bench/temp_conan-io__conan-290_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git apply -v /home/swe-bench/temp_conan-io__conan-290_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+Checking patch conans/client/command.py...
+Checking patch conans/client/deps_builder.py...
+Checking patch conans/client/loader.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/model/info.py...
+Checking patch conans/model/options.py...
+Checking patch conans/model/requires.py...
+Checking patch conans/model/scope.py...
+Applied patch conans/client/command.py cleanly.
+Applied patch conans/client/deps_builder.py cleanly.
+Applied patch conans/client/loader.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/model/info.py cleanly.
+Applied patch conans/model/options.py cleanly.
+Applied patch conans/model/requires.py cleanly.
+Applied patch conans/model/scope.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git diff > /home/swe-bench/temp_conan-io__conan-290_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-290_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+/home/swe-bench/temp_conan-io__conan-290_pred_try.patch:402: trailing whitespace.
+    
+Checking patch conans/model/scope.py...
+Checking patch conans/model/requires.py...
+Checking patch conans/model/options.py...
+Checking patch conans/model/info.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/client/loader.py...
+Checking patch conans/client/deps_builder.py...
+Checking patch conans/client/command.py...
+Applied patch conans/model/scope.py cleanly.
+Applied patch conans/model/requires.py cleanly.
+Applied patch conans/model/options.py cleanly.
+Applied patch conans/model/info.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/client/loader.py cleanly.
+Applied patch conans/client/deps_builder.py cleanly.
+Applied patch conans/client/command.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git diff > /home/swe-bench/temp_conan-io__conan-290_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git apply -v /home/swe-bench/temp_conan-io__conan-290_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+Checking patch conans/client/command.py...
+Checking patch conans/client/deps_builder.py...
+Checking patch conans/client/loader.py...
+Checking patch conans/client/manager.py...
+Checking patch conans/model/info.py...
+Checking patch conans/model/options.py...
+Checking patch conans/model/requires.py...
+Checking patch conans/model/scope.py...
+Applied patch conans/client/command.py cleanly.
+Applied patch conans/client/deps_builder.py cleanly.
+Applied patch conans/client/loader.py cleanly.
+Applied patch conans/client/manager.py cleanly.
+Applied patch conans/model/info.py cleanly.
+Applied patch conans/model/options.py cleanly.
+Applied patch conans/model/requires.py cleanly.
+Applied patch conans/model/scope.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git diff > /home/swe-bench/temp_conan-io__conan-290_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git restore conans/test/conanfile_loader_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git restore conans/test/conanfile_tools_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git restore conans/test/create_package_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git restore conans/test/model/options_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git restore conans/test/model/order_libs_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git restore conans/test/model/transitive_reqs_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: git apply -v /home/swe-bench/temp_conan-io__conan-290_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+Checking patch conans/test/conanfile_loader_test.py...
+Checking patch conans/test/conanfile_tools_test.py...
+Checking patch conans/test/create_package_test.py...
+Checking patch conans/test/integration/conan_scopes_test.py...
+Checking patch conans/test/model/options_test.py...
+Checking patch conans/test/model/order_libs_test.py...
+Checking patch conans/test/model/transitive_reqs_test.py...
+Applied patch conans/test/conanfile_loader_test.py cleanly.
+Applied patch conans/test/conanfile_tools_test.py cleanly.
+Applied patch conans/test/create_package_test.py cleanly.
+Applied patch conans/test/integration/conan_scopes_test.py cleanly.
+Applied patch conans/test/model/options_test.py cleanly.
+Applied patch conans/test/model/order_libs_test.py cleanly.
+Applied patch conans/test/model/transitive_reqs_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/conanfile_loader_test.py conans/test/conanfile_tools_test.py conans/test/create_package_test.py conans/test/integration/conan_scopes_test.py conans/test/model/options_test.py conans/test/model/order_libs_test.py conans/test/model/transitive_reqs_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-290] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/conanfile_loader_test.py conans/test/conanfile_tools_test.py conans/test/create_package_test.py conans/test/integration/conan_scopes_test.py conans/test/model/options_test.py conans/test/model/order_libs_test.py conans/test/model/transitive_reqs_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/conanfile_loader_test.py conans/test/conanfile_tools_test.py conans/test/create_package_test.py conans/test/integration/conan_scopes_test.py conans/test/model/options_test.py conans/test/model/order_libs_test.py conans/test/model/transitive_reqs_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 7 errors
+
+=============================== warnings summary ===============================
+conans/model/ref.py:38
+  /home/swe-bench/conan-io__conan/conans/model/ref.py:38: DeprecationWarning: invalid escape sequence \.
+    base_er = "[a-zA-Z0-9_]+[a-zA-Z0-9_\.-]{%s,%s}" % (min_chars - 1, max_chars)
+
+conans/model/build_info.py:87
+  /home/swe-bench/conan-io__conan/conans/model/build_info.py:87: DeprecationWarning: invalid escape sequence \[
+    pattern = re.compile("^\[([a-zA-Z0-9_-]{2,50})\]")
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+ERROR conans/test/conanfile_loader_test.py
+ERROR conans/test/conanfile_tools_test.py
+ERROR conans/test/create_package_test.py
+ERROR conans/test/integration/conan_scopes_test.py
+ERROR conans/test/model/options_test.py
+ERROR conans/test/model/order_libs_test.py
+ERROR conans/test/model/transitive_reqs_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 7 errors during collection !!!!!!!!!!!!!!!!!!!!
+======================== 2 warnings, 7 errors in 0.33s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-290] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-290] Test script run successful 

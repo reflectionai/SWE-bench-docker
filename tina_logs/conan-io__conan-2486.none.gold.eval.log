@@ -1,0 +1,197 @@
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Task Metadata:
+	- Instance ID: conan-io__conan-2486
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git -c advice.detachedHead=false checkout 56687000911b98b9ec4a530130e13a57692715dd 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+HEAD is now at 566870009 Merge pull request #2477 from memsharded/feature/extra_resource_vsgen
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git diff > /home/swe-bench/temp_conan-io__conan-2486_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git apply -v /home/swe-bench/temp_conan-io__conan-2486_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+Checking patch conans/client/build/autotools_environment.py...
+Checking patch conans/client/build/cmake.py...
+Checking patch conans/client/build/cppstd_flags.py...
+Checking patch conans/client/build/visual_environment.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/migrations.py...
+Checking patch conans/client/settings_preprocessor.py...
+Checking patch conans/model/info.py...
+Applied patch conans/client/build/autotools_environment.py cleanly.
+Applied patch conans/client/build/cmake.py cleanly.
+Applied patch conans/client/build/cppstd_flags.py cleanly.
+Applied patch conans/client/build/visual_environment.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/migrations.py cleanly.
+Applied patch conans/client/settings_preprocessor.py cleanly.
+Applied patch conans/model/info.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git diff > /home/swe-bench/temp_conan-io__conan-2486_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-2486_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+/home/swe-bench/temp_conan-io__conan-2486_pred_try.patch:448: trailing whitespace.
+        toolset: [None, v90, v100, v110, v110_xp, v120, v120_xp, v140, v140_xp, v140_clang_c2, LLVM-vs2014, LLVM-vs2014_xp, v141, v141_xp, v141_clang_c2]  
+Checking patch conans/model/info.py...
+Checking patch conans/client/settings_preprocessor.py...
+Checking patch conans/client/migrations.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/build/visual_environment.py...
+Checking patch conans/client/build/cppstd_flags.py...
+Checking patch conans/client/build/cmake.py...
+Checking patch conans/client/build/autotools_environment.py...
+Applied patch conans/model/info.py cleanly.
+Applied patch conans/client/settings_preprocessor.py cleanly.
+Applied patch conans/client/migrations.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/build/visual_environment.py cleanly.
+Applied patch conans/client/build/cppstd_flags.py cleanly.
+Applied patch conans/client/build/cmake.py cleanly.
+Applied patch conans/client/build/autotools_environment.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git diff > /home/swe-bench/temp_conan-io__conan-2486_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git apply -v /home/swe-bench/temp_conan-io__conan-2486_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+Checking patch conans/client/build/autotools_environment.py...
+Checking patch conans/client/build/cmake.py...
+Checking patch conans/client/build/cppstd_flags.py...
+Checking patch conans/client/build/visual_environment.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/generators/cmake_common.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/migrations.py...
+Checking patch conans/client/settings_preprocessor.py...
+Checking patch conans/model/info.py...
+Applied patch conans/client/build/autotools_environment.py cleanly.
+Applied patch conans/client/build/cmake.py cleanly.
+Applied patch conans/client/build/cppstd_flags.py cleanly.
+Applied patch conans/client/build/visual_environment.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/generators/cmake_common.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/migrations.py cleanly.
+Applied patch conans/client/settings_preprocessor.py cleanly.
+Applied patch conans/model/info.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git diff > /home/swe-bench/temp_conan-io__conan-2486_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git restore conans/test/build_helpers/autotools_configure_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git restore conans/test/build_helpers/msbuild_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git restore conans/test/generators/cmake_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git restore conans/test/integration/cmake_flags_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git restore conans/test/integration/package_id_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git restore conans/test/utils/visual_project_files.py 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: git apply -v /home/swe-bench/temp_conan-io__conan-2486_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+Checking patch conans/test/build_helpers/autotools_configure_test.py...
+Checking patch conans/test/build_helpers/cpp_std_flags_test.py...
+Checking patch conans/test/build_helpers/msbuild_test.py...
+Checking patch conans/test/generators/cmake_test.py...
+Checking patch conans/test/integration/cmake_flags_test.py...
+Checking patch conans/test/integration/cppstd_test.py...
+Checking patch conans/test/integration/package_id_test.py...
+/home/swe-bench/temp_conan-io__conan-2486_test.patch:515: new blank line at EOF.
++
+Checking patch conans/test/utils/visual_project_files.py...
+Applied patch conans/test/build_helpers/autotools_configure_test.py cleanly.
+Applied patch conans/test/build_helpers/cpp_std_flags_test.py cleanly.
+Applied patch conans/test/build_helpers/msbuild_test.py cleanly.
+Applied patch conans/test/generators/cmake_test.py cleanly.
+Applied patch conans/test/integration/cmake_flags_test.py cleanly.
+Applied patch conans/test/integration/cppstd_test.py cleanly.
+Applied patch conans/test/integration/package_id_test.py cleanly.
+Applied patch conans/test/utils/visual_project_files.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/build_helpers/autotools_configure_test.py conans/test/build_helpers/cpp_std_flags_test.py conans/test/build_helpers/msbuild_test.py conans/test/generators/cmake_test.py conans/test/integration/cmake_flags_test.py conans/test/integration/cppstd_test.py conans/test/integration/package_id_test.py conans/test/utils/visual_project_files.py;
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/build_helpers/autotools_configure_test.py conans/test/build_helpers/cpp_std_flags_test.py conans/test/build_helpers/msbuild_test.py conans/test/generators/cmake_test.py conans/test/integration/cmake_flags_test.py conans/test/integration/cppstd_test.py conans/test/integration/package_id_test.py conans/test/utils/visual_project_files.py 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/build_helpers/autotools_configure_test.py conans/test/build_helpers/cpp_std_flags_test.py conans/test/build_helpers/msbuild_test.py conans/test/generators/cmake_test.py conans/test/integration/cmake_flags_test.py conans/test/integration/cppstd_test.py conans/test/integration/package_id_test.py conans/test/utils/visual_project_files.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 8 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/build_helpers/autotools_configure_test.py
+ERROR conans/test/build_helpers/cpp_std_flags_test.py
+ERROR conans/test/build_helpers/msbuild_test.py
+ERROR conans/test/generators/cmake_test.py
+ERROR conans/test/integration/cmake_flags_test.py
+ERROR conans/test/integration/cppstd_test.py
+ERROR conans/test/integration/package_id_test.py
+ERROR conans/test/utils/visual_project_files.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 8 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 8 errors in 0.68s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-2486] Test script run successful 

@@ -1,0 +1,145 @@
+[conan-io__conan__1.60.2] [conan-io__conan-207] Task Metadata:
+	- Instance ID: conan-io__conan-207
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git -c advice.detachedHead=false checkout 5540c3a4a07292d7472dcfc5a71501e47f5e1142 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+HEAD is now at 5540c3a4a Brew readme
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git diff > /home/swe-bench/temp_conan-io__conan-207_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git apply -v /home/swe-bench/temp_conan-io__conan-207_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+Checking patch conans/client/remote_manager.py...
+Hunk #1 succeeded at 133 (offset 6 lines).
+Checking patch conans/util/files.py...
+Hunk #1 succeeded at 83 (offset 6 lines).
+Applied patch conans/client/remote_manager.py cleanly.
+Applied patch conans/util/files.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git diff > /home/swe-bench/temp_conan-io__conan-207_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-207_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+Checking patch conans/util/files.py...
+Hunk #1 succeeded at 83 (offset -6 lines).
+Checking patch conans/client/remote_manager.py...
+Hunk #1 succeeded at 133 (offset -6 lines).
+Applied patch conans/util/files.py cleanly.
+Applied patch conans/client/remote_manager.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git diff > /home/swe-bench/temp_conan-io__conan-207_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git apply -v /home/swe-bench/temp_conan-io__conan-207_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+Checking patch conans/client/remote_manager.py...
+Hunk #1 succeeded at 133 (offset 6 lines).
+Checking patch conans/util/files.py...
+Hunk #1 succeeded at 83 (offset 6 lines).
+Applied patch conans/client/remote_manager.py cleanly.
+Applied patch conans/util/files.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git diff > /home/swe-bench/temp_conan-io__conan-207_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git restore conans/server/test/service/service_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git restore conans/test/command/export_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git restore conans/test/tgz_md5_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git restore conans/test/upload_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git restore conans/test/utils/cpp_test_files.py 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: git apply -v /home/swe-bench/temp_conan-io__conan-207_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+Checking patch conans/server/test/service/service_test.py...
+Checking patch conans/test/command/export_test.py...
+Checking patch conans/test/tgz_md5_test.py...
+Checking patch conans/test/upload_test.py...
+Checking patch conans/test/utils/cpp_test_files.py...
+Applied patch conans/server/test/service/service_test.py cleanly.
+Applied patch conans/test/command/export_test.py cleanly.
+Applied patch conans/test/tgz_md5_test.py cleanly.
+Applied patch conans/test/upload_test.py cleanly.
+Applied patch conans/test/utils/cpp_test_files.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/server/test/service/service_test.py conans/test/command/export_test.py conans/test/tgz_md5_test.py conans/test/upload_test.py conans/test/utils/cpp_test_files.py;
+[conan-io__conan__1.60.2] [conan-io__conan-207] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/server/test/service/service_test.py conans/test/command/export_test.py conans/test/tgz_md5_test.py conans/test/upload_test.py conans/test/utils/cpp_test_files.py 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/server/test/service/service_test.py conans/test/command/export_test.py conans/test/tgz_md5_test.py conans/test/upload_test.py conans/test/utils/cpp_test_files.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 5 errors
+
+=============================== warnings summary ===============================
+conans/model/ref.py:38
+  /home/swe-bench/conan-io__conan/conans/model/ref.py:38: DeprecationWarning: invalid escape sequence \.
+    base_er = "[a-zA-Z0-9_]+[a-zA-Z0-9_\.-]{%s,%s}" % (min_chars - 1, max_chars)
+
+conans/model/build_info.py:86
+  /home/swe-bench/conan-io__conan/conans/model/build_info.py:86: DeprecationWarning: invalid escape sequence \[
+    pattern = re.compile("^\[([a-zA-Z0-9_-]{2,50})\]")
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+ERROR conans/server/test/service/service_test.py
+ERROR conans/test/command/export_test.py
+ERROR conans/test/tgz_md5_test.py
+ERROR conans/test/upload_test.py
+ERROR conans/test/utils/cpp_test_files.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 5 errors during collection !!!!!!!!!!!!!!!!!!!!
+======================== 2 warnings, 5 errors in 0.32s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-207] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-207] Test script run successful 

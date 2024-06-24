@@ -1,0 +1,179 @@
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Task Metadata:
+	- Instance ID: conan-io__conan-3941
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git -c advice.detachedHead=false checkout a4bbe1c2d37bfcfc60b26c1562ab3bc292afd984 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+HEAD is now at a4bbe1c2d 1.9.2
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git diff > /home/swe-bench/temp_conan-io__conan-3941_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git apply -v /home/swe-bench/temp_conan-io__conan-3941_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+Checking patch conans/__init__.py...
+error: while searching for:
+REVISIONS = "revisions"  # Only when enabled in config, not by default look at server_launcher.py
+SERVER_CAPABILITIES = [COMPLEX_SEARCH_CAPABILITY, ]  # Still without v2 because it is changing
+
+__version__ = '1.9.1'
+
+
+error: patch failed: conans/__init__.py:18
+error: conans/__init__.py: patch does not apply
+Checking patch conans/client/tools/win.py...
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 1 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git restore . 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git apply /home/swe-bench/temp_conan-io__conan-3941_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+error: No valid patches in input (allow with "--allow-empty")
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 128 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Output (git apply - revert to initial state): error: No valid patches in input (allow with "--allow-empty")
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: patch --batch --fuzz=5 -p1 -i /home/swe-bench/temp_conan-io__conan-3941_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+patching file conans/__init__.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+patching file conans/client/tools/win.py
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git diff > /home/swe-bench/temp_conan-io__conan-3941_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-3941_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+Checking patch conans/client/tools/win.py...
+Checking patch conans/__init__.py...
+error: while searching for:
+REVISIONS = "revisions"  # Only when enabled in config, not by default look at server_launcher.py
+SERVER_CAPABILITIES = [COMPLEX_SEARCH_CAPABILITY, ]  # Still without v2 because it is changing
+
+__version__ = '1.9.2'
+
+
+error: patch failed: conans/__init__.py:18
+error: conans/__init__.py: patch does not apply
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 1 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git restore . 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git apply /home/swe-bench/temp_conan-io__conan-3941_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Output (git apply - revert to initial state):  
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: patch -R --batch --fuzz=5 -p1 -i /home/swe-bench/temp_conan-io__conan-3941_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+patching file conans/__init__.py
+Unreversed patch detected!  Ignoring -R.
+patching file conans/client/tools/win.py
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git diff > /home/swe-bench/temp_conan-io__conan-3941_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git apply -v /home/swe-bench/temp_conan-io__conan-3941_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+Checking patch conans/__init__.py...
+error: while searching for:
+REVISIONS = "revisions"  # Only when enabled in config, not by default look at server_launcher.py
+SERVER_CAPABILITIES = [COMPLEX_SEARCH_CAPABILITY, ]  # Still without v2 because it is changing
+
+__version__ = '1.9.1'
+
+
+error: patch failed: conans/__init__.py:18
+error: conans/__init__.py: patch does not apply
+Checking patch conans/client/tools/win.py...
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 1 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git restore . 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git apply /home/swe-bench/temp_conan-io__conan-3941_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+error: No valid patches in input (allow with "--allow-empty")
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 128 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Output (git apply - revert to initial state): error: No valid patches in input (allow with "--allow-empty")
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: patch --batch --fuzz=5 -p1 -i /home/swe-bench/temp_conan-io__conan-3941_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+patching file conans/__init__.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+patching file conans/client/tools/win.py
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git diff > /home/swe-bench/temp_conan-io__conan-3941_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git restore conans/test/util/tools_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: git apply -v /home/swe-bench/temp_conan-io__conan-3941_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+Checking patch conans/test/util/tools_test.py...
+Applied patch conans/test/util/tools_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/util/tools_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/util/tools_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/util/tools_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 1 error
+
+=========================== short test summary info ============================
+ERROR conans/test/util/tools_test.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.34s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-3941] Test script run successful 

@@ -1,0 +1,115 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Task Metadata:
+	- Instance ID: conan-io__conan-13390
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git -c advice.detachedHead=false checkout cc6c1d568021a5ebb6de6f14a8d93557cb7f7829 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+HEAD is now at cc6c1d568 [test] Adjust info folders test to be compatible with Conan 2.0 (#13385)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git diff > /home/swe-bench/temp_conan-io__conan-13390_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13390_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+/home/swe-bench/temp_conan-io__conan-13390_pred_try.patch:5: trailing whitespace.
+import itertools 
+/home/swe-bench/temp_conan-io__conan-13390_pred_try.patch:145: trailing whitespace.
+    
+/home/swe-bench/temp_conan-io__conan-13390_pred_try.patch:153: trailing whitespace.
+    
+/home/swe-bench/temp_conan-io__conan-13390_pred_try.patch:157: trailing whitespace.
+        - A "filter" will affect all premake function calls after it's set. It's used to limit following project 
+/home/swe-bench/temp_conan-io__conan-13390_pred_try.patch:175: trailing whitespace.
+        
+Checking patch conan/tools/premake/premakedeps.py...
+Applied patch conan/tools/premake/premakedeps.py cleanly.
+warning: squelched 8 whitespace errors
+warning: 13 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git diff > /home/swe-bench/temp_conan-io__conan-13390_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13390_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+Checking patch conan/tools/premake/premakedeps.py...
+Applied patch conan/tools/premake/premakedeps.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git diff > /home/swe-bench/temp_conan-io__conan-13390_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13390_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+/home/swe-bench/temp_conan-io__conan-13390_pred.patch:5: trailing whitespace.
+import itertools 
+/home/swe-bench/temp_conan-io__conan-13390_pred.patch:145: trailing whitespace.
+    
+/home/swe-bench/temp_conan-io__conan-13390_pred.patch:153: trailing whitespace.
+    
+/home/swe-bench/temp_conan-io__conan-13390_pred.patch:157: trailing whitespace.
+        - A "filter" will affect all premake function calls after it's set. It's used to limit following project 
+/home/swe-bench/temp_conan-io__conan-13390_pred.patch:175: trailing whitespace.
+        
+Checking patch conan/tools/premake/premakedeps.py...
+Applied patch conan/tools/premake/premakedeps.py cleanly.
+warning: squelched 8 whitespace errors
+warning: 13 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git diff > /home/swe-bench/temp_conan-io__conan-13390_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git restore conans/test/integration/toolchains/premake/test_premakedeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13390_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+Checking patch conans/test/integration/toolchains/premake/test_premakedeps.py...
+Applied patch conans/test/integration/toolchains/premake/test_premakedeps.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/premake/test_premakedeps.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/premake/test_premakedeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Std. Output:
+============================= test session starts ==============================
+collected 1 item
+
+conans/test/integration/toolchains/premake/test_premakedeps.py .         [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/toolchains/premake/test_premakedeps.py::test_premakedeps
+============================== 1 passed in 2.35s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-13390] Test script run successful 

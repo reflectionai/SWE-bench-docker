@@ -1,0 +1,175 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Task Metadata:
+	- Instance ID: conan-io__conan-4546
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git -c advice.detachedHead=false checkout 0470bb0e20950d7c03df6fe416b5e5a92d7e04f1 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+HEAD is now at 0470bb0e2 add gcc versions 8.3, 9.1 (#5112)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git diff > /home/swe-bench/temp_conan-io__conan-4546_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4546_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+Checking patch conans/client/build/autotools_environment.py...
+Checking patch conans/client/build/cmake_flags.py...
+Checking patch conans/client/build/compiler_flags.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/conf/detect.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/tools/oss.py...
+Applied patch conans/client/build/autotools_environment.py cleanly.
+Applied patch conans/client/build/cmake_flags.py cleanly.
+Applied patch conans/client/build/compiler_flags.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/conf/detect.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/tools/oss.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git diff > /home/swe-bench/temp_conan-io__conan-4546_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4546_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+Checking patch conans/client/tools/oss.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/conf/detect.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/build/compiler_flags.py...
+Checking patch conans/client/build/cmake_flags.py...
+Checking patch conans/client/build/autotools_environment.py...
+Applied patch conans/client/tools/oss.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/conf/detect.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/build/compiler_flags.py cleanly.
+Applied patch conans/client/build/cmake_flags.py cleanly.
+Applied patch conans/client/build/autotools_environment.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git diff > /home/swe-bench/temp_conan-io__conan-4546_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4546_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+Checking patch conans/client/build/autotools_environment.py...
+Checking patch conans/client/build/cmake_flags.py...
+Checking patch conans/client/build/compiler_flags.py...
+Checking patch conans/client/conf/__init__.py...
+Checking patch conans/client/conf/detect.py...
+Checking patch conans/client/generators/compiler_args.py...
+Checking patch conans/client/tools/oss.py...
+Applied patch conans/client/build/autotools_environment.py cleanly.
+Applied patch conans/client/build/cmake_flags.py cleanly.
+Applied patch conans/client/build/compiler_flags.py cleanly.
+Applied patch conans/client/conf/__init__.py cleanly.
+Applied patch conans/client/conf/detect.py cleanly.
+Applied patch conans/client/generators/compiler_args.py cleanly.
+Applied patch conans/client/tools/oss.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git diff > /home/swe-bench/temp_conan-io__conan-4546_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git restore conans/test/unittests/client/build/compiler_flags_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git restore conans/test/unittests/client/tools/os_info/osinfo_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git restore conans/test/unittests/model/other_settings_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git restore conans/test/unittests/model/transitive_reqs_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git restore conans/test/unittests/util/detect_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git restore conans/test/unittests/util/detected_architecture_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git restore conans/test/unittests/util/tools_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4546_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+Checking patch conans/test/unittests/client/build/compiler_flags_test.py...
+Checking patch conans/test/unittests/client/tools/os_info/osinfo_test.py...
+Checking patch conans/test/unittests/model/other_settings_test.py...
+Checking patch conans/test/unittests/model/transitive_reqs_test.py...
+Checking patch conans/test/unittests/util/detect_test.py...
+Checking patch conans/test/unittests/util/detected_architecture_test.py...
+Checking patch conans/test/unittests/util/tools_test.py...
+Applied patch conans/test/unittests/client/build/compiler_flags_test.py cleanly.
+Applied patch conans/test/unittests/client/tools/os_info/osinfo_test.py cleanly.
+Applied patch conans/test/unittests/model/other_settings_test.py cleanly.
+Applied patch conans/test/unittests/model/transitive_reqs_test.py cleanly.
+Applied patch conans/test/unittests/util/detect_test.py cleanly.
+Applied patch conans/test/unittests/util/detected_architecture_test.py cleanly.
+Applied patch conans/test/unittests/util/tools_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/build/compiler_flags_test.py conans/test/unittests/client/tools/os_info/osinfo_test.py conans/test/unittests/model/other_settings_test.py conans/test/unittests/model/transitive_reqs_test.py conans/test/unittests/util/detect_test.py conans/test/unittests/util/detected_architecture_test.py conans/test/unittests/util/tools_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/build/compiler_flags_test.py conans/test/unittests/client/tools/os_info/osinfo_test.py conans/test/unittests/model/other_settings_test.py conans/test/unittests/model/transitive_reqs_test.py conans/test/unittests/util/detect_test.py conans/test/unittests/util/detected_architecture_test.py conans/test/unittests/util/tools_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/build/compiler_flags_test.py conans/test/unittests/client/tools/os_info/osinfo_test.py conans/test/unittests/model/other_settings_test.py conans/test/unittests/model/transitive_reqs_test.py conans/test/unittests/util/detect_test.py conans/test/unittests/util/detected_architecture_test.py conans/test/unittests/util/tools_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 7 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/unittests/client/build/compiler_flags_test.py
+ERROR conans/test/unittests/client/tools/os_info/osinfo_test.py
+ERROR conans/test/unittests/model/other_settings_test.py
+ERROR conans/test/unittests/model/transitive_reqs_test.py
+ERROR conans/test/unittests/util/detect_test.py
+ERROR conans/test/unittests/util/detected_architecture_test.py
+ERROR conans/test/unittests/util/tools_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 7 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 7 errors in 0.68s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4546] Test script run successful 

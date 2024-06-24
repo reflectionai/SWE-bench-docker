@@ -1,0 +1,296 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Task Metadata:
+	- Instance ID: conan-io__conan-13729
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git -c advice.detachedHead=false checkout 2a2cddcead0eb5a5828ceea8cf0254fb546ba4d3 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+HEAD is now at 2a2cddcea Render profile name when using Jinja2 (#13721)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git diff > /home/swe-bench/temp_conan-io__conan-13729_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13729_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+Checking patch conan/tools/apple/xcodebuild.py...
+Checking patch conan/tools/cmake/cmake.py...
+Checking patch conan/tools/meson/meson.py...
+Checking patch conan/tools/microsoft/msbuild.py...
+Checking patch conans/model/conf.py...
+Applied patch conan/tools/apple/xcodebuild.py cleanly.
+Applied patch conan/tools/cmake/cmake.py cleanly.
+Applied patch conan/tools/meson/meson.py cleanly.
+Applied patch conan/tools/microsoft/msbuild.py cleanly.
+Applied patch conans/model/conf.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git diff > /home/swe-bench/temp_conan-io__conan-13729_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13729_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+Checking patch conans/model/conf.py...
+Checking patch conan/tools/microsoft/msbuild.py...
+Checking patch conan/tools/meson/meson.py...
+Checking patch conan/tools/cmake/cmake.py...
+Checking patch conan/tools/apple/xcodebuild.py...
+Applied patch conans/model/conf.py cleanly.
+Applied patch conan/tools/microsoft/msbuild.py cleanly.
+Applied patch conan/tools/meson/meson.py cleanly.
+Applied patch conan/tools/cmake/cmake.py cleanly.
+Applied patch conan/tools/apple/xcodebuild.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git diff > /home/swe-bench/temp_conan-io__conan-13729_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13729_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+Checking patch conan/tools/apple/xcodebuild.py...
+Checking patch conan/tools/cmake/cmake.py...
+Checking patch conan/tools/meson/meson.py...
+Checking patch conan/tools/microsoft/msbuild.py...
+Checking patch conans/model/conf.py...
+Applied patch conan/tools/apple/xcodebuild.py cleanly.
+Applied patch conan/tools/cmake/cmake.py cleanly.
+Applied patch conan/tools/meson/meson.py cleanly.
+Applied patch conan/tools/microsoft/msbuild.py cleanly.
+Applied patch conans/model/conf.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git diff > /home/swe-bench/temp_conan-io__conan-13729_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/functional/toolchains/apple/test_xcodebuild.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/functional/toolchains/cmake/test_cmake.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/functional/toolchains/meson/test_install.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/functional/toolchains/meson/test_meson.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/functional/toolchains/microsoft/test_msbuild.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/integration/configuration/conf/test_conf.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/integration/configuration/conf/test_conf_profile.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/unittests/client/tools/apple/test_xcodebuild.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git restore conans/test/unittests/model/test_conf.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13729_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+Checking patch conans/test/functional/toolchains/apple/test_xcodebuild.py...
+Checking patch conans/test/functional/toolchains/cmake/test_cmake.py...
+/home/swe-bench/temp_conan-io__conan-13729_test.patch:33: new blank line at EOF.
++
+Checking patch conans/test/functional/toolchains/meson/test_install.py...
+Checking patch conans/test/functional/toolchains/meson/test_meson.py...
+Checking patch conans/test/functional/toolchains/microsoft/test_msbuild.py...
+Checking patch conans/test/integration/configuration/conf/test_conf.py...
+Checking patch conans/test/integration/configuration/conf/test_conf_profile.py...
+Checking patch conans/test/unittests/client/tools/apple/test_xcodebuild.py...
+Checking patch conans/test/unittests/model/test_conf.py...
+Applied patch conans/test/functional/toolchains/apple/test_xcodebuild.py cleanly.
+Applied patch conans/test/functional/toolchains/cmake/test_cmake.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_install.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_meson.py cleanly.
+Applied patch conans/test/functional/toolchains/microsoft/test_msbuild.py cleanly.
+Applied patch conans/test/integration/configuration/conf/test_conf.py cleanly.
+Applied patch conans/test/integration/configuration/conf/test_conf_profile.py cleanly.
+Applied patch conans/test/unittests/client/tools/apple/test_xcodebuild.py cleanly.
+Applied patch conans/test/unittests/model/test_conf.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/apple/test_xcodebuild.py conans/test/functional/toolchains/cmake/test_cmake.py conans/test/functional/toolchains/meson/test_install.py conans/test/functional/toolchains/meson/test_meson.py conans/test/functional/toolchains/microsoft/test_msbuild.py conans/test/integration/configuration/conf/test_conf.py conans/test/integration/configuration/conf/test_conf_profile.py conans/test/unittests/client/tools/apple/test_xcodebuild.py conans/test/unittests/model/test_conf.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/apple/test_xcodebuild.py conans/test/functional/toolchains/cmake/test_cmake.py conans/test/functional/toolchains/meson/test_install.py conans/test/functional/toolchains/meson/test_meson.py conans/test/functional/toolchains/microsoft/test_msbuild.py conans/test/integration/configuration/conf/test_conf.py conans/test/integration/configuration/conf/test_conf_profile.py conans/test/unittests/client/tools/apple/test_xcodebuild.py conans/test/unittests/model/test_conf.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Std. Output:
+============================= test session starts ==============================
+collected 91 items
+
+conans/test/functional/toolchains/apple/test_xcodebuild.py sss           [  3%]
+conans/test/functional/toolchains/cmake/test_cmake.py sssssEEssssEEEEE   [ 20%]
+conans/test/functional/toolchains/meson/test_install.py E                [ 21%]
+conans/test/functional/toolchains/meson/test_meson.py EEs                [ 25%]
+conans/test/functional/toolchains/microsoft/test_msbuild.py sssssss      [ 32%]
+conans/test/integration/configuration/conf/test_conf.py .............    [ 47%]
+conans/test/integration/configuration/conf/test_conf_profile.py .......s [ 56%]
+..                                                                       [ 58%]
+conans/test/unittests/client/tools/apple/test_xcodebuild.py .....        [ 63%]
+conans/test/unittests/model/test_conf.py ............................... [ 97%]
+..                                                                       [100%]
+
+=============================== warnings summary ===============================
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/functional/toolchains/apple/test_xcodebuild.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/functional/toolchains/cmake/test_cmake.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/functional/toolchains/meson/test_meson.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/functional/toolchains/microsoft/test_msbuild.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/integration/configuration/conf/test_conf.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/integration/configuration/conf/test_conf_profile.py)
+    class TestClient(object):
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_basic_composition
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_basic_inclusion
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_composition_conan_conf
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_new_config_file
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_new_config_file_required_version
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_composition_conan_conf_overwritten_by_cli_arg
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_composition_conan_conf_different_data_types_by_cli_arg
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_jinja_global_conf
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_jinja_global_conf_include
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_jinja_global_conf_paths
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_empty_conf_valid
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_nonexisting_conf
+PASSED conans/test/integration/configuration/conf/test_conf.py::test_nonexisting_conf_global_conf
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_cmake_no_config
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_cmake_config
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_cmake_config_error
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_cmake_config_package
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_cmake_config_package_not_scoped
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_config_profile_forbidden
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_msbuild_config
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_conf_package_patterns
+PASSED conans/test/integration/configuration/conf/test_conf_profile.py::test_config_package_append
+PASSED conans/test/unittests/client/tools/apple/test_xcodebuild.py::test_verbosity_global[quiet]
+PASSED conans/test/unittests/client/tools/apple/test_xcodebuild.py::test_verbosity_global[None]
+PASSED conans/test/unittests/client/tools/apple/test_xcodebuild.py::test_verbosity_global[verbose]
+PASSED conans/test/unittests/client/tools/apple/test_xcodebuild.py::test_sdk_path
+PASSED conans/test/unittests/client/tools/apple/test_xcodebuild.py::test_sdk
+PASSED conans/test/unittests/model/test_conf.py::test_conf_definition
+PASSED conans/test/unittests/model/test_conf.py::test_conf_definition_error[tools.doesnotexist:never]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_definition_error[tools:doesnotexist]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_definition_error[core.doesnotexist:never]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_definition_error[core:doesnotexist]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_update
+PASSED conans/test/unittests/model/test_conf.py::test_conf_rebase
+PASSED conans/test/unittests/model/test_conf.py::test_conf_error_per_package
+PASSED conans/test/unittests/model/test_conf.py::test_conf_error_uppercase
+PASSED conans/test/unittests/model/test_conf.py::test_parse_spaces
+PASSED conans/test/unittests/model/test_conf.py::test_conf_get_different_type_input_objects[user.company.cpu:jobs=!-None]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_get_different_type_input_objects[user.company.cpu:jobs=10-10]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_get_different_type_input_objects[user.company.build:ccflags=--m superflag---m superflag]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_get_different_type_input_objects[zlib:user.company.check:shared=True-True]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_get_different_type_input_objects[zlib:user.company.check:shared_str='True'-"True"]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_get_different_type_input_objects[user.company.list:objs=[1, 2, 3, 4, 'mystr', {'a': 1}]-expected5]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_get_different_type_input_objects[user.company.network:proxies={'url': 'http://api.site.com/api', 'dataType': 'json', 'method': 'GET'}-expected6]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations[user.company.list:objs=[2, 3]-user.company.list:objs=+[0, 1]-expected0]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations[user.company.list:objs=[2, 3]-user.company.list:objs+=[4, 5]-expected1]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations[user.company.list:objs=[2, 3]-user.company.list:objs+={'a': 1}-expected2]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations[user.company.list:objs=[2, 3]-user.company.list:objs=+start-expected3]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations[user.company.list:objs=[2, 3]-user.company.list:objs=[0, 1]-expected4]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations_fails_with_wrong_types[user.company.list:objs=value-user.company.list:objs=['value']]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations_fails_with_wrong_types[user.company.list:objs='value'-user.company.list:objs=+[0, 1]]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations_fails_with_wrong_types[user.company.list:objs={'a': 1}-user.company.list:objs+={'b': 1}]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations_fails_with_wrong_types[user.company.list:objs=True-user.company.list:objs+=False]
+PASSED conans/test/unittests/model/test_conf.py::test_conf_list_operations_fails_with_wrong_types[user.company.list:objs=10-user.company.list:objs=+11]
+PASSED conans/test/unittests/model/test_conf.py::test_compose_conf_complex
+PASSED conans/test/unittests/model/test_conf.py::test_compose_conf_dict_updates
+PASSED conans/test/unittests/model/test_conf.py::test_conf_get_check_type_and_default
+PASSED conans/test/unittests/model/test_conf.py::test_conf_pop
+PASSED conans/test/unittests/model/test_conf.py::test_conf_choices
+PASSED conans/test/unittests/model/test_conf.py::test_conf_choices_default
+SKIPPED [1] conans/test/functional/toolchains/apple/test_xcodebuild.py:57: Only for MacOS
+SKIPPED [1] conans/test/functional/toolchains/apple/test_xcodebuild.py:103: Only for MacOS
+SKIPPED [1] conans/test/functional/toolchains/apple/test_xcodebuild.py:139: Only for MacOS
+SKIPPED [1] conans/test/functional/toolchains/cmake/test_cmake.py:18: Needs windows
+SKIPPED [2] conans/test/functional/toolchains/cmake/test_cmake.py:302: Only for windows
+SKIPPED [2] conans/test/functional/toolchains/cmake/test_cmake.py:204: Only for windows
+SKIPPED [2] conans/test/functional/toolchains/cmake/test_cmake.py:424: Only for Apple
+SKIPPED [2] conans/test/functional/toolchains/cmake/test_cmake.py:484: Only for windows
+SKIPPED [1] conans/test/functional/toolchains/meson/test_meson.py:188: Latest Meson versions needs Python >= 3.8
+SKIPPED [1] conans/test/functional/toolchains/microsoft/test_msbuild.py:304: Only for windows
+SKIPPED [1] conans/test/functional/toolchains/microsoft/test_msbuild.py:310: Only for windows
+SKIPPED [2] conans/test/functional/toolchains/microsoft/test_msbuild.py:421: Only for windows
+SKIPPED [1] conans/test/functional/toolchains/microsoft/test_msbuild.py:429: Only for windows
+SKIPPED [1] conans/test/functional/toolchains/microsoft/test_msbuild.py:490: Only for windows
+SKIPPED [1] conans/test/functional/toolchains/microsoft/test_msbuild.py:529: Only for windows
+SKIPPED [1] conans/test/integration/configuration/conf/test_conf_profile.py:159: Only for windows
+ERROR conans/test/functional/toolchains/cmake/test_cmake.py::LinuxTest::test_toolchain_linux_0_Debug
+ERROR conans/test/functional/toolchains/cmake/test_cmake.py::LinuxTest::test_toolchain_linux_1_Release
+ERROR conans/test/functional/toolchains/cmake/test_cmake.py::CMakeInstallTest::test_install
+ERROR conans/test/functional/toolchains/cmake/test_cmake.py::CMakeInstallTest::test_install_in_build
+ERROR conans/test/functional/toolchains/cmake/test_cmake.py::TestCmakeTestMethod::test_test
+ERROR conans/test/functional/toolchains/cmake/test_cmake.py::CMakeOverrideCacheTest::test_cmake_cache_variables
+ERROR conans/test/functional/toolchains/cmake/test_cmake.py::TestCMakeFindPackagePreferConfig::test_prefer_config
+ERROR conans/test/functional/toolchains/meson/test_install.py::MesonInstall::test_install
+ERROR conans/test/functional/toolchains/meson/test_meson.py::MesonToolchainTest::test_definition_of_global_options
+ERROR conans/test/functional/toolchains/meson/test_meson.py::MesonToolchainTest::test_meson_default_dirs
+============ 60 passed, 21 skipped, 6 warnings, 10 errors in 19.61s ============
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/apple/test_xcodebuild.py conans/test/functional/toolchains/cmake/test_cmake.py conans/test/functional/toolchains/meson/test_install.py conans/test/functional/toolchains/meson/test_meson.py conans/test/functional/toolchains/microsoft/test_msbuild.py conans/test/integration/configuration/conf/test_conf.py conans/test/integration/configuration/conf/test_conf_profile.py conans/test/unittests/client/tools/apple/test_xcodebuild.py conans/test/unittests/model/test_conf.py` failed. (See above for error)
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-13729] Test script run successful 

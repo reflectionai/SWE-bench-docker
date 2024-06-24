@@ -1,0 +1,116 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Task Metadata:
+	- Instance ID: conan-io__conan-13450
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git -c advice.detachedHead=false checkout 8c424def2d50c9c0e951b52f2609abff19cbeeaa 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+HEAD is now at 8c424def2 Add global verbosity conf `tools.build:verbosity` (#13428)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git diff > /home/swe-bench/temp_conan-io__conan-13450_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13450_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+Checking patch conan/tools/build/flags.py...
+Checking patch conan/tools/meson/helpers.py...
+Checking patch conan/tools/meson/toolchain.py...
+Applied patch conan/tools/build/flags.py cleanly.
+Applied patch conan/tools/meson/helpers.py cleanly.
+Applied patch conan/tools/meson/toolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git diff > /home/swe-bench/temp_conan-io__conan-13450_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13450_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+Checking patch conan/tools/meson/toolchain.py...
+Checking patch conan/tools/meson/helpers.py...
+Checking patch conan/tools/build/flags.py...
+Applied patch conan/tools/meson/toolchain.py cleanly.
+Applied patch conan/tools/meson/helpers.py cleanly.
+Applied patch conan/tools/build/flags.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git diff > /home/swe-bench/temp_conan-io__conan-13450_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13450_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+Checking patch conan/tools/build/flags.py...
+Checking patch conan/tools/meson/helpers.py...
+Checking patch conan/tools/meson/toolchain.py...
+Applied patch conan/tools/build/flags.py cleanly.
+Applied patch conan/tools/meson/helpers.py cleanly.
+Applied patch conan/tools/meson/toolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git diff > /home/swe-bench/temp_conan-io__conan-13450_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git restore conans/test/unittests/client/build/cpp_std_flags_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13450_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+Checking patch conans/test/unittests/client/build/cpp_std_flags_test.py...
+Applied patch conans/test/unittests/client/build/cpp_std_flags_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/build/cpp_std_flags_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/client/build/cpp_std_flags_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Std. Output:
+============================= test session starts ==============================
+collected 12 items
+
+conans/test/unittests/client/build/cpp_std_flags_test.py ......xx....    [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_apple_clang_cppstd_defaults
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_apple_clang_cppstd_flags
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_clang_cppstd_defaults
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_clang_cppstd_flags
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_gcc_cppstd_defaults
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_gcc_cppstd_flags
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_mcst_lcc_cppstd_defaults
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_mcst_lcc_cppstd_flag
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_visual_cppstd_defaults
+PASSED conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_visual_cppstd_flags
+XFAIL conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_intel_gcc_cppstd_flag
+  Intel-cc compiler c++flags to be defined
+XFAIL conans/test/unittests/client/build/cpp_std_flags_test.py::CompilerFlagsTest::test_intel_visual_cppstd_flag
+  Intel-cc compiler c++flags to be defined
+======================== 10 passed, 2 xfailed in 0.73s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-13450] Test script run successful 
