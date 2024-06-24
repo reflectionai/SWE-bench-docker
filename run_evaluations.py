@@ -42,7 +42,7 @@ index 0000000..e69de29
 """
   predictions_path = pathlib.Path(
       tempfile.NamedTemporaryFile(delete=False, suffix='.jsonl').name)
-  log_dir = pathlib.Path("/home/tina/SWE-bench-docker/tina_logs")
+  log_dir = pathlib.Path(log_dir)
   print("LOGGING RESULTS ON HOST MACHINE AT: ", log_dir)
 
   # Add suffix indicating if no_op or gold patch was applied during this run.
@@ -91,6 +91,8 @@ if __name__ == "__main__":
       "--swe_bench_tasks", type=str, default="princeton-nlp/SWE-bench_Lite")
   parser.add_argument(
       "--instance_id", type=str, default=None, help='optional, specify to run only one task')
+  parser.add_argument(
+      "--log_dir", type=str, required=True, help='host machine logging directory')
   args = parser.parse_args()
   asyncio.run(
       main(
@@ -98,4 +100,5 @@ if __name__ == "__main__":
           num_processes=args.num_processes,
           swe_bench_tasks=args.swe_bench_tasks,
           split=args.split,
-          instance_id=args.instance_id))
+          instance_id=args.instance_id,
+          log_dir=args.log_dir))
