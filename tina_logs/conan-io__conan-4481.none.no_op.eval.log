@@ -1,0 +1,217 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Task Metadata:
+	- Instance ID: conan-io__conan-4481
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git -c advice.detachedHead=false checkout 68ced146342b04e56cd66fce729c86982198f471 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+HEAD is now at 68ced1463 return empty list if env variable is empty (#4594)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git diff > /home/swe-bench/temp_conan-io__conan-4481_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4481_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-4481_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git diff > /home/swe-bench/temp_conan-io__conan-4481_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4481_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git diff > /home/swe-bench/temp_conan-io__conan-4481_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4481_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-4481_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git diff > /home/swe-bench/temp_conan-io__conan-4481_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/commands/info_on_child_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/commands/info_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/commands/inspect_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/consume_header_only_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/consume_settings_and_options_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/forbidden_commands_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/graph_related_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/layouts_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/link_create_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/link_remove_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/functional/editable/transitive_editable_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/integration/workspace_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/unittests/model/editable_cpp_info/apply_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/unittests/model/editable_cpp_info/parse_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/unittests/model/editable_cpp_info/work_on_items_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git restore conans/test/unittests/model/transitive_reqs_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4481_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+Checking patch conans/test/functional/editable/commands/info_on_child_test.py...
+Checking patch conans/test/functional/editable/commands/info_test.py...
+Checking patch conans/test/functional/editable/commands/inspect_test.py...
+Checking patch conans/test/functional/editable/consume_header_only_test.py...
+Checking patch conans/test/functional/editable/consume_settings_and_options_test.py...
+Checking patch conans/test/functional/editable/forbidden_commands_test.py...
+Checking patch conans/test/functional/editable/graph_related_test.py...
+Checking patch conans/test/functional/editable/layouts_test.py...
+Checking patch conans/test/functional/editable/link_create_test.py...
+Checking patch conans/test/functional/editable/link_remove_test.py...
+Checking patch conans/test/functional/editable/transitive_editable_test.py...
+Checking patch conans/test/integration/workspace_test.py...
+Checking patch conans/test/unittests/model/editable_cpp_info/apply_test.py...
+Checking patch conans/test/unittests/model/editable_cpp_info/parse_test.py...
+Checking patch conans/test/unittests/model/editable_cpp_info/work_on_items_test.py...
+Checking patch conans/test/unittests/model/transitive_reqs_test.py...
+Applied patch conans/test/functional/editable/commands/info_on_child_test.py cleanly.
+Applied patch conans/test/functional/editable/commands/info_test.py cleanly.
+Applied patch conans/test/functional/editable/commands/inspect_test.py cleanly.
+Applied patch conans/test/functional/editable/consume_header_only_test.py cleanly.
+Applied patch conans/test/functional/editable/consume_settings_and_options_test.py cleanly.
+Applied patch conans/test/functional/editable/forbidden_commands_test.py cleanly.
+Applied patch conans/test/functional/editable/graph_related_test.py cleanly.
+Applied patch conans/test/functional/editable/layouts_test.py cleanly.
+Applied patch conans/test/functional/editable/link_create_test.py cleanly.
+Applied patch conans/test/functional/editable/link_remove_test.py cleanly.
+Applied patch conans/test/functional/editable/transitive_editable_test.py cleanly.
+Applied patch conans/test/integration/workspace_test.py cleanly.
+Applied patch conans/test/unittests/model/editable_cpp_info/apply_test.py cleanly.
+Applied patch conans/test/unittests/model/editable_cpp_info/parse_test.py cleanly.
+Applied patch conans/test/unittests/model/editable_cpp_info/work_on_items_test.py cleanly.
+Applied patch conans/test/unittests/model/transitive_reqs_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/editable/commands/info_on_child_test.py conans/test/functional/editable/commands/info_test.py conans/test/functional/editable/commands/inspect_test.py conans/test/functional/editable/consume_header_only_test.py conans/test/functional/editable/consume_settings_and_options_test.py conans/test/functional/editable/forbidden_commands_test.py conans/test/functional/editable/graph_related_test.py conans/test/functional/editable/layouts_test.py conans/test/functional/editable/link_create_test.py conans/test/functional/editable/link_remove_test.py conans/test/functional/editable/transitive_editable_test.py conans/test/integration/workspace_test.py conans/test/unittests/model/editable_cpp_info/apply_test.py conans/test/unittests/model/editable_cpp_info/parse_test.py conans/test/unittests/model/editable_cpp_info/work_on_items_test.py conans/test/unittests/model/transitive_reqs_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/editable/commands/info_on_child_test.py conans/test/functional/editable/commands/info_test.py conans/test/functional/editable/commands/inspect_test.py conans/test/functional/editable/consume_header_only_test.py conans/test/functional/editable/consume_settings_and_options_test.py conans/test/functional/editable/forbidden_commands_test.py conans/test/functional/editable/graph_related_test.py conans/test/functional/editable/layouts_test.py conans/test/functional/editable/link_create_test.py conans/test/functional/editable/link_remove_test.py conans/test/functional/editable/transitive_editable_test.py conans/test/integration/workspace_test.py conans/test/unittests/model/editable_cpp_info/apply_test.py conans/test/unittests/model/editable_cpp_info/parse_test.py conans/test/unittests/model/editable_cpp_info/work_on_items_test.py conans/test/unittests/model/transitive_reqs_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/editable/commands/info_on_child_test.py conans/test/functional/editable/commands/info_test.py conans/test/functional/editable/commands/inspect_test.py conans/test/functional/editable/consume_header_only_test.py conans/test/functional/editable/consume_settings_and_options_test.py conans/test/functional/editable/forbidden_commands_test.py conans/test/functional/editable/graph_related_test.py conans/test/functional/editable/layouts_test.py conans/test/functional/editable/link_create_test.py conans/test/functional/editable/link_remove_test.py conans/test/functional/editable/transitive_editable_test.py conans/test/integration/workspace_test.py conans/test/unittests/model/editable_cpp_info/apply_test.py conans/test/unittests/model/editable_cpp_info/parse_test.py conans/test/unittests/model/editable_cpp_info/work_on_items_test.py conans/test/unittests/model/transitive_reqs_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 16 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/editable/commands/info_on_child_test.py
+ERROR conans/test/functional/editable/commands/info_test.py
+ERROR conans/test/functional/editable/commands/inspect_test.py
+ERROR conans/test/functional/editable/consume_header_only_test.py
+ERROR conans/test/functional/editable/consume_settings_and_options_test.py
+ERROR conans/test/functional/editable/forbidden_commands_test.py
+ERROR conans/test/functional/editable/graph_related_test.py
+ERROR conans/test/functional/editable/layouts_test.py
+ERROR conans/test/functional/editable/link_create_test.py
+ERROR conans/test/functional/editable/link_remove_test.py
+ERROR conans/test/functional/editable/transitive_editable_test.py
+ERROR conans/test/integration/workspace_test.py
+ERROR conans/test/unittests/model/editable_cpp_info/apply_test.py
+ERROR conans/test/unittests/model/editable_cpp_info/parse_test.py
+ERROR conans/test/unittests/model/editable_cpp_info/work_on_items_test.py
+ERROR conans/test/unittests/model/transitive_reqs_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 16 errors during collection !!!!!!!!!!!!!!!!!!!
+============================== 16 errors in 1.01s ==============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4481] Test script run successful 

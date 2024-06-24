@@ -1,0 +1,175 @@
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Task Metadata:
+	- Instance ID: conan-io__conan-4293
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git -c advice.detachedHead=false checkout f364eb11307e1689c548646bbbf6af53c112c872 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+HEAD is now at f364eb113 use named arguments (#4426)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git diff > /home/swe-bench/temp_conan-io__conan-4293_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4293_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-4293_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git diff > /home/swe-bench/temp_conan-io__conan-4293_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-4293_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git diff > /home/swe-bench/temp_conan-io__conan-4293_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4293_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-4293_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git diff > /home/swe-bench/temp_conan-io__conan-4293_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/functional/command/remove_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/functional/command/search_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/functional/command/upload_complete_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/functional/old/conan_trace_file_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/functional/old/package_integrity_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/integration/multi_remote_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/integration/revisions_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/integration/syncronize_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/unittests/server/revision_list_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git restore conans/test/utils/tools.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: git apply -v /home/swe-bench/temp_conan-io__conan-4293_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+Checking patch conans/test/functional/command/remove_test.py...
+Checking patch conans/test/functional/command/search_test.py...
+Checking patch conans/test/functional/command/upload_complete_test.py...
+Checking patch conans/test/functional/old/conan_trace_file_test.py...
+Checking patch conans/test/functional/old/package_integrity_test.py...
+Checking patch conans/test/integration/multi_remote_test.py...
+Checking patch conans/test/integration/revisions_test.py...
+Checking patch conans/test/integration/syncronize_test.py...
+Checking patch conans/test/unittests/client/cache_test.py...
+Checking patch conans/test/unittests/client/util/time_test.py...
+Checking patch conans/test/unittests/server/revision_list_test.py...
+Checking patch conans/test/utils/tools.py...
+Applied patch conans/test/functional/command/remove_test.py cleanly.
+Applied patch conans/test/functional/command/search_test.py cleanly.
+Applied patch conans/test/functional/command/upload_complete_test.py cleanly.
+Applied patch conans/test/functional/old/conan_trace_file_test.py cleanly.
+Applied patch conans/test/functional/old/package_integrity_test.py cleanly.
+Applied patch conans/test/integration/multi_remote_test.py cleanly.
+Applied patch conans/test/integration/revisions_test.py cleanly.
+Applied patch conans/test/integration/syncronize_test.py cleanly.
+Applied patch conans/test/unittests/client/cache_test.py cleanly.
+Applied patch conans/test/unittests/client/util/time_test.py cleanly.
+Applied patch conans/test/unittests/server/revision_list_test.py cleanly.
+Applied patch conans/test/utils/tools.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/remove_test.py conans/test/functional/command/search_test.py conans/test/functional/command/upload_complete_test.py conans/test/functional/old/conan_trace_file_test.py conans/test/functional/old/package_integrity_test.py conans/test/integration/multi_remote_test.py conans/test/integration/revisions_test.py conans/test/integration/syncronize_test.py conans/test/unittests/client/cache_test.py conans/test/unittests/client/util/time_test.py conans/test/unittests/server/revision_list_test.py conans/test/utils/tools.py;
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/remove_test.py conans/test/functional/command/search_test.py conans/test/functional/command/upload_complete_test.py conans/test/functional/old/conan_trace_file_test.py conans/test/functional/old/package_integrity_test.py conans/test/integration/multi_remote_test.py conans/test/integration/revisions_test.py conans/test/integration/syncronize_test.py conans/test/unittests/client/cache_test.py conans/test/unittests/client/util/time_test.py conans/test/unittests/server/revision_list_test.py conans/test/utils/tools.py 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/command/remove_test.py conans/test/functional/command/search_test.py conans/test/functional/command/upload_complete_test.py conans/test/functional/old/conan_trace_file_test.py conans/test/functional/old/package_integrity_test.py conans/test/integration/multi_remote_test.py conans/test/integration/revisions_test.py conans/test/integration/syncronize_test.py conans/test/unittests/client/cache_test.py conans/test/unittests/client/util/time_test.py conans/test/unittests/server/revision_list_test.py conans/test/utils/tools.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 12 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/command/remove_test.py
+ERROR conans/test/functional/command/search_test.py
+ERROR conans/test/functional/command/upload_complete_test.py
+ERROR conans/test/functional/old/conan_trace_file_test.py
+ERROR conans/test/functional/old/package_integrity_test.py
+ERROR conans/test/integration/multi_remote_test.py
+ERROR conans/test/integration/revisions_test.py
+ERROR conans/test/integration/syncronize_test.py
+ERROR conans/test/unittests/client/cache_test.py
+ERROR conans/test/unittests/client/util/time_test.py
+ERROR conans/test/unittests/server/revision_list_test.py
+ERROR conans/test/utils/tools.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 12 errors during collection !!!!!!!!!!!!!!!!!!!
+============================== 12 errors in 0.82s ==============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-4293] Test script run successful 

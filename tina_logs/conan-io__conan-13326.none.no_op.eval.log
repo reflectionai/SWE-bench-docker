@@ -1,0 +1,168 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Task Metadata:
+	- Instance ID: conan-io__conan-13326
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git -c advice.detachedHead=false checkout 00700331f59e1e01b53315fec786e7f78d7bced2 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+HEAD is now at 00700331f convert to dicts settings_user.yml (#13323)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git diff > /home/swe-bench/temp_conan-io__conan-13326_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13326_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-13326_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git diff > /home/swe-bench/temp_conan-io__conan-13326_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13326_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git diff > /home/swe-bench/temp_conan-io__conan-13326_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13326_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-13326_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git diff > /home/swe-bench/temp_conan-io__conan-13326_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git restore conans/test/unittests/tools/build/test_cppstd.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13326_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+Checking patch conans/test/unittests/tools/build/test_cppstd.py...
+Applied patch conans/test/unittests/tools/build/test_cppstd.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/tools/build/test_cppstd.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/tools/build/test_cppstd.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/tools/build/test_cppstd.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 70 items
+
+conans/test/unittests/tools/build/test_cppstd.py ....................... [ 32%]
+...............FFF.............................                          [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-2.0-values0]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-2.1-values1]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-2.2-values2]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-3.1-values3]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-3.4-values4]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-3.5-values5]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-4.9-values6]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-5-values7]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-6-values8]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_clang[clang-12-values9]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_with_specific_values
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_error
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_gcc[gcc-2.0-values0]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_gcc[gcc-3.4-values1]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_gcc[gcc-4.2-values2]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_gcc[gcc-4.3-values3]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_gcc[gcc-4.8-values4]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_gcc[gcc-5-values5]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_gcc[gcc-8-values6]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_gcc[gcc-11-values7]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_apple_clang[apple-clang-3.9-values0]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_apple_clang[apple-clang-4.0-values1]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_apple_clang[apple-clang-5.0-values2]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_apple_clang[apple-clang-5.1-values3]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_apple_clang[apple-clang-6.1-values4]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_apple_clang[apple-clang-9.5-values5]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_apple_clang[apple-clang-10-values6]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_apple_clang[apple-clang-13-values7]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_msvc[msvc-180-values0]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_msvc[msvc-190-values1]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_msvc[msvc-191-values2]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_msvc[msvc-192-values3]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_msvc[msvc-193-values4]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_mcst[mcst-lcc-1.20-values0]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_mcst[mcst-lcc-1.21-values1]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_mcst[mcst-lcc-1.23-values2]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_mcst[mcst-lcc-1.24-values3]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_mcst[mcst-lcc-1.25-values4]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_default_cppstd_gcc[gcc-5-gnu98]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_default_cppstd_gcc[gcc-8-gnu14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_default_cppstd_gcc[msvc-190-14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_default_cppstd_gcc[apple-clang-12.0-gnu98]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_default_cppstd_gcc[clang-6-gnu14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_cppstd_type
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_settings[98]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_settings[11]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_settings[14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_settings[17]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_outdated_settings[98]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_outdated_settings[11]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_outdated_settings[14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_settings_with_extension[98]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_settings_with_extension[11]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_settings_with_extension[14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_check_min_cppstd_from_settings_with_extension[17]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_settings[98]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_settings[11]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_settings[14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_settings[17]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_outdated_settings[98]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_outdated_settings[11]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_outdated_settings[14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_settings_with_extension[98]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_settings_with_extension[11]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_settings_with_extension[14]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_from_settings_with_extension[17]
+PASSED conans/test/unittests/tools/build/test_cppstd.py::test_valid_min_cppstd_unsupported_standard
+FAILED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_qcc[qcc-4.4-values0]
+FAILED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_qcc[qcc-5.4-values1]
+FAILED conans/test/unittests/tools/build/test_cppstd.py::test_supported_cppstd_qcc[qcc-8.3-values2]
+========================= 3 failed, 67 passed in 1.28s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-13326] Test script run successful 

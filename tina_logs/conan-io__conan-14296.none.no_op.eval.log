@@ -1,0 +1,134 @@
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Task Metadata:
+	- Instance ID: conan-io__conan-14296
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git -c advice.detachedHead=false checkout a26104a90c1d683956982ede2e6a481e5dbde5e4 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+HEAD is now at a26104a90 Conan 2.1.0-dev
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git diff > /home/swe-bench/temp_conan-io__conan-14296_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14296_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-14296_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git diff > /home/swe-bench/temp_conan-io__conan-14296_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-14296_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git diff > /home/swe-bench/temp_conan-io__conan-14296_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14296_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-14296_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git diff > /home/swe-bench/temp_conan-io__conan-14296_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git restore conans/test/integration/toolchains/cmake/test_cmaketoolchain.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14296_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+Checking patch conans/test/integration/toolchains/cmake/test_cmaketoolchain.py...
+Applied patch conans/test/integration/toolchains/cmake/test_cmaketoolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/cmake/test_cmaketoolchain.py;
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/cmake/test_cmaketoolchain.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/cmake/test_cmaketoolchain.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 36 items
+
+conans/test/integration/toolchains/cmake/test_cmaketoolchain.py ........ [ 22%]
+ss..F..........s............                                             [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cross_build
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cross_build_linux_to_macos
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cross_build_user_toolchain
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_no_cross_build
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cross_arch
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_no_cross_build_arch
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cross_build_conf
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_find_builddirs
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_extra_flags_via_conf
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cmake_presets_binary_dir_available
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cmake_presets_multiconfig
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cmake_presets_singleconfig
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_toolchain_cache_variables
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_android_c_library
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_android_legacy_toolchain_flag[True]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_android_legacy_toolchain_flag[False]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_android_legacy_toolchain_flag[None]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_android_legacy_toolchain_with_compileflags[True]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_android_legacy_toolchain_with_compileflags[False]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_android_legacy_toolchain_with_compileflags[None]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_presets_ninja_msvc[x86-x86_64]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_presets_ninja_msvc[x86_64-x86_64]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_pkg_config_block
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_user_presets_custom_location[subproject]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_user_presets_custom_location[False]
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_set_cmake_lang_compilers_and_launchers
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cmake_layout_toolchain_folder
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_build_folder_vars_editables
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_set_linker_scripts
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_test_package_layout
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_presets_not_found_error_msg
+PASSED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_recipe_build_folders_vars
+SKIPPED [1] conans/test/integration/toolchains/cmake/test_cmaketoolchain.py:288: Only OSX
+SKIPPED [1] conans/test/integration/toolchains/cmake/test_cmaketoolchain.py:315: Only OSX
+SKIPPED [1] conans/test/integration/toolchains/cmake/test_cmaketoolchain.py:726: Only Windows
+FAILED conans/test/integration/toolchains/cmake/test_cmaketoolchain.py::test_cmake_presets_shared_preset
+=================== 1 failed, 32 passed, 3 skipped in 29.14s ===================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-14296] Test script run successful 

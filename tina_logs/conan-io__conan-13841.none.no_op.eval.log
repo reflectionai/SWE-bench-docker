@@ -1,0 +1,121 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Task Metadata:
+	- Instance ID: conan-io__conan-13841
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git -c advice.detachedHead=false checkout b5e840cac71f43ae67431920785ae223010e7296 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+HEAD is now at b5e840cac new test for CMake+editable+components (#13801)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git diff > /home/swe-bench/temp_conan-io__conan-13841_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13841_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-13841_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git diff > /home/swe-bench/temp_conan-io__conan-13841_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13841_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git diff > /home/swe-bench/temp_conan-io__conan-13841_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13841_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-13841_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git diff > /home/swe-bench/temp_conan-io__conan-13841_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git restore conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13841_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+/home/swe-bench/temp_conan-io__conan-13841_test.patch:35: trailing whitespace.
+    
+Checking patch conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py...
+Applied patch conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 14 items
+
+conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py sEEE [ 28%]
+E.EE.EEEsE                                                               [100%]
+
+=============================== warnings summary ===============================
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py)
+    class TestClient(object):
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+PASSED conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_custom_configuration
+PASSED conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_private_transitive
+SKIPPED [1] conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py:40: Windows only multi-config
+SKIPPED [1] conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py:664: Windows DLL specific
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_system_libs
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_system_libs_no_libs
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_system_libs_components_no_libs
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_do_not_mix_cflags_cxxflags
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_buildirs_working
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_cpp_info_link_objects
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_system_dep
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_error_missing_build_type
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_map_imported_config
+ERROR conans/test/functional/toolchains/cmake/cmakedeps/test_cmakedeps.py::test_quiet
+============== 2 passed, 2 skipped, 1 warning, 10 errors in 5.52s ==============
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-13841] Test script run successful 

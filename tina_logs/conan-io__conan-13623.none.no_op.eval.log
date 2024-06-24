@@ -1,0 +1,148 @@
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Task Metadata:
+	- Instance ID: conan-io__conan-13623
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git -c advice.detachedHead=false checkout 20705e711aafafbbd918c2a8a87275fe09054cd0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+HEAD is now at 20705e711 fix package-query patterns for options (#13618)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git diff > /home/swe-bench/temp_conan-io__conan-13623_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13623_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-13623_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git diff > /home/swe-bench/temp_conan-io__conan-13623_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-13623_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git diff > /home/swe-bench/temp_conan-io__conan-13623_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13623_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-13623_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git diff > /home/swe-bench/temp_conan-io__conan-13623_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git restore conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git restore conans/test/integration/layout/test_layout_paths.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git restore conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: git apply -v /home/swe-bench/temp_conan-io__conan-13623_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+Checking patch conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py...
+Checking patch conans/test/integration/layout/test_layout_paths.py...
+Checking patch conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py...
+Applied patch conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py cleanly.
+Applied patch conans/test/integration/layout/test_layout_paths.py cleanly.
+Applied patch conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py conans/test/integration/layout/test_layout_paths.py conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py;
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py conans/test/integration/layout/test_layout_paths.py conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py conans/test/integration/layout/test_layout_paths.py conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 20 items
+
+conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py EEs          [ 15%]
+conans/test/integration/layout/test_layout_paths.py F                    [ 20%]
+conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py F.FFF...... [ 75%]
+F....                                                                    [100%]
+
+=============================== warnings summary ===============================
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/integration/layout/test_layout_paths.py)
+    class TestClient(object):
+
+conans/test/utils/tools.py:363
+  /home/swe-bench/conan-io__conan/conans/test/utils/tools.py:363: PytestCollectionWarning: cannot collect test class 'TestClient' because it has a __init__ constructor (from: conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py)
+    class TestClient(object):
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_empty_dirs
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_custom_content_and_version_components
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkg_with_public_deps_and_component_requires
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkg_with_public_deps_and_component_requires_2
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkg_config_name_full_aliases
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_components_and_package_pc_creation_order
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkgconfigdeps_with_test_requires
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_tool_requires
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_tool_requires_not_created_if_no_activated
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_tool_requires_raise_exception_if_exist_both_require_and_build_one
+PASSED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_error_missing_pc_build_context
+SKIPPED [1] conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py:60: It makes sense only for Windows
+ERROR conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py::test_pkgconfigdeps_definitions_escape
+ERROR conans/test/functional/toolchains/gnu/test_pkgconfigdeps.py::test_pkgconfigdeps_with_test_requires
+FAILED conans/test/integration/layout/test_layout_paths.py::test_editable_layout_paths
+FAILED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_pkg_config_dirs
+FAILED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_system_libs
+FAILED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_multiple_include
+FAILED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_custom_content
+FAILED conans/test/integration/toolchains/gnu/test_pkgconfigdeps.py::test_with_editable_layout
+======== 6 failed, 11 passed, 1 skipped, 3 warnings, 2 errors in 32.06s ========
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-13623] Test script run successful 

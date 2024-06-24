@@ -1,0 +1,124 @@
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Task Metadata:
+	- Instance ID: conan-io__conan-14378
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git -c advice.detachedHead=false checkout bc4ed4d79fd92edd825fc846dfa515c7b3912138 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+HEAD is now at bc4ed4d79 Implement test_package ``--build-test=missing`` for full control of ``test_package`` deps (#14347)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git diff > /home/swe-bench/temp_conan-io__conan-14378_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14378_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-14378_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git diff > /home/swe-bench/temp_conan-io__conan-14378_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-14378_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git diff > /home/swe-bench/temp_conan-io__conan-14378_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14378_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-14378_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git diff > /home/swe-bench/temp_conan-io__conan-14378_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git restore conans/test/integration/toolchains/microsoft/test_msbuildtoolchain.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git restore conans/test/unittests/tools/microsoft/test_msbuild.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14378_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+Checking patch conans/test/integration/toolchains/microsoft/test_msbuildtoolchain.py...
+Checking patch conans/test/unittests/tools/microsoft/test_msbuild.py...
+Applied patch conans/test/integration/toolchains/microsoft/test_msbuildtoolchain.py cleanly.
+Applied patch conans/test/unittests/tools/microsoft/test_msbuild.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/microsoft/test_msbuildtoolchain.py conans/test/unittests/tools/microsoft/test_msbuild.py;
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/microsoft/test_msbuildtoolchain.py conans/test/unittests/tools/microsoft/test_msbuild.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/microsoft/test_msbuildtoolchain.py conans/test/unittests/tools/microsoft/test_msbuild.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 19 items
+
+conans/test/integration/toolchains/microsoft/test_msbuildtoolchain.py F  [  5%]
+conans/test/unittests/tools/microsoft/test_msbuild.py .......F.........F [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_targets
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_cpu_count
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_toolset
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_toolset_for_intel_cc[icx-Intel C++ Compiler 2021]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_toolset_for_intel_cc[dpcpp-Intel(R) oneAPI DPC++ Compiler]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_toolset_for_intel_cc[classic-Intel C++ Compiler 19.2]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_standard
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_and_intel_cc_props[icx-Intel C++ Compiler 2021]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_and_intel_cc_props[dpcpp-Intel(R) oneAPI DPC++ Compiler]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuild_and_intel_cc_props[classic-Intel C++ Compiler 19.2]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_is_msvc[msvc-True]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_is_msvc[clang-False]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_is_msvc_build
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_is_msvc_static_runtime[msvc-True-static-Release-True]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_is_msvc_static_runtime[msvc-True-static-Debug-True]
+PASSED conans/test/unittests/tools/microsoft/test_msbuild.py::test_is_msvc_static_runtime[clang-True-None-Debug-False]
+FAILED conans/test/integration/toolchains/microsoft/test_msbuildtoolchain.py::test_msbuildtoolchain_props_with_extra_flags
+FAILED conans/test/unittests/tools/microsoft/test_msbuild.py::test_resource_compile
+FAILED conans/test/unittests/tools/microsoft/test_msbuild.py::test_msbuildtoolchain_changing_flags_via_attributes
+========================= 3 failed, 16 passed in 2.19s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-14378] Test script run successful 

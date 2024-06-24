@@ -1,0 +1,111 @@
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Task Metadata:
+	- Instance ID: conan-io__conan-14168
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git -c advice.detachedHead=false checkout 6a85762a3761072716317c2b9575bf48513f129e 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+HEAD is now at 6a85762a3 Merge branch 'release/2.0' into develop2
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git diff > /home/swe-bench/temp_conan-io__conan-14168_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14168_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-14168_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git diff > /home/swe-bench/temp_conan-io__conan-14168_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-14168_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git diff > /home/swe-bench/temp_conan-io__conan-14168_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14168_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-14168_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git diff > /home/swe-bench/temp_conan-io__conan-14168_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git restore conans/test/integration/toolchains/apple/test_xcodedeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14168_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+/home/swe-bench/temp_conan-io__conan-14168_test.patch:30: trailing whitespace.
+            
+/home/swe-bench/temp_conan-io__conan-14168_test.patch:46: trailing whitespace.
+                configuration_name = custom_config_name 
+/home/swe-bench/temp_conan-io__conan-14168_test.patch:48: trailing whitespace.
+                configuration_name = build_type            
+Checking patch conans/test/integration/toolchains/apple/test_xcodedeps.py...
+Applied patch conans/test/integration/toolchains/apple/test_xcodedeps.py cleanly.
+warning: 3 lines add whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/apple/test_xcodedeps.py;
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/toolchains/apple/test_xcodedeps.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Std. Output:
+============================= test session starts ==============================
+collected 8 items
+
+conans/test/integration/toolchains/apple/test_xcodedeps.py sssssss.      [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/toolchains/apple/test_xcodedeps.py::test_skipped_not_included
+SKIPPED [1] conans/test/integration/toolchains/apple/test_xcodedeps.py:60: Only for MacOS
+SKIPPED [1] conans/test/integration/toolchains/apple/test_xcodedeps.py:92: Only for MacOS
+SKIPPED [1] conans/test/integration/toolchains/apple/test_xcodedeps.py:148: Only for MacOS
+SKIPPED [1] conans/test/integration/toolchains/apple/test_xcodedeps.py:239: Only for MacOS
+SKIPPED [1] conans/test/integration/toolchains/apple/test_xcodedeps.py:362: Only for MacOS
+SKIPPED [1] conans/test/integration/toolchains/apple/test_xcodedeps.py:389: Only for MacOS
+SKIPPED [1] conans/test/integration/toolchains/apple/test_xcodedeps.py:473: Only for MacOS
+========================= 1 passed, 7 skipped in 2.58s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Return Code: 0 
+
+>>>>> All Tests Passed
+[conan-io__conan__1.60.2] [conan-io__conan-14168] Test script run successful 

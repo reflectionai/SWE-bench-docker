@@ -1,0 +1,105 @@
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Task Metadata:
+	- Instance ID: conan-io__conan-5490
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git -c advice.detachedHead=false checkout f1755997ff5ad9e36bd6bce937684a9e864b0aa4 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+HEAD is now at f1755997f CI script as a library (#5458)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git diff > /home/swe-bench/temp_conan-io__conan-5490_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5490_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-5490_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git diff > /home/swe-bench/temp_conan-io__conan-5490_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-5490_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git diff > /home/swe-bench/temp_conan-io__conan-5490_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5490_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-5490_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git diff > /home/swe-bench/temp_conan-io__conan-5490_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git restore conans/test/functional/graph_lock/graph_lock_ci_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git restore conans/test/functional/graph_lock/graph_lock_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: git apply -v /home/swe-bench/temp_conan-io__conan-5490_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+Checking patch conans/test/functional/graph_lock/graph_lock_ci_test.py...
+Checking patch conans/test/functional/graph_lock/graph_lock_test.py...
+Applied patch conans/test/functional/graph_lock/graph_lock_ci_test.py cleanly.
+Applied patch conans/test/functional/graph_lock/graph_lock_test.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/graph_lock/graph_lock_ci_test.py conans/test/functional/graph_lock/graph_lock_test.py;
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/graph_lock/graph_lock_ci_test.py conans/test/functional/graph_lock/graph_lock_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/graph_lock/graph_lock_ci_test.py conans/test/functional/graph_lock/graph_lock_test.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 2 errors
+
+=========================== short test summary info ============================
+ERROR conans/test/functional/graph_lock/graph_lock_ci_test.py
+ERROR conans/test/functional/graph_lock/graph_lock_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.41s ===============================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Return Code: 2 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-5490] Test script run successful 

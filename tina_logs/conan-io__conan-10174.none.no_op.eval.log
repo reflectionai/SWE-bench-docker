@@ -1,0 +1,172 @@
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Task Metadata:
+	- Instance ID: conan-io__conan-10174
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git -c advice.detachedHead=false checkout 5c05cd52fb8ab2ee6f43f9cde40b0c5b17595ac0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+HEAD is now at 5c05cd52f allow legacy cmake 2022 (#10361)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git diff > /home/swe-bench/temp_conan-io__conan-10174_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10174_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-10174_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git diff > /home/swe-bench/temp_conan-io__conan-10174_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-10174_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git diff > /home/swe-bench/temp_conan-io__conan-10174_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10174_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-10174_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git diff > /home/swe-bench/temp_conan-io__conan-10174_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_android.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_cross_x86.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_install.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_ios.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_meson.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_meson_build_require.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_pkg_config_reuse.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_preprocessor_definitions.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git restore conans/test/functional/toolchains/meson/test_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: git apply -v /home/swe-bench/temp_conan-io__conan-10174_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+Checking patch conans/test/functional/toolchains/meson/test_android.py...
+Checking patch conans/test/integration/toolchains/meson/test_backend.py => conans/test/functional/toolchains/meson/test_backend.py...
+Checking patch conans/test/functional/toolchains/meson/test_cross_compilation.py...
+Checking patch conans/test/functional/toolchains/meson/test_cross_x86.py...
+Checking patch conans/test/functional/toolchains/meson/test_install.py...
+Checking patch conans/test/functional/toolchains/meson/test_ios.py...
+Checking patch conans/test/functional/toolchains/meson/test_meson.py...
+Checking patch conans/test/functional/toolchains/meson/test_meson_build_require.py...
+Checking patch conans/test/functional/toolchains/meson/test_pkg_config_reuse.py...
+Checking patch conans/test/functional/toolchains/meson/test_preprocessor_definitions.py...
+Checking patch conans/test/functional/toolchains/meson/test_test.py...
+Checking patch conans/test/integration/toolchains/meson/test_mesontoolchain.py...
+Applied patch conans/test/functional/toolchains/meson/test_android.py cleanly.
+Applied patch conans/test/integration/toolchains/meson/test_backend.py => conans/test/functional/toolchains/meson/test_backend.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_cross_compilation.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_cross_x86.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_install.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_ios.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_meson.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_meson_build_require.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_pkg_config_reuse.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_preprocessor_definitions.py cleanly.
+Applied patch conans/test/functional/toolchains/meson/test_test.py cleanly.
+Applied patch conans/test/integration/toolchains/meson/test_mesontoolchain.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/meson/test_android.py conans/test/functional/toolchains/meson/test_backend.py conans/test/functional/toolchains/meson/test_cross_compilation.py conans/test/functional/toolchains/meson/test_cross_x86.py conans/test/functional/toolchains/meson/test_install.py conans/test/functional/toolchains/meson/test_ios.py conans/test/functional/toolchains/meson/test_meson.py conans/test/functional/toolchains/meson/test_meson_build_require.py conans/test/functional/toolchains/meson/test_pkg_config_reuse.py conans/test/functional/toolchains/meson/test_preprocessor_definitions.py conans/test/functional/toolchains/meson/test_test.py conans/test/integration/toolchains/meson/test_mesontoolchain.py;
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/meson/test_android.py conans/test/functional/toolchains/meson/test_backend.py conans/test/functional/toolchains/meson/test_cross_compilation.py conans/test/functional/toolchains/meson/test_cross_x86.py conans/test/functional/toolchains/meson/test_install.py conans/test/functional/toolchains/meson/test_ios.py conans/test/functional/toolchains/meson/test_meson.py conans/test/functional/toolchains/meson/test_meson_build_require.py conans/test/functional/toolchains/meson/test_pkg_config_reuse.py conans/test/functional/toolchains/meson/test_preprocessor_definitions.py conans/test/functional/toolchains/meson/test_test.py conans/test/integration/toolchains/meson/test_mesontoolchain.py 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Std. Output:
+ImportError while loading conftest '/home/swe-bench/conan-io__conan/conans/test/conftest.py'.
+conans/__init__.py:1: in <module>
+    from conans.client.build.autotools_environment import AutoToolsBuildEnvironment
+conans/client/build/autotools_environment.py:6: in <module>
+    from conans.client.build.compiler_flags import (architecture_flag, build_type_define,
+conans/client/build/compiler_flags.py:13: in <module>
+    from conans.client.tools.apple import to_apple_arch
+conans/client/tools/__init__.py:12: in <module>
+    from .net import *
+conans/client/tools/net.py:3: in <module>
+    from conans.client.downloaders.download import run_downloader
+conans/client/downloaders/download.py:1: in <module>
+    from conans.client.downloaders.cached_file_downloader import CachedFileDownloader
+conans/client/downloaders/cached_file_downloader.py:8: in <module>
+    from conans.client.downloaders.file_downloader import check_checksum
+conans/client/downloaders/file_downloader.py:12: in <module>
+    from conans.util import progress_bar
+conans/util/progress_bar.py:5: in <module>
+    from tqdm import tqdm
+E   ModuleNotFoundError: No module named 'tqdm'
+
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/functional/toolchains/meson/test_android.py conans/test/functional/toolchains/meson/test_backend.py conans/test/functional/toolchains/meson/test_cross_compilation.py conans/test/functional/toolchains/meson/test_cross_x86.py conans/test/functional/toolchains/meson/test_install.py conans/test/functional/toolchains/meson/test_ios.py conans/test/functional/toolchains/meson/test_meson.py conans/test/functional/toolchains/meson/test_meson_build_require.py conans/test/functional/toolchains/meson/test_pkg_config_reuse.py conans/test/functional/toolchains/meson/test_preprocessor_definitions.py conans/test/functional/toolchains/meson/test_test.py conans/test/integration/toolchains/meson/test_mesontoolchain.py` failed. (See above for error)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Return Code: 4 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-10174] Test script run successful 

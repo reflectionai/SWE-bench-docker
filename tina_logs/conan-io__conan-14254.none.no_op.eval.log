@@ -1,0 +1,144 @@
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Task Metadata:
+	- Instance ID: conan-io__conan-14254
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git -c advice.detachedHead=false checkout 64ab9e767c24a96847b3c180b0b0308a553c5032 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+HEAD is now at 64ab9e767 fix leaking of CMakeDeps lib_suffix variable (#14253)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git diff > /home/swe-bench/temp_conan-io__conan-14254_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14254_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-14254_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git diff > /home/swe-bench/temp_conan-io__conan-14254_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-14254_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git diff > /home/swe-bench/temp_conan-io__conan-14254_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14254_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-14254_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git diff > /home/swe-bench/temp_conan-io__conan-14254_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git restore conans/test/integration/command/upload/upload_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git restore conans/test/integration/command_v2/test_combined_pkglist_flows.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14254_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+Checking patch conans/test/integration/command/upload/upload_test.py...
+Checking patch conans/test/integration/command_v2/test_combined_pkglist_flows.py...
+Applied patch conans/test/integration/command/upload/upload_test.py cleanly.
+Applied patch conans/test/integration/command_v2/test_combined_pkglist_flows.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/command/upload/upload_test.py conans/test/integration/command_v2/test_combined_pkglist_flows.py;
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/command/upload/upload_test.py conans/test/integration/command_v2/test_combined_pkglist_flows.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/command/upload/upload_test.py conans/test/integration/command_v2/test_combined_pkglist_flows.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 37 items
+
+conans/test/integration/command/upload/upload_test.py .................. [ 48%]
+...                                                                      [ 56%]
+conans/test/integration/command_v2/test_combined_pkglist_flows.py ..F... [ 72%]
+..........                                                               [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_broken_package_tgz
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_broken_sources_tgz
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_concurrent_upload
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_corrupt_upload
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_pattern_upload
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_pattern_upload_no_recipes
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_skip_upload
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_dirty
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_force
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_key_error
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_login_prompt_disabled_no_user
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_login_prompt_disabled_user_authenticated
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_login_prompt_disabled_user_not_authenticated
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_modified_recipe
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_no_overwrite_all
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_unmodified_package
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_unmodified_recipe
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_without_cleaned_user
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_without_sources
+PASSED conans/test/integration/command/upload/upload_test.py::UploadTest::test_upload_without_user_channel
+PASSED conans/test/integration/command/upload/upload_test.py::test_upload_only_without_user_channel
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestListUpload::test_list_upload_recipes
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestListUpload::test_list_upload_packages
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestGraphCreatedUpload::test_create_upload
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestCreateGraphToPkgList::test_graph_pkg_list_only_built
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestCreateGraphToPkgList::test_graph_pkg_list_all_recipes_only
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestGraphInfoToPkgList::test_graph_pkg_list_only_built
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestDownloadUpload::test_download_upload_all[False]
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestDownloadUpload::test_download_upload_all[True]
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestDownloadUpload::test_download_upload_only_recipes[False]
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestDownloadUpload::test_download_upload_only_recipes[True]
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestListRemove::test_remove_nothing_only_refs
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestListRemove::test_remove_all[False]
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestListRemove::test_remove_all[True]
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestListRemove::test_remove_packages[False]
+PASSED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestListRemove::test_remove_packages[True]
+FAILED conans/test/integration/command_v2/test_combined_pkglist_flows.py::TestListUpload::test_list_upload_empty_list
+======================== 1 failed, 36 passed in 43.99s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-14254] Test script run successful 

@@ -1,0 +1,132 @@
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Task Metadata:
+	- Instance ID: conan-io__conan-12695
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git -c advice.detachedHead=false checkout 64a64b879a811d7e0d6dae27183aab0bc6de2c4c 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+HEAD is now at 64a64b879 [develop2] moving global graph_compute to GraphAPI (#12666)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git diff > /home/swe-bench/temp_conan-io__conan-12695_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git apply -v /home/swe-bench/temp_conan-io__conan-12695_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-12695_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git diff > /home/swe-bench/temp_conan-io__conan-12695_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-12695_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git diff > /home/swe-bench/temp_conan-io__conan-12695_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git apply -v /home/swe-bench/temp_conan-io__conan-12695_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+Checking patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt...
+/home/swe-bench/temp_conan-io__conan-12695_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_5b4ace86-dd1e-4382-a831-9f39a41b67a0.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git diff > /home/swe-bench/temp_conan-io__conan-12695_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git restore conans/test/integration/conanfile/required_conan_version_test.py 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git restore conans/test/unittests/model/version/test_version_range.py 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: git apply -v /home/swe-bench/temp_conan-io__conan-12695_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+Checking patch conans/test/integration/conanfile/required_conan_version_test.py...
+Checking patch conans/test/unittests/model/version/test_version_range.py...
+Applied patch conans/test/integration/conanfile/required_conan_version_test.py cleanly.
+Applied patch conans/test/unittests/model/version/test_version_range.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/conanfile/required_conan_version_test.py conans/test/unittests/model/version/test_version_range.py;
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/conanfile/required_conan_version_test.py conans/test/unittests/model/version/test_version_range.py 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/integration/conanfile/required_conan_version_test.py conans/test/unittests/model/version/test_version_range.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 26 items
+
+conans/test/integration/conanfile/required_conan_version_test.py .F.     [ 11%]
+conans/test/unittests/model/version/test_version_range.py .............. [ 65%]
+........F                                                                [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/integration/conanfile/required_conan_version_test.py::RequiredConanVersionTest::test_required_conan_version
+PASSED conans/test/integration/conanfile/required_conan_version_test.py::RequiredConanVersionTest::test_required_conan_version_with_loading_issues
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[>1.0.0-conditions0-versions_in0-versions_out0]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[<2.0-conditions1-versions_in1-versions_out1]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[>1 <2.0-conditions2-versions_in2-versions_out2]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[~2.5-conditions3-versions_in3-versions_out3]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[~2.5.1-conditions4-versions_in4-versions_out4]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[~1-conditions5-versions_in5-versions_out5]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[^1.2-conditions6-versions_in6-versions_out6]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[^1.2.3-conditions7-versions_in7-versions_out7]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[^0.1.2-conditions8-versions_in8-versions_out8]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[1.0.0-conditions9-versions_in9-versions_out9]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[=1.0.0-conditions10-versions_in10-versions_out10]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[*-conditions11-versions_in11-versions_out11]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[-conditions12-versions_in12-versions_out12]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[1.0.0 || 2.1.3-conditions13-versions_in13-versions_out13]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[>1 <2.0 || ^3.2 -conditions14-versions_in14-versions_out14]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[-conditions15-versions_in15-versions_out15]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[*, include_prerelease=True-conditions16-versions_in16-versions_out16]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[*--conditions17-versions_in17-versions_out17]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[>1- <2.0-conditions18-versions_in18-versions_out18]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[>1- <2.0 || ^3.2 -conditions19-versions_in19-versions_out19]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[^1.1.2--conditions20-versions_in20-versions_out20]
+PASSED conans/test/unittests/model/version/test_version_range.py::test_range[~1.1.2--conditions21-versions_in21-versions_out21]
+FAILED conans/test/integration/conanfile/required_conan_version_test.py::RequiredConanVersionTest::test_required_conan_version_invalid_syntax
+FAILED conans/test/unittests/model/version/test_version_range.py::test_wrong_range_syntax
+========================= 2 failed, 24 passed in 7.19s =========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-12695] Test script run successful 
