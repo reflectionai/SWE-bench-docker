@@ -102,4 +102,4 @@ if __name__ == "__main__":
           swe_bench_tasks=args.swe_bench_tasks,
           split=args.split,
           instance_id=args.instance_id,
-          log_dir=args.log_dir))
+          log_dir_path=args.log_dir))
