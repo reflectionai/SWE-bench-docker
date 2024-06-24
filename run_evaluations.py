@@ -42,7 +42,7 @@ index 0000000..e69de29
 """
   predictions_path = pathlib.Path(
       tempfile.NamedTemporaryFile(delete=False, suffix='.jsonl').name)
-  log_dir = pathlib.Path("/Users/tina/bench/SWE-bench-docker/tina_logs")
+  log_dir = pathlib.Path("/home/tina/SWE-bench-docker/tina_logs")
   print("LOGGING RESULTS ON HOST MACHINE AT: ", log_dir)
 
   # Add suffix indicating if no_op or gold patch was applied during this run.

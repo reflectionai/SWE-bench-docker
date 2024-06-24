@@ -1,0 +1,181 @@
+{
+    "repo": "all",
+    "total_predictions": 2,
+    "Patch Apply Success": {
+        "f2p_weighted": 100,
+        "p2p_weighted": 100,
+        "f2p_unweighted": 100,
+        "p2p_unweighted": 100,
+        "cases": [
+            {
+                "conan-io__conan-14397.none.no_op.eval.log": {
+                    "FAIL_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "FAIL_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    }
+                },
+                "conan-io__conan-14538.none.gold.eval.log": {
+                    "FAIL_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "FAIL_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    }
+                },
+                "conan-io__conan-14538.none.no_op.eval.log": {
+                    "FAIL_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "FAIL_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    }
+                },
+                "conan-io__conan-14397.none.gold.eval.log": {
+                    "FAIL_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "FAIL_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    }
+                }
+            }
+        ],
+        "case_resolution_counts": {
+            "RESOLVED_FULL": 4
+        },
+        "case_resolution_rates": {
+            "RESOLVED_FULL": 100.0
+        }
+    },
+    "Patch Apply Success + Failure": {
+        "f2p_weighted": 100,
+        "p2p_weighted": 100,
+        "f2p_unweighted": 100,
+        "p2p_unweighted": 100,
+        "cases": [
+            {
+                "conan-io__conan-14397.none.no_op.eval.log": {
+                    "FAIL_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "FAIL_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    }
+                },
+                "conan-io__conan-14538.none.gold.eval.log": {
+                    "FAIL_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "FAIL_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    }
+                },
+                "conan-io__conan-14538.none.no_op.eval.log": {
+                    "FAIL_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "FAIL_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    }
+                },
+                "conan-io__conan-14397.none.gold.eval.log": {
+                    "FAIL_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_PASS": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "FAIL_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    },
+                    "PASS_TO_FAIL": {
+                        "success": [],
+                        "failure": []
+                    }
+                }
+            },
+            {}
+        ],
+        "case_resolution_counts": {
+            "RESOLVED_FULL": 4
+        },
+        "case_resolution_rates": {
+            "RESOLVED_FULL": 100.0
+        }
+    }
+}

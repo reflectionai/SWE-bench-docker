@@ -1,0 +1,15 @@
+{
+    "no_generation": [],
+    "generated": [
+        "conan-io__conan-14397",
+        "conan-io__conan-14538"
+    ],
+    "with_logs": [],
+    "install_fail": [],
+    "reset_failed": [],
+    "no_apply": [],
+    "applied": [],
+    "test_errored": [],
+    "test_timeout": [],
+    "resolved": []
+}

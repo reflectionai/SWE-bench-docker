@@ -39,6 +39,7 @@ async def run_docker_evaluation(
   # Create a temporary file to store the task_instance JSON
   with tempfile.NamedTemporaryFile(delete=False, mode='w+',
                                    suffix='.json') as tmpfile:
+    os.chmod(tmpfile.name, 0o777)  # Ensure file can be read later.
     json.dump(task_instance, tmpfile)
     tmpfile.close()
     tmpfile_path = tmpfile.name
@@ -72,7 +73,6 @@ async def run_docker_evaluation(
     ]
 
     cmd_string = ' '.join(docker_command)
-
     if True:
       logger.info(cmd_string)
 

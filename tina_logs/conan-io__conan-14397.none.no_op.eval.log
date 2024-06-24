@@ -1,0 +1,101 @@
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Task Metadata:
+	- Instance ID: conan-io__conan-14397
+	- Testbed: conan-io__conan__1.60.2
+	- Evaluation Model: none
+	- Python version: Python 3.11.8
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git -c advice.detachedHead=false checkout aca81fcad474ee783855a40ff6a815ac5662d7db 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+HEAD is now at aca81fcad tools: Add support for Alpine Linux (#14382)
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git diff > /home/swe-bench/temp_conan-io__conan-14397_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14397_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+Checking patch no_op_177ff549-6a27-4085-a2e4-db28c6138acd.txt...
+/home/swe-bench/temp_conan-io__conan-14397_pred_try.patch:8: new blank line at EOF.
++
+Applied patch no_op_177ff549-6a27-4085-a2e4-db28c6138acd.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git diff > /home/swe-bench/temp_conan-io__conan-14397_pred_try_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git apply -v -R /home/swe-bench/temp_conan-io__conan-14397_pred_try.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+Checking patch no_op_177ff549-6a27-4085-a2e4-db28c6138acd.txt...
+Applied patch no_op_177ff549-6a27-4085-a2e4-db28c6138acd.txt cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git diff > /home/swe-bench/temp_conan-io__conan-14397_pred_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14397_pred.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+Checking patch no_op_177ff549-6a27-4085-a2e4-db28c6138acd.txt...
+/home/swe-bench/temp_conan-io__conan-14397_pred.patch:8: new blank line at EOF.
++
+Applied patch no_op_177ff549-6a27-4085-a2e4-db28c6138acd.txt cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git diff > /home/swe-bench/temp_conan-io__conan-14397_test_init.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git restore conans/test/unittests/tools/cmake/test_cmake_install.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: git apply -v /home/swe-bench/temp_conan-io__conan-14397_test.patch 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+Checking patch conans/test/unittests/tools/cmake/test_cmake_install.py...
+Applied patch conans/test/unittests/tools/cmake/test_cmake_install.py cleanly.
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 0 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n conan-io__conan__1.60.2  pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/tools/cmake/test_cmake_install.py;
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Command: conda run -n conan-io__conan__1.60.2 pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/tools/cmake/test_cmake_install.py 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Subprocess args: {"cwd": "/home/swe-bench/conan-io__conan", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider conans/test/unittests/tools/cmake/test_cmake_install.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 4 items
+
+conans/test/unittests/tools/cmake/test_cmake_install.py ..FF             [100%]
+
+=========================== short test summary info ============================
+PASSED conans/test/unittests/tools/cmake/test_cmake_install.py::test_run_install_component
+PASSED conans/test/unittests/tools/cmake/test_cmake_install.py::test_run_install_strip
+FAILED conans/test/unittests/tools/cmake/test_cmake_install.py::test_run_install_cli_args
+FAILED conans/test/unittests/tools/cmake/test_cmake_install.py::test_run_install_cli_args_strip
+========================= 2 failed, 2 passed in 0.65s ==========================
+
+ 
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Return Code: 1 
+
+>>>>> Some Tests Failed
+[conan-io__conan__1.60.2] [conan-io__conan-14397] Test script run successful 
